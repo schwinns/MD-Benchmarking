@@ -20,14 +20,14 @@ coulombtype = PME
 Tcoupl = v-rescale
 tc-grps = system
 tau-t = 0.1
-ref-t = 343.0
+ref-t = 300.0
 Pcoupl = berendsen
 Pcoupltype = isotropic
 ref-p = 1 1
 compressibility = 4.5e-5 4.5e-5
 
 gen-vel = yes
-gen-temp = 343.0
+gen-temp = 300.0
 pbc = xyz
 DispCorr = EnerPres
 refcoord-scaling = all
