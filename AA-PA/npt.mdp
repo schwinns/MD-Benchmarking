@@ -24,9 +24,10 @@ ref-t = 300.0
 Pcoupl = Parrinello-Rahman
 Pcoupltype = semiisotropic
 ref-p = 1.01325 1.01325
+tau-p = 20
 compressibility = 4.5e-5 4.5e-5
 
-gen-vel = yes
+gen-vel = no
 gen-temp = 300.0
 pbc = xyz
 DispCorr = EnerPres
