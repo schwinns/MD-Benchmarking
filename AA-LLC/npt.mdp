@@ -31,3 +31,4 @@ gen-temp = 300.0
 pbc = xyz
 DispCorr = EnerPres
 refcoord-scaling = all
+periodic-molecules = yes
