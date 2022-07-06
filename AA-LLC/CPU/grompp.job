@@ -9,7 +9,7 @@ module load openmpi/3.1.6-gcc10.2.0
 source /jet/home/susa/pkgs/gromacs/2020.5_cpu/bin/GMXRC
 
 export GMX_MAXBACKUP=-1  # do not make back-ups
-mpirun -np 1 gmx_mpi grompp -f ../npt.mdp -p topol.top -c ../npt0.gro -o npt
+mpirun -np 1 gmx_mpi grompp -f ../npt.mdp -p topol.top -c ../solvated_water.gro -o npt
              
 
 
