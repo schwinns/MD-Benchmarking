@@ -5,9 +5,11 @@
 #SBATCH -J 'RM'
 
 
-module load gcc/10.2.0
-module load openmpi/3.1.6-gcc10.2.0
-source /jet/home/susa/pkgs/gromacs/2020.5_cpu/bin/GMXRC
+module load gcc
+module load cuda/11.1.1
+module load openmpi/3.1.6-gcc8.3.1
+PATH=$PATH:/jet/home/schwinns/pkgs/gromacs/2020.5
+source /jet/home/schwinns/pkgs/gromacs/2020.5/bin/GMXRC
 
 export GMX_MAXBACKUP=-1  # do not make back-ups
 
