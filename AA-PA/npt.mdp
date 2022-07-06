@@ -30,4 +30,4 @@ gen-vel = yes
 gen-temp = 300.0
 pbc = xyz
 DispCorr = EnerPres
-periodic
+periodic-molecules = yes
