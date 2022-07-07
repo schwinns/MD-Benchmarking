@@ -1,0 +1,1356 @@
+                      :-) GROMACS - gmx mdrun, 2020.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.5
+Executable:   /jet/home/schwinns/pkgs/gromacs/2020.5/bin/gmx_mpi
+Data prefix:  /jet/home/schwinns/pkgs/gromacs/2020.5
+Working dir:  /ocean/projects/cts160011p/schwinns/benchmark/2022/AA-LLC/GPU/G2
+Process ID:   90632
+Command line:
+  gmx_mpi mdrun -v -s ../npt.tpr -o npt -g G2_np10_nomp1.log -ntomp 1
+
+GROMACS version:    2020.5
+Verified release checksum is 4d9aa1b4e69850bc4583c1983ce2e0e3a88250cafb8f30ab0290b4dd4413a41e
+Precision:          single
+Memory model:       64 bit
+MPI library:        MPI
+OpenMP support:     enabled (GMX_OPENMP_MAX_THREADS = 64)
+GPU support:        CUDA
+SIMD instructions:  SSE4.1
+FFT library:        fftw-3.3.8-sse2
+RDTSCP usage:       disabled
+TNG support:        enabled
+Hwloc support:      hwloc-1.11.9
+Tracing support:    disabled
+C compiler:         /jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/gcc-10.2.0-tfzxq7udz2a53dmujvasy4uz33t27iwv/bin/gcc GNU 10.2.0
+C compiler flags:   -msse4.1 -pthread -fexcess-precision=fast -funroll-all-loops -O2 -DNDEBUG
+C++ compiler:       /jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/gcc-10.2.0-tfzxq7udz2a53dmujvasy4uz33t27iwv/bin/g++ GNU 10.2.0
+C++ compiler flags: -msse4.1 -pthread -fexcess-precision=fast -funroll-all-loops -fopenmp -O2 -DNDEBUG
+CUDA compiler:      /jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin/nvcc nvcc: NVIDIA (R) Cuda compiler driver;Copyright (c) 2005-2020 NVIDIA Corporation;Built on Mon_Oct_12_20:09:46_PDT_2020;Cuda compilation tools, release 11.1, V11.1.105;Build cuda_11.1.TC455_06.29190527_0
+CUDA compiler flags:-gencode;arch=compute_35,code=sm_35;-gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_52,code=sm_52;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_61,code=sm_61;-gencode;arch=compute_70,code=sm_70;-Wno-deprecated-gpu-targets;-gencode;arch=compute_35,code=compute_35;-gencode;arch=compute_50,code=compute_50;-gencode;arch=compute_52,code=compute_52;-gencode;arch=compute_60,code=compute_60;-gencode;arch=compute_61,code=compute_61;-gencode;arch=compute_70,code=compute_70;-gencode;arch=compute_75,code=compute_75;-gencode;arch=compute_80,code=compute_80;-use_fast_math;-D_FORCE_INLINES;-msse4.1 -pthread -fexcess-precision=fast -funroll-all-loops -fopenmp -O2 -DNDEBUG
+CUDA driver:        11.40
+CUDA runtime:       11.10
+
+
+Running on 1 node with total 40 cores, 40 logical cores, 2 compatible GPUs
+Hardware detected on host v001.ib.bridges2.psc.edu (the node of MPI rank 0):
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) Gold 6248 CPU @ 2.50GHz
+    Family: 6   Model: 85   Stepping: 7
+    Features: aes apic avx avx2 avx512f avx512cd avx512bw avx512vl clfsh cmov cx8 cx16 f16c fma hle htt intel lahf mmx msr nonstop_tsc pcid pclmuldq pdcm pdpe1gb popcnt pse rdrnd rdtscp rtm sse2 sse3 sse4.1 sse4.2 ssse3 tdt x2apic
+    Number of AVX-512 FMA units: Cannot run AVX-512 detection - assuming 2
+  Hardware topology: Only logical processor count
+  GPU info:
+    Number of GPUs detected: 2
+    #0: NVIDIA Tesla V100-SXM2-32GB, compute cap.: 7.0, ECC: yes, stat: compatible
+    #1: NVIDIA Tesla V100-SXM2-32GB, compute cap.: 7.0, ECC: yes, stat: compatible
+
+Highest SIMD level requested by all nodes in run: AVX_512
+SIMD instructions selected at compile time:       SSE4.1
+This program was compiled for different hardware than you are running on,
+which could influence performance.
+The current CPU can measure timings more accurately than the code in
+gmx mdrun was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding gmx mdrun with the GMX_USE_RDTSCP=ON CMake option.
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+M. J. Abraham, T. Murtola, R. Schulz, S. Páll, J. C. Smith, B. Hess, E.
+Lindahl
+GROMACS: High performance molecular simulations through multi-level
+parallelism from laptops to supercomputers
+SoftwareX 1 (2015) pp. 19-25
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+S. Páll, M. J. Abraham, C. Kutzner, B. Hess, E. Lindahl
+Tackling Exascale Software Challenges in Molecular Dynamics Simulations with
+GROMACS
+In S. Markidis & E. Laure (Eds.), Solving Software Challenges for Exascale 8759 (2015) pp. 3-27
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+S. Pronk, S. Páll, R. Schulz, P. Larsson, P. Bjelkmar, R. Apostolov, M. R.
+Shirts, J. C. Smith, P. M. Kasson, D. van der Spoel, B. Hess, and E. Lindahl
+GROMACS 4.5: a high-throughput and highly parallel open source molecular
+simulation toolkit
+Bioinformatics 29 (2013) pp. 845-54
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+B. Hess and C. Kutzner and D. van der Spoel and E. Lindahl
+GROMACS 4: Algorithms for highly efficient, load-balanced, and scalable
+molecular simulation
+J. Chem. Theory Comput. 4 (2008) pp. 435-447
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+D. van der Spoel, E. Lindahl, B. Hess, G. Groenhof, A. E. Mark and H. J. C.
+Berendsen
+GROMACS: Fast, Flexible and Free
+J. Comp. Chem. 26 (2005) pp. 1701-1719
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+E. Lindahl and B. Hess and D. van der Spoel
+GROMACS 3.0: A package for molecular simulation and trajectory analysis
+J. Mol. Mod. 7 (2001) pp. 306-317
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+H. J. C. Berendsen, D. van der Spoel and R. van Drunen
+GROMACS: A message-passing parallel molecular dynamics implementation
+Comp. Phys. Comm. 91 (1995) pp. 43-56
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE CITE THE DOI FOR THIS VERSION OF GROMACS ++++
+https://doi.org/10.5281/zenodo.4420785
+-------- -------- --- Thank You --- -------- --------
+
+Input Parameters:
+   integrator                     = md
+   tinit                          = 0
+   dt                             = 0.002
+   nsteps                         = 50000
+   init-step                      = 0
+   simulation-part                = 1
+   comm-mode                      = Linear
+   nstcomm                        = 100
+   bd-fric                        = 0
+   ld-seed                        = -1140986690
+   emtol                          = 10
+   emstep                         = 0.01
+   niter                          = 20
+   fcstep                         = 0
+   nstcgsteep                     = 1000
+   nbfgscorr                      = 10
+   rtpi                           = 0.05
+   nstxout                        = 0
+   nstvout                        = 0
+   nstfout                        = 0
+   nstlog                         = 1000
+   nstcalcenergy                  = 100
+   nstenergy                      = 5000
+   nstxout-compressed             = 5000
+   compressed-x-precision         = 1000
+   cutoff-scheme                  = Verlet
+   nstlist                        = 40
+   pbc                            = xyz
+   periodic-molecules             = true
+   verlet-buffer-tolerance        = 0.005
+   rlist                          = 1.01
+   coulombtype                    = PME
+   coulomb-modifier               = Potential-shift
+   rcoulomb-switch                = 0
+   rcoulomb                       = 1
+   epsilon-r                      = 1
+   epsilon-rf                     = inf
+   vdw-type                       = Cut-off
+   vdw-modifier                   = Potential-shift
+   rvdw-switch                    = 0
+   rvdw                           = 1
+   DispCorr                       = EnerPres
+   table-extension                = 1
+   fourierspacing                 = 0.12
+   fourier-nx                     = 80
+   fourier-ny                     = 80
+   fourier-nz                     = 80
+   pme-order                      = 4
+   ewald-rtol                     = 1e-05
+   ewald-rtol-lj                  = 0.001
+   lj-pme-comb-rule               = Geometric
+   ewald-geometry                 = 0
+   epsilon-surface                = 0
+   tcoupl                         = V-rescale
+   nsttcouple                     = 40
+   nh-chain-length                = 0
+   print-nose-hoover-chain-variables = false
+   pcoupl                         = Berendsen
+   pcoupltype                     = Isotropic
+   nstpcouple                     = 40
+   tau-p                          = 1
+   compressibility (3x3):
+      compressibility[    0]={ 4.50000e-05,  0.00000e+00,  0.00000e+00}
+      compressibility[    1]={ 0.00000e+00,  4.50000e-05,  0.00000e+00}
+      compressibility[    2]={ 0.00000e+00,  0.00000e+00,  4.50000e-05}
+   ref-p (3x3):
+      ref-p[    0]={ 1.00000e+00,  0.00000e+00,  0.00000e+00}
+      ref-p[    1]={ 0.00000e+00,  1.00000e+00,  0.00000e+00}
+      ref-p[    2]={ 0.00000e+00,  0.00000e+00,  1.00000e+00}
+   refcoord-scaling               = All
+   posres-com (3):
+      posres-com[0]= 0.00000e+00
+      posres-com[1]= 0.00000e+00
+      posres-com[2]= 0.00000e+00
+   posres-comB (3):
+      posres-comB[0]= 0.00000e+00
+      posres-comB[1]= 0.00000e+00
+      posres-comB[2]= 0.00000e+00
+   QMMM                           = false
+   QMconstraints                  = 0
+   QMMMscheme                     = 0
+   MMChargeScaleFactor            = 1
+qm-opts:
+   ngQM                           = 0
+   constraint-algorithm           = Lincs
+   continuation                   = false
+   Shake-SOR                      = false
+   shake-tol                      = 0.0001
+   lincs-order                    = 4
+   lincs-iter                     = 1
+   lincs-warnangle                = 30
+   nwall                          = 0
+   wall-type                      = 9-3
+   wall-r-linpot                  = -1
+   wall-atomtype[0]               = -1
+   wall-atomtype[1]               = -1
+   wall-density[0]                = 0
+   wall-density[1]                = 0
+   wall-ewald-zfac                = 3
+   pull                           = false
+   awh                            = false
+   rotation                       = false
+   interactiveMD                  = false
+   disre                          = No
+   disre-weighting                = Conservative
+   disre-mixed                    = false
+   dr-fc                          = 1000
+   dr-tau                         = 0
+   nstdisreout                    = 100
+   orire-fc                       = 0
+   orire-tau                      = 0
+   nstorireout                    = 100
+   free-energy                    = no
+   cos-acceleration               = 0
+   deform (3x3):
+      deform[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      deform[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      deform[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   simulated-tempering            = false
+   swapcoords                     = no
+   userint1                       = 0
+   userint2                       = 0
+   userint3                       = 0
+   userint4                       = 0
+   userreal1                      = 0
+   userreal2                      = 0
+   userreal3                      = 0
+   userreal4                      = 0
+   applied-forces:
+     electric-field:
+       x:
+         E0                       = 0
+         omega                    = 0
+         t0                       = 0
+         sigma                    = 0
+       y:
+         E0                       = 0
+         omega                    = 0
+         t0                       = 0
+         sigma                    = 0
+       z:
+         E0                       = 0
+         omega                    = 0
+         t0                       = 0
+         sigma                    = 0
+     density-guided-simulation:
+       active                     = false
+       group                      = protein
+       similarity-measure         = inner-product
+       atom-spreading-weight      = unity
+       force-constant             = 1e+09
+       gaussian-transform-spreading-width = 0.2
+       gaussian-transform-spreading-range-in-multiples-of-width = 4
+       reference-density-filename = reference.mrc
+       nst                        = 1
+       normalize-densities        = true
+       adaptive-force-scaling     = false
+       adaptive-force-scaling-time-constant = 4
+grpopts:
+   nrdf:      197751
+   ref-t:         300
+   tau-t:         0.1
+annealing:          No
+annealing-npoints:           0
+   acc:	           0           0           0
+   nfreeze:           N           N           N
+   energygrp-flags[  0]: 0
+
+Changing nstlist from 40 to 100, rlist from 1.01 to 1.068
+
+
+Initializing Domain Decomposition on 10 ranks
+Dynamic load balancing: auto
+Minimum cell size due to atom displacement: 0.788 nm
+NOTE: Periodic molecules are present in this system. Because of this, the domain decomposition algorithm cannot easily determine the minimum cell size that it requires for treating bonded interactions. Instead, domain decomposition will assume that half the non-bonded cut-off will be a suitable lower bound.
+Minimum cell size due to bonded interactions: 0.534 nm
+Maximum distance for 5 constraints, at 120 deg. angles, all-trans: 0.219 nm
+Estimated maximum distance required for P-LINCS: 0.219 nm
+Scaling the initial minimum size with 1/0.8 (option -dds) = 1.25
+Using 0 separate PME ranks
+Optimizing the DD grid for 10 cells with a minimum initial size of 0.985 nm
+The maximum allowed number of cells is: X 9 Y 9 Z 9
+Domain decomposition grid 5 x 2 x 1, separate PME ranks 0
+PME domain decomposition: 5 x 2 x 1
+Domain decomposition rank 0, coordinates 0 0 0
+
+The initial number of communication pulses is: X 1 Y 1
+The initial domain decomposition cell size is: X 1.88 nm Y 4.71 nm
+
+The maximum allowed distance for atoms involved in interactions is:
+                 non-bonded interactions           1.068 nm
+(the following are initial values, they could change due to box deformation)
+            two-body bonded interactions  (-rdd)   1.068 nm
+          multi-body bonded interactions  (-rdd)   1.068 nm
+  atoms separated by up to 5 constraints  (-rcon)  1.885 nm
+
+When dynamic load balancing gets turned on, these settings will change to:
+The maximum number of communication pulses is: X 1 Y 1
+The minimum size for domain decomposition cells is 1.068 nm
+The requested allowed shrink of DD cells (option -dds) is: 0.80
+The allowed shrink of domain decomposition cells is: X 0.57 Y 0.23
+The maximum allowed distance for atoms involved in interactions is:
+                 non-bonded interactions           1.068 nm
+            two-body bonded interactions  (-rdd)   1.068 nm
+          multi-body bonded interactions  (-rdd)   1.068 nm
+  atoms separated by up to 5 constraints  (-rcon)  1.068 nm
+
+On host v001.ib.bridges2.psc.edu 2 GPUs selected for this run.
+Mapping of GPU IDs to the 10 GPU tasks in the 10 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+Using 10 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread per MPI process
+
+
+NOTE: Your choice of number of MPI ranks and amount of resources results in using 1 OpenMP threads per rank, which is most likely inefficient. The optimum is usually between 2 and 6 threads per rank.
+System total charge: -0.000
+Will do PME sum in reciprocal space for electrostatic interactions.
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+U. Essmann, L. Perera, M. L. Berkowitz, T. Darden, H. Lee and L. G. Pedersen 
+A smooth particle mesh Ewald method
+J. Chem. Phys. 103 (1995) pp. 8577-8592
+-------- -------- --- Thank You --- -------- --------
+
+Using a Gaussian width (1/beta) of 0.320163 nm for Ewald
+Potential shift: LJ r^-12: -1.000e+00 r^-6: -1.000e+00, Ewald -1.000e-05
+Initialized non-bonded Ewald tables, spacing: 9.33e-04 size: 1073
+
+Generated table with 1033 data points for 1-4 COUL.
+Tabscale = 500 points/nm
+Generated table with 1033 data points for 1-4 LJ6.
+Tabscale = 500 points/nm
+Generated table with 1033 data points for 1-4 LJ12.
+Tabscale = 500 points/nm
+
+Using GPU 8x8 nonbonded short-range kernels
+
+Using a dual 8x8 pair-list setup updated with dynamic, rolling pruning:
+  outer list: updated every 100 steps, buffer 0.068 nm, rlist 1.068 nm
+  inner list: updated every  32 steps, buffer 0.002 nm, rlist 1.002 nm
+At tolerance 0.005 kJ/mol/ps per atom, equivalent classical 1x1 list would be:
+  outer list: updated every 100 steps, buffer 0.241 nm, rlist 1.241 nm
+  inner list: updated every  32 steps, buffer 0.111 nm, rlist 1.111 nm
+
+Using Lorentz-Berthelot Lennard-Jones combination rule
+
+Long Range LJ corr.: <C6> 6.2310e-04
+
+
+Initializing Parallel LINear Constraint Solver
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+B. Hess
+P-LINCS: A Parallel Linear Constraint Solver for molecular simulation
+J. Chem. Theory Comput. 4 (2008) pp. 116-122
+-------- -------- --- Thank You --- -------- --------
+
+The number of constraints is 41253
+There are constraints between atoms in different decomposition domains,
+will communicate selected coordinates each lincs iteration
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+S. Miyamoto and P. A. Kollman
+SETTLE: An Analytical Version of the SHAKE and RATTLE Algorithms for Rigid
+Water Models
+J. Comp. Chem. 13 (1992) pp. 952-962
+-------- -------- --- Thank You --- -------- --------
+
+
+Linking all bonded interactions to atoms
+
+Intra-simulation communication will occur every 20 steps.
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+G. Bussi, D. Donadio and M. Parrinello
+Canonical sampling through velocity rescaling
+J. Chem. Phys. 126 (2007) pp. 014101
+-------- -------- --- Thank You --- -------- --------
+
+There are: 85755 Atoms
+Atom distribution over 10 domains: av 8575 stddev 100 min 8519 max 8657
+
+NOTE: DLB will not turn on during the first phase of PME tuning
+
+Constraining the starting coordinates (step 0)
+
+Constraining the coordinates at t0-dt (step 0)
+Center of mass motion removal mode is Linear
+We have the following groups for center of mass motion removal:
+  0:  rest
+RMS relative constraint deviation after constraining: 2.96e-06
+Initial temperature: 300.555 K
+
+Started mdrun on rank 0 Thu Jul  7 13:24:06 2022
+
+           Step           Time
+              0        0.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    1.00525e+05    1.68189e+05    1.82747e+03    8.79351e+04    1.96274e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.03482e+04   -7.63198e+04   -2.29063e+04   -6.41510e+05    1.99657e+04
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -1.76369e+05    2.66720e+05    9.03513e+04    9.03802e+04    3.24439e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.54992e+02   -5.00035e+01    4.47217e-06
+
+
+DD  step 99 load imb.: force  2.6%
+
+DD  step 999 load imb.: force  0.2%
+           Step           Time
+           1000        2.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.52559e+04    1.53130e+05    1.64034e+03    8.46061e+04    1.95064e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04598e+04   -7.80887e+04   -2.32083e+04   -6.54410e+05    1.88770e+04
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.17593e+05    2.46641e+05    2.90486e+04    8.98490e+04    3.00015e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.67057e+02   -6.23222e+01    3.50607e-06
+
+step 1900: timed with pme grid 80 80 80, coulomb cutoff 1.000: 661.6 M-cycles
+
+DD  step 1999 load imb.: force  0.2%
+           Step           Time
+           2000        4.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.63593e+04    1.52461e+05    1.64085e+03    8.45295e+04    1.94217e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.03831e+04   -7.70619e+04   -2.32288e+04   -6.46487e+05    9.82167e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.18131e+05    2.46392e+05    2.82614e+04    9.00325e+04    2.99712e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.67881e+02   -7.38695e+01    3.53129e-06
+
+step 2100: timed with pme grid 64 64 64, coulomb cutoff 1.227: 572.1 M-cycles
+step 2300: timed with pme grid 56 56 56, coulomb cutoff 1.402: 547.1 M-cycles
+step 2500: timed with pme grid 48 48 48, coulomb cutoff 1.636: 574.3 M-cycles
+step 2500: the maximum allowed grid scaling limits the PME load balancing to a coulomb cut-off of 1.636
+step 2700: timed with pme grid 48 48 48, coulomb cutoff 1.636: 571.7 M-cycles
+step 2900: timed with pme grid 52 52 52, coulomb cutoff 1.510: 591.1 M-cycles
+
+DD  step 2999 load imb.: force  0.3%
+           Step           Time
+           3000        6.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.55203e+04    1.53753e+05    1.68235e+03    8.44769e+04    1.94503e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.02937e+04   -7.72486e+04   -2.32529e+04   -6.44172e+05    6.23116e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.18801e+05    2.46432e+05    2.76308e+04    9.03031e+04    2.99760e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.68850e+02   -9.62899e+01    3.51795e-06
+
+step 3100: timed with pme grid 56 56 56, coulomb cutoff 1.402: 550.3 M-cycles
+step 3300: timed with pme grid 60 60 60, coulomb cutoff 1.309: 559.8 M-cycles
+step 3500: timed with pme grid 64 64 64, coulomb cutoff 1.227: 569.4 M-cycles
+step 3700: timed with pme grid 72 72 72, coulomb cutoff 1.091: 625.8 M-cycles
+              optimal pme grid 56 56 56, coulomb cutoff 1.402
+
+NOTE: DLB can now turn on, when beneficial
+
+DD  step 3999 load imb.: force  0.3%
+           Step           Time
+           4000        8.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.52606e+04    1.52214e+05    1.67186e+03    8.44098e+04    1.94749e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.03105e+04   -7.67085e+04   -2.33007e+04   -6.45433e+05    6.23131e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.21216e+05    2.46162e+05    2.49459e+04    9.02747e+04    2.99432e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.70778e+02    1.72836e+02    3.51051e-06
+
+
+DD  step 4999 load imb.: force  0.2%
+           Step           Time
+           5000       10.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.68232e+04    1.53284e+05    1.65092e+03    8.42652e+04    1.94394e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.03977e+04   -7.75132e+04   -2.33244e+04   -6.45083e+05    6.11409e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.19786e+05    2.46718e+05    2.69317e+04    9.07815e+04    3.00108e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.71736e+02   -2.03166e+02    3.47683e-06
+
+
+DD  step 5999 load imb.: force  0.7%
+           Step           Time
+           6000       12.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.52996e+04    1.53685e+05    1.62932e+03    8.34980e+04    1.94660e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.03705e+04   -7.75226e+04   -2.32845e+04   -6.44974e+05    6.08856e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.21291e+05    2.47005e+05    2.57137e+04    9.07072e+04    3.00457e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.70126e+02    1.24336e+02    3.52091e-06
+
+
+DD  step 6999 load imb.: force  0.5%
+           Step           Time
+           7000       14.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.47804e+04    1.52661e+05    1.64297e+03    8.37664e+04    1.95274e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04182e+04   -7.68089e+04   -2.32731e+04   -6.45631e+05    6.33374e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.21672e+05    2.47181e+05    2.55092e+04    9.09084e+04    3.00671e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.69666e+02   -6.78011e+01    3.51870e-06
+
+
+DD  step 7999 load imb.: force  0.3%
+           Step           Time
+           8000       16.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.48924e+04    1.53267e+05    1.65192e+03    8.39432e+04    1.95208e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.03396e+04   -7.69217e+04   -2.33186e+04   -6.45795e+05    6.21834e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.21194e+05    2.46444e+05    2.52494e+04    9.09877e+04    2.99775e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.71499e+02    1.73600e+02    3.53611e-06
+
+
+DD  step 8999 load imb.: force  0.3%
+           Step           Time
+           9000       18.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.52992e+04    1.53036e+05    1.66605e+03    8.37154e+04    1.94381e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.02361e+04   -7.79557e+04   -2.33562e+04   -6.44887e+05    6.15698e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.22181e+05    2.45336e+05    2.31557e+04    9.13214e+04    2.98428e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.73020e+02    5.61700e+00    3.49078e-06
+
+
+DD  step 9999 load imb.: force  0.3%
+           Step           Time
+          10000       20.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.53873e+04    1.53724e+05    1.62733e+03    8.38255e+04    1.94956e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.03451e+04   -7.80553e+04   -2.33133e+04   -6.45270e+05    6.15089e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.21313e+05    2.45913e+05    2.46000e+04    9.16537e+04    2.99130e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.71287e+02   -1.01925e+02    3.50492e-06
+
+
+DD  step 10999 load imb.: force  0.3%
+           Step           Time
+          11000       22.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.51711e+04    1.53235e+05    1.63624e+03    8.37872e+04    1.94634e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.03087e+04   -7.82328e+04   -2.33477e+04   -6.44917e+05    6.13741e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.22205e+05    2.46524e+05    2.43190e+04    9.16690e+04    2.99872e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.72675e+02    2.25602e+01    3.46518e-06
+
+
+DD  step 11999 load imb.: force  0.2%
+           Step           Time
+          12000       24.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.45685e+04    1.53462e+05    1.63229e+03    8.38608e+04    1.95180e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.02016e+04   -7.80424e+04   -2.33633e+04   -6.45704e+05    6.10422e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.22504e+05    2.46893e+05    2.43892e+04    9.17333e+04    3.00321e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.73306e+02    1.22340e+02    3.52812e-06
+
+
+DD  step 12999 load imb.: force  0.3%
+           Step           Time
+          13000       26.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.63184e+04    1.53463e+05    1.63102e+03    8.40181e+04    1.93887e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.03213e+04   -7.78475e+04   -2.32970e+04   -6.45846e+05    6.19994e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.21794e+05    2.48248e+05    2.64545e+04    9.22350e+04    3.01970e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.70628e+02   -2.14467e+02    3.52880e-06
+
+
+DD  step 13999 load imb.: force  0.3%
+           Step           Time
+          14000       28.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.43426e+04    1.53488e+05    1.63049e+03    8.41601e+04    1.95515e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.02486e+04   -7.81689e+04   -2.33563e+04   -6.45516e+05    6.05694e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.22097e+05    2.46297e+05    2.41995e+04    9.23228e+04    2.99596e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.73026e+02    7.46181e+01    3.56080e-06
+
+
+DD  step 14999 load imb.: force  0.2%
+           Step           Time
+          15000       30.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.49626e+04    1.53328e+05    1.59033e+03    8.36905e+04    1.94755e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.03143e+04   -7.77826e+04   -2.34058e+04   -6.46327e+05    6.02927e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.23474e+05    2.47344e+05    2.38704e+04    9.23998e+04    3.00870e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.75031e+02    1.70582e+02    3.53919e-06
+
+
+DD  step 15999 load imb.: force  0.2%
+           Step           Time
+          16000       32.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.44404e+04    1.51852e+05    1.60003e+03    8.38964e+04    1.95213e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04477e+04   -7.79762e+04   -2.33972e+04   -6.46028e+05    6.20576e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.24642e+05    2.47070e+05    2.24280e+04    9.24045e+04    3.00536e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.74681e+02    2.59559e+02    3.53365e-06
+
+
+DD  step 16999 load imb.: force  0.5%
+           Step           Time
+          17000       34.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.49498e+04    1.52636e+05    1.62170e+03    8.41564e+04    1.94734e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.03313e+04   -7.89086e+04   -2.33430e+04   -6.45196e+05    6.08241e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.23599e+05    2.46854e+05    2.32550e+04    9.30399e+04    3.00273e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.72488e+02   -2.25665e+02    3.50438e-06
+
+
+DD  step 17999 load imb.: force  0.2%
+           Step           Time
+          18000       36.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.52932e+04    1.52809e+05    1.60127e+03    8.35212e+04    1.94785e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04172e+04   -7.81029e+04   -2.33423e+04   -6.45567e+05    6.17724e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.23242e+05    2.46078e+05    2.28354e+04    9.33185e+04    2.99330e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.72459e+02   -1.68018e+02    3.47449e-06
+
+
+DD  step 18999 load imb.: force  0.2%
+           Step           Time
+          19000       38.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.47163e+04    1.52201e+05    1.61905e+03    8.35636e+04    1.94932e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.03761e+04   -7.83146e+04   -2.33685e+04   -6.46095e+05    6.12915e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.24994e+05    2.46550e+05    2.15568e+04    9.33542e+04    2.99904e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.73519e+02   -9.79952e+01    3.52457e-06
+
+
+DD  step 19999 load imb.: force  0.4%
+           Step           Time
+          20000       40.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.55256e+04    1.52799e+05    1.62217e+03    8.39452e+04    1.94236e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.02870e+04   -7.79732e+04   -2.33826e+04   -6.46035e+05    5.99938e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.23551e+05    2.45975e+05    2.24239e+04    9.36513e+04    2.99204e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.74091e+02   -1.01192e+02    3.50939e-06
+
+
+DD  step 20999 load imb.: force  0.2%
+           Step           Time
+          21000       42.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.55540e+04    1.52899e+05    1.65405e+03    8.40028e+04    1.94269e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.02955e+04   -7.92533e+04   -2.34225e+04   -6.45573e+05    6.05228e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.24114e+05    2.45186e+05    2.10719e+04    9.38251e+04    2.98245e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.75707e+02    1.13773e+02    3.47429e-06
+
+
+DD  step 21999 load imb.: force  0.8%
+           Step           Time
+          22000       44.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.58431e+04    1.51992e+05    1.62759e+03    8.38372e+04    1.93844e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.03704e+04   -7.82054e+04   -2.33729e+04   -6.47202e+05    6.06676e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.25939e+05    2.46526e+05    2.05866e+04    9.41270e+04    2.99875e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.73698e+02   -2.33837e+02    3.47947e-06
+
+
+DD  step 22999 load imb.: force  0.3%
+           Step           Time
+          23000       46.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.53161e+04    1.52779e+05    1.62453e+03    8.36888e+04    1.94523e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.02894e+04   -7.90572e+04   -2.33892e+04   -6.45974e+05    6.10630e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.24671e+05    2.47319e+05    2.26476e+04    9.42490e+04    3.00839e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.74358e+02   -7.19989e+01    3.47176e-06
+
+
+DD  step 23999 load imb.: force  0.2%
+           Step           Time
+          24000       48.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.58262e+04    1.52662e+05    1.66849e+03    8.39025e+04    1.94662e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.03989e+04   -7.74584e+04   -2.34122e+04   -6.48208e+05    6.00986e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.24747e+05    2.47400e+05    2.26536e+04    9.43608e+04    3.00938e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.75289e+02   -2.65409e+01    3.52137e-06
+
+
+DD  step 24999 load imb.: force  0.4%
+           Step           Time
+          25000       50.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.51816e+04    1.53647e+05    1.58970e+03    8.38204e+04    1.94584e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04062e+04   -7.93049e+04   -2.33627e+04   -6.44878e+05    5.97758e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.23151e+05    2.46219e+05    2.30681e+04    9.46170e+04    2.99502e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.73282e+02   -4.86845e+01    3.47329e-06
+
+
+DD  step 25999 load imb.: force  0.6%
+           Step           Time
+          26000       52.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.53882e+04    1.52000e+05    1.62856e+03    8.41342e+04    1.94814e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.03799e+04   -7.73069e+04   -2.34086e+04   -6.47046e+05    5.99249e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.24184e+05    2.46422e+05    2.22380e+04    9.47978e+04    2.99748e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.75141e+02    1.54283e+02    3.47427e-06
+
+
+DD  step 26999 load imb.: force  0.1%
+           Step           Time
+          27000       54.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.50919e+04    1.52932e+05    1.64408e+03    8.36055e+04    1.95020e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.03554e+04   -7.86636e+04   -2.33562e+04   -6.45422e+05    6.02091e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.23483e+05    2.46485e+05    2.30020e+04    9.50036e+04    2.99825e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.73022e+02    6.70753e+01    3.51777e-06
+
+
+DD  step 27999 load imb.: force  0.2%
+           Step           Time
+          28000       56.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.61522e+04    1.53006e+05    1.63684e+03    8.39664e+04    1.94381e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04400e+04   -7.90881e+04   -2.33764e+04   -6.45169e+05    6.08955e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.22842e+05    2.45379e+05    2.25365e+04    9.55294e+04    2.98479e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.73837e+02   -2.48312e+02    3.47760e-06
+
+
+DD  step 28999 load imb.: force  0.5%
+           Step           Time
+          29000       58.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.53772e+04    1.53153e+05    1.61471e+03    8.38892e+04    1.94554e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04158e+04   -7.83294e+04   -2.33623e+04   -6.46914e+05    6.04789e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.24386e+05    2.46739e+05    2.23526e+04    9.55591e+04    3.00133e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.73267e+02   -3.80505e+01    3.50361e-06
+
+
+DD  step 29999 load imb.: force  0.2%
+           Step           Time
+          30000       60.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.61342e+04    1.52290e+05    1.61375e+03    8.38465e+04    1.93816e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04950e+04   -7.86150e+04   -2.34270e+04   -6.47052e+05    6.01219e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.25877e+05    2.46028e+05    2.01510e+04    9.59858e+04    2.99269e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.75891e+02   -3.11176e+02    3.45810e-06
+
+
+DD  step 30999 load imb.: force  0.4%
+           Step           Time
+          31000       62.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.52473e+04    1.52218e+05    1.60186e+03    8.37956e+04    1.95028e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.05134e+04   -7.86705e+04   -2.33827e+04   -6.46106e+05    6.04513e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.24736e+05    2.47375e+05    2.26384e+04    9.61341e+04    3.00907e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.74094e+02   -2.04797e+02    3.49483e-06
+
+
+DD  step 31999 load imb.: force  0.3%
+           Step           Time
+          32000       64.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.45969e+04    1.53073e+05    1.63452e+03    8.39843e+04    1.95419e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.05536e+04   -7.84413e+04   -2.33865e+04   -6.46869e+05    6.07694e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.24466e+05    2.45917e+05    2.14508e+04    9.61313e+04    2.99134e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.74248e+02    2.92811e+02    3.49529e-06
+
+
+DD  step 32999 load imb.: force  0.2%
+           Step           Time
+          33000       66.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.58145e+04    1.51910e+05    1.67434e+03    8.37656e+04    1.94440e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.05150e+04   -7.87707e+04   -2.34198e+04   -6.47126e+05    5.98981e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.26237e+05    2.47837e+05    2.16002e+04    9.63175e+04    3.01470e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.75597e+02   -2.29346e+00    3.50906e-06
+
+
+DD  step 33999 load imb.: force  0.5%
+           Step           Time
+          34000       68.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.61557e+04    1.52956e+05    1.64836e+03    8.39244e+04    1.94243e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04755e+04   -7.73645e+04   -2.34214e+04   -6.48415e+05    6.05978e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.24689e+05    2.48093e+05    2.34037e+04    9.67073e+04    3.01781e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.75661e+02   -1.54912e+02    3.53112e-06
+
+
+DD  step 34999 load imb.: force  0.5%
+           Step           Time
+          35000       70.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.57679e+04    1.52905e+05    1.62141e+03    8.38498e+04    1.94549e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04659e+04   -7.85046e+04   -2.34250e+04   -6.47021e+05    6.03942e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.24685e+05    2.46000e+05    2.13155e+04    9.70403e+04    2.99235e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.75810e+02   -3.68759e+02    3.47390e-06
+
+
+DD  step 35999 load imb.: force  0.2%
+           Step           Time
+          36000       72.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.52819e+04    1.53092e+05    1.63736e+03    8.36268e+04    1.94748e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04706e+04   -7.79633e+04   -2.34542e+04   -6.47096e+05    6.04707e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.24551e+05    2.47397e+05    2.28465e+04    9.67716e+04    3.00934e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.76994e+02    2.55291e+02    3.51049e-06
+
+
+DD  step 36999 load imb.: force  0.2%
+           Step           Time
+          37000       74.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.55997e+04    1.52669e+05    1.61841e+03    8.36514e+04    1.94485e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04661e+04   -7.90380e+04   -2.34014e+04   -6.45246e+05    6.02064e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.24107e+05    2.47559e+05    2.34517e+04    9.71734e+04    3.01131e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.74852e+02   -6.44401e+01    3.51800e-06
+
+
+DD  step 37999 load imb.: force  0.3%
+           Step           Time
+          38000       76.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.51981e+04    1.53076e+05    1.59492e+03    8.36045e+04    1.95344e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04353e+04   -7.93335e+04   -2.33727e+04   -6.45715e+05    6.16230e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.23877e+05    2.45110e+05    2.12330e+04    9.74703e+04    2.98153e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.73690e+02   -1.34777e+01    3.47340e-06
+
+
+DD  step 38999 load imb.: force  0.2%
+           Step           Time
+          39000       78.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.58453e+04    1.53501e+05    1.63218e+03    8.37851e+04    1.94526e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.05170e+04   -7.75147e+04   -2.33832e+04   -6.46529e+05    6.05719e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.22597e+05    2.46669e+05    2.40719e+04    9.76794e+04    3.00049e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.74115e+02   -1.54705e+02    3.47486e-06
+
+
+DD  step 39999 load imb.: force  0.5%
+           Step           Time
+          40000       80.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.58279e+04    1.52836e+05    1.61129e+03    8.39052e+04    1.94433e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.05650e+04   -7.84369e+04   -2.33964e+04   -6.46025e+05    6.06156e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.23749e+05    2.47552e+05    2.38030e+04    9.77936e+04    3.01123e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.74648e+02   -2.45529e+02    3.48004e-06
+
+
+DD  step 40999 load imb.: force  0.2%
+           Step           Time
+          41000       82.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.49304e+04    1.53645e+05    1.58680e+03    8.31054e+04    1.95018e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04902e+04   -7.79451e+04   -2.34080e+04   -6.47007e+05    6.00336e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.24562e+05    2.47531e+05    2.29694e+04    9.77977e+04    3.01097e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.75119e+02    2.89479e+02    3.46406e-06
+
+
+DD  step 41999 load imb.: force  0.3%
+           Step           Time
+          42000       84.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.61352e+04    1.53857e+05    1.59502e+03    8.34819e+04    1.94126e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.05480e+04   -7.81696e+04   -2.34054e+04   -6.46754e+05    5.99571e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.23687e+05    2.46966e+05    2.32789e+04    9.82889e+04    3.00410e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.75014e+02   -6.47266e+01    3.48415e-06
+
+
+DD  step 42999 load imb.: force  0.8%
+           Step           Time
+          43000       86.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.52141e+04    1.53171e+05    1.66078e+03    8.35496e+04    1.94995e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04575e+04   -7.83263e+04   -2.34210e+04   -6.46425e+05    6.16959e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.23870e+05    2.45960e+05    2.20906e+04    9.83804e+04    2.99187e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.75645e+02    2.62503e+00    3.58015e-06
+
+
+DD  step 43999 load imb.: force  0.2%
+           Step           Time
+          44000       88.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.52819e+04    1.53352e+05    1.66758e+03    8.41335e+04    1.94318e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04625e+04   -7.89639e+04   -2.33939e+04   -6.47492e+05    6.12873e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.25431e+05    2.46566e+05    2.11352e+04    9.86170e+04    2.99924e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.74549e+02   -2.49699e+02    3.52759e-06
+
+
+DD  step 44999 load imb.: force  0.3%
+           Step           Time
+          45000       90.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.51011e+04    1.53850e+05    1.60550e+03    8.36289e+04    1.94725e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.05200e+04   -7.87119e+04   -2.33981e+04   -6.46812e+05    6.03005e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.24501e+05    2.47360e+05    2.28594e+04    9.87610e+04    3.00890e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.74719e+02   -1.63274e+02    3.50837e-06
+
+
+DD  step 45999 load imb.: force  0.2%
+           Step           Time
+          46000       92.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.53904e+04    1.52791e+05    1.63915e+03    8.39702e+04    1.94655e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.05067e+04   -7.88003e+04   -2.34182e+04   -6.47204e+05    6.06687e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.25416e+05    2.46167e+05    2.07506e+04    9.88847e+04    2.99438e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.75532e+02   -4.58167e+01    3.52122e-06
+
+
+DD  step 46999 load imb.: force  0.2%
+           Step           Time
+          47000       94.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.51664e+04    1.53288e+05    1.59268e+03    8.33962e+04    1.94937e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04577e+04   -7.93125e+04   -2.34686e+04   -6.47460e+05    6.03136e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.26288e+05    2.46353e+05    2.00648e+04    9.89347e+04    2.99664e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.77579e+02    2.37343e+02    3.46739e-06
+
+
+DD  step 47999 load imb.: force  0.5%
+           Step           Time
+          48000       96.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.53698e+04    1.52825e+05    1.59463e+03    8.36836e+04    1.95205e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.05055e+04   -7.86221e+04   -2.34457e+04   -6.47576e+05    6.11746e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.25353e+05    2.46334e+05    2.09812e+04    9.91654e+04    2.99641e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.76647e+02    6.80995e+01    3.48132e-06
+
+
+DD  step 48999 load imb.: force  0.2%
+           Step           Time
+          49000       98.00000
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.58118e+04    1.52882e+05    1.64819e+03    8.36941e+04    1.94533e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04962e+04   -7.88270e+04   -2.34273e+04   -6.46714e+05    5.99068e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.24905e+05    2.45473e+05    2.05677e+04    9.94779e+04    2.98594e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.75902e+02   -9.36043e+01    3.48660e-06
+
+
+DD  step 49999 load imb.: force  0.2%
+           Step           Time
+          50000      100.00000
+
+Writing checkpoint, step 50000 at Thu Jul  7 13:26:01 2022
+
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.54854e+04    1.53143e+05    1.63210e+03    8.40014e+04    1.94613e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04933e+04   -7.82763e+04   -2.34600e+04   -6.47347e+05    6.05209e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.24650e+05    2.46319e+05    2.16690e+04    9.95430e+04    2.99622e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.77228e+02    8.24437e+01    3.46819e-06
+
+
+	<======  ###############  ==>
+	<====  A V E R A G E S  ====>
+	<==  ###############  ======>
+
+	Statistics over 50001 steps using 501 frames
+
+   Energies (kJ/mol)
+           Bond          Angle    Proper Dih. Ryckaert-Bell.          LJ-14
+    9.53606e+04    1.53143e+05    1.62910e+03    8.38589e+04    1.94705e+05
+     Coulomb-14        LJ (SR)  Disper. corr.   Coulomb (SR)   Coul. recip.
+   -1.04165e+04   -7.81912e+04   -2.33697e+04   -6.46524e+05    6.61792e+03
+      Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
+   -2.23187e+05    2.46729e+05    2.35412e+04    9.46541e+04    3.00121e+02
+ Pres. DC (bar) Pressure (bar)   Constr. rmsd
+   -4.73572e+02   -1.16527e+01    0.00000e+00
+
+          Box-X          Box-Y          Box-Z
+    9.36137e+00    9.36137e+00    9.36137e+00
+
+   Total Virial (kJ/mol)
+    8.21388e+04   -2.20921e+02    1.13328e+03
+   -2.20260e+02    8.34994e+04    1.62017e+02
+    1.13334e+03    1.61735e+02    8.19599e+04
+
+   Pressure (bar)
+    5.35466e+00   -1.03515e+00   -4.89008e+01
+   -1.06196e+00   -5.21017e+01   -8.77397e+00
+   -4.89029e+01   -8.76241e+00    1.17890e+01
+
+
+       P P   -   P M E   L O A D   B A L A N C I N G
+
+ PP/PME load balancing changed the cut-off and PME settings:
+           particle-particle                    PME
+            rcoulomb  rlist            grid      spacing   1/beta
+   initial  1.000 nm  1.002 nm      80  80  80   0.118 nm  0.320 nm
+   final    1.402 nm  1.404 nm      56  56  56   0.168 nm  0.449 nm
+ cost-ratio           2.75             0.34
+ (note that these numbers concern only part of the total PP and PME load)
+
+
+	M E G A - F L O P S   A C C O U N T I N G
+
+ NB=Group-cutoff nonbonded kernels    NxN=N-by-N cluster Verlet kernels
+ RF=Reaction-Field  VdW=Van der Waals  QSTab=quadratic-spline table
+ W3=SPC/TIP3p  W4=TIP4p (single or pairs)
+ V&F=Potential and force  V=Potential only  F=Force only
+
+ Computing:                               M-Number         M-Flops  % Flops
+-----------------------------------------------------------------------------
+ Pair Search distance check            6398.984064       57590.857     0.0
+ NxN Ewald Elec. + LJ [F]           7151929.076160   472027319.027    97.2
+ NxN Ewald Elec. + LJ [V&F]           72389.727744     7745700.869     1.6
+ Calc Weights                         12863.507265      463086.262     0.1
+ Spread Q Bspline                    274421.488320      548842.977     0.1
+ Gather F Bspline                    274421.488320     1646528.930     0.3
+ 3D-FFT                              333185.564786     2665484.518     0.5
+ Solve PME                              326.943872       20924.408     0.0
+ Reset In Box                            42.963255         128.890     0.0
+ CG-CoM                                  43.049010         129.147     0.0
+ Virial                                 129.393705        2329.087     0.0
+ Stop-CM                                 43.049010         430.490     0.0
+ P-Coupling                             107.279505         643.677     0.0
+ Calc-Ekin                              428.946510       11581.556     0.0
+ Lincs                                 2209.430718      132565.843     0.0
+ Lincs-Mat                            11656.813284       46627.253     0.0
+ Constraint-V                          5388.502767       43108.022     0.0
+ Constraint-Vir                          95.433166        2290.396     0.0
+ Settle                                 323.249642      104409.634     0.0
+-----------------------------------------------------------------------------
+ Total                                               485519721.841   100.0
+-----------------------------------------------------------------------------
+
+
+    D O M A I N   D E C O M P O S I T I O N   S T A T I S T I C S
+
+ av. #atoms communicated per step for force:  2 x 109411.0
+ av. #atoms communicated per step for LINCS:  2 x 5677.8
+
+
+Dynamic load balancing report:
+ DLB was off during the run due to low measured imbalance.
+ Average load imbalance: 0.4%.
+ The balanceable part of the MD step is 54%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 0.2%.
+
+
+     R E A L   C Y C L E   A N D   T I M E   A C C O U N T I N G
+
+On 10 MPI ranks
+
+ Computing:          Num   Num      Call    Wall time         Giga-Cycles
+                     Ranks Threads  Count      (s)         total sum    %
+-----------------------------------------------------------------------------
+ Domain decomp.        10    1        501       4.239        105.720   3.7
+ DD comm. load         10    1        482       0.002          0.056   0.0
+ Neighbor search       10    1        501       3.540         88.290   3.1
+ Launch GPU ops.       10    1     100002       3.687         91.946   3.2
+ Comm. coord.          10    1      49500       3.089         77.033   2.7
+ Force                 10    1      50001       1.445         36.045   1.3
+ Wait + Comm. F        10    1      50001       3.218         80.261   2.8
+ PME mesh              10    1      50001      68.340       1704.427  59.2
+ Wait Bonded GPU       10    1        501       0.001          0.021   0.0
+ Wait GPU NB nonloc.   10    1      50001       0.600         14.954   0.5
+ Wait GPU NB local     10    1      50001       0.150          3.740   0.1
+ NB X/F buffer ops.    10    1     199002       6.916        172.480   6.0
+ Write traj.           10    1         11       0.032          0.808   0.0
+ Update                10    1      50001       2.332         58.164   2.0
+ Constraints           10    1      50003      13.745        342.798  11.9
+ Comm. energies        10    1       2501       0.192          4.778   0.2
+ Rest                                           3.999         99.749   3.5
+-----------------------------------------------------------------------------
+ Total                                        115.525       2881.268 100.0
+-----------------------------------------------------------------------------
+ Breakdown of PME mesh computation
+-----------------------------------------------------------------------------
+ PME redist. X/F       10    1     100002      10.396        259.292   9.0
+ PME spread            10    1      50001      20.653        515.087  17.9
+ PME gather            10    1      50001      20.479        510.767  17.7
+ PME 3D-FFT            10    1     100002       9.070        226.207   7.9
+ PME 3D-FFT Comm.      10    1     200004       4.845        120.837   4.2
+ PME solve Elec        10    1      50001       2.823         70.407   2.4
+-----------------------------------------------------------------------------
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     1155.221      115.525     1000.0
+                 (ns/day)    (hour/ns)
+Performance:       74.790        0.321
+Finished mdrun on rank 0 Thu Jul  7 13:26:02 2022
+
