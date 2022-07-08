@@ -13,7 +13,7 @@ source /jet/home/schwinns/pkgs/gromacs/2020.5/bin/GMXRC
 
 export GMX_MAXBACKUP=-1  # do not make back-ups
 
-mpirun -np 256 gmx_mpi mdrun -v -s ../npt.tpr -o npt -g  N2_np256.log  -ntomp 1
+mpirun -np 256 gmx_mpi mdrun -v -s ../npt.tpr -o npt -g  N2_np256.log  -ntomp 1 -npme 
 
 
              
