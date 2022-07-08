@@ -19,7 +19,7 @@ export GMX_MAXBACKUP=-1  # do not make back-ups
 # mpirun -np 16 gmx_mpi mdrun -v -s ../npt.tpr -o npt -g  N1_np16.log  -ntomp 1
 # mpirun -np 8 gmx_mpi mdrun -v -s ../npt.tpr -o npt -g  N1_np8.log  -ntomp 1
 # mpirun -np 4 gmx_mpi mdrun -v -s ../npt.tpr -o npt -g  N1_np4.log  -ntomp 1
-mpirun -np 2 gmx_mpi mdrun -v -s ../npt.tpr -o npt -g  N1_np2.log  -ntomp 1
+# mpirun -np 2 gmx_mpi mdrun -v -s ../npt.tpr -o npt -g  N1_np2.log  -ntomp 1
 mpirun -np 1 gmx_mpi mdrun -v -s ../npt.tpr -o npt -g  N1_np1.log  -ntomp 1
 
              
