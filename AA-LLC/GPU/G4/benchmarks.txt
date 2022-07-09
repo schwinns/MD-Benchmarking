@@ -1,0 +1,22 @@
+.........................
+
+On host v001.ib.bridges2.psc.edu 4 GPUs selected for this run.
+On 16 MPI ranks
+109.7 ns/day
+.........................  
+
+On host v001.ib.bridges2.psc.edu 4 GPUs selected for this run.
+On 20 MPI ranks
+107.2 ns/day
+.........................  
+
+On host v001.ib.bridges2.psc.edu 4 GPUs selected for this run.
+On 4 MPI ranks, each using 4 OpenMP threads
+94.8 ns/day
+.........................  
+
+On host v001.ib.bridges2.psc.edu 4 GPUs selected for this run.
+On 8 MPI ranks, each using 2 OpenMP threads
+102.8 ns/day
+.........................  
+
