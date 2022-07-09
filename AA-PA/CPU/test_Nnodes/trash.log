@@ -30,9 +30,9 @@ GROMACS:      gmx mdrun, version 2020.5
 Executable:   /jet/home/schwinns/pkgs/gromacs/2020.5/bin/gmx_mpi
 Data prefix:  /jet/home/schwinns/pkgs/gromacs/2020.5
 Working dir:  /ocean/projects/cts160011p/schwinns/benchmark/2022/AA-PA/CPU/test_Nnodes
-Process ID:   52880
+Process ID:   97903
 Command line:
-  gmx_mpi mdrun -v -s ../npt.tpr -o npt -g N2_np640.log -ntomp 1
+  gmx_mpi mdrun -v -s ../npt.tpr -o npt -g N2_np256.log -ntomp 1
 
 GROMACS version:    2020.5
 Verified release checksum is 4d9aa1b4e69850bc4583c1983ce2e0e3a88250cafb8f30ab0290b4dd4413a41e
@@ -57,11 +57,11 @@ CUDA driver:        0.0
 CUDA runtime:       N/A
 
 
-Running on 5 nodes with total 640 cores, 640 logical cores (GPU detection deactivated)
+Running on 2 nodes with total 256 cores, 256 logical cores (GPU detection deactivated)
   Cores per node:           128
   Logical cores per node:   128
   Compatible GPUs per node:  0
-Hardware detected on host r360.ib.bridges2.psc.edu (the node of MPI rank 0):
+Hardware detected on host r435.ib.bridges2.psc.edu (the node of MPI rank 0):
   CPU info:
     Vendor: AMD
     Brand:  AMD EPYC 7742 64-Core Processor                
@@ -72,7 +72,7 @@ Hardware detected on host r360.ib.bridges2.psc.edu (the node of MPI rank 0):
       Socket  0: [   0] [   1] [   2] [   3] [   4] [   5] [   6] [   7] [   8] [   9] [  10] [  11] [  12] [  13] [  14] [  15] [  16] [  17] [  18] [  19] [  20] [  21] [  22] [  23] [  24] [  25] [  26] [  27] [  28] [  29] [  30] [  31] [  32] [  33] [  34] [  35] [  36] [  37] [  38] [  39] [  40] [  41] [  42] [  43] [  44] [  45] [  46] [  47] [  48] [  49] [  50] [  51] [  52] [  53] [  54] [  55] [  56] [  57] [  58] [  59] [  60] [  61] [  62] [  63]
       Socket  1: [  64] [  65] [  66] [  67] [  68] [  69] [  70] [  71] [  72] [  73] [  74] [  75] [  76] [  77] [  78] [  79] [  80] [  81] [  82] [  83] [  84] [  85] [  86] [  87] [  88] [  89] [  90] [  91] [  92] [  93] [  94] [  95] [  96] [  97] [  98] [  99] [ 100] [ 101] [ 102] [ 103] [ 104] [ 105] [ 106] [ 107] [ 108] [ 109] [ 110] [ 111] [ 112] [ 113] [ 114] [ 115] [ 116] [ 117] [ 118] [ 119] [ 120] [ 121] [ 122] [ 123] [ 124] [ 125] [ 126] [ 127]
     Numa nodes:
-      Node  0 (134906683392 bytes mem):   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63
+      Node  0 (134906679296 bytes mem):   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63
       Node  1 (135272402944 bytes mem):  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127
       Latency:
                0     1
@@ -330,7 +330,7 @@ annealing-npoints:           0
 Changing nstlist from 40 to 100, rlist from 1.051 to 1.119
 
 
-Initializing Domain Decomposition on 640 ranks
+Initializing Domain Decomposition on 256 ranks
 Dynamic load balancing: auto
 Minimum cell size due to atom displacement: 0.747 nm
 NOTE: Periodic molecules are present in this system. Because of this, the domain decomposition algorithm cannot easily determine the minimum cell size that it requires for treating bonded interactions. Instead, domain decomposition will assume that half the non-bonded cut-off will be a suitable lower bound.
@@ -339,19 +339,19 @@ Maximum distance for 5 constraints, at 120 deg. angles, all-trans: 0.202 nm
 Estimated maximum distance required for P-LINCS: 0.202 nm
 Scaling the initial minimum size with 1/0.8 (option -dds) = 1.25
 Guess for relative PME load: 0.21
-Will use 480 particle-particle and 160 PME only ranks
+Will use 192 particle-particle and 64 PME only ranks
 This is a guess, check the performance at the end of the log file
-Using 160 separate PME ranks, as guessed by mdrun
-Optimizing the DD grid for 480 cells with a minimum initial size of 0.934 nm
+Using 64 separate PME ranks, as guessed by mdrun
+Optimizing the DD grid for 192 cells with a minimum initial size of 0.934 nm
 The maximum allowed number of cells is: X 4 Y 4 Z 9
 
 -------------------------------------------------------
 Program:     gmx mdrun, version 2020.5
 Source file: src/gromacs/domdec/domdec.cpp (line 2277)
-MPI rank:    0 (out of 640)
+MPI rank:    0 (out of 256)
 
 Fatal error:
-There is no domain decomposition for 480 ranks that is compatible with the
+There is no domain decomposition for 192 ranks that is compatible with the
 given box and a minimum cell size of 0.93375 nm
 Change the number of ranks or mdrun option -rdd or -dds
 Look in the log file for details on the domain decomposition
