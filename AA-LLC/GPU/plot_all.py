@@ -2,26 +2,19 @@ import  matplotlib.pyplot as plt
 import numpy as np
 
 
-data =  np.loadtxt('benchmarks.dat')
+G1 = np.loadtxt('G1/benchmarks.dat')
+G2 = np.loadtxt('G2/benchmarks.dat')
+G4 = np.loadtxt('G4/benchmarks.dat')
+G8 = np.loadtxt('G8/benchmarks.dat')
 
 plt.rc('font' , size =12)
 plt.ylabel('performance (ns/day)')
-plt.xlabel('GPUs')
-#plt.xscale("log")
-#plt.yscale("log")
+plt.xlabel('processors')
 
-x=data[:,0]
-y1=data[:,1]
-y2=data[:,2]
-y4=data[:,3]
-y5=data[:,4]
-ymax=np.amax(data[:,1:],axis=1)
-plt.xticks([1,2,4,8])
-plt.plot(x, y1, marker='o', linewidth=0, label='1 MPI/GPU')
-plt.plot(x, y2, marker='v', linewidth=0, label='2 MPI/GPU')
-plt.plot(x, y4, marker='s', linewidth=0, label='4 MPI/GPU')
-plt.plot(x, y5, marker='*', linewidth=0, label='5 MPI/GPU')
-plt.plot(x, ymax, linewidth=2, label='best')
+plt.plot(G1[:,0], G1[:,1], marker='o', label='1 GPU')
+plt.plot(G2[:,0], G2[:,1], marker='o', label='2 GPUs')
+plt.plot(G4[:,0], G4[:,1], marker='o', label='4 GPUs')
+plt.plot(G8[:,0], G8[:,1], marker='o', label='8 GPUs')
 
 plt.legend()
 plt.savefig('test_GPU.png')

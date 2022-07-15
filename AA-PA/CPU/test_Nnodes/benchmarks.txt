@@ -1,0 +1,12 @@
+.........................
+
+Running on 1 node with total 128 cores, 128 logical cores (GPU detection deactivated)
+Using 128 MPI processes
+328.7 ns/day
+.........................  
+
+Running on 2 nodes with total 256 cores, 256 logical cores (GPU detection deactivated)
+Using 256 MPI processes
+185.2 ns/day
+.........................  
+
