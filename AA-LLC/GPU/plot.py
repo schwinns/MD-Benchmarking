@@ -14,7 +14,7 @@ print('G8:\n', G8, '\n\n')
 
 plt.rc('font' , size =12)
 plt.ylabel('performance (ns/day)')
-plt.xlabel('processors')
+plt.xlabel('GPUs')
 plt.title('AA simulation on GPU nodes')
 # plt.xscale("log")
 # plt.yscale("log")

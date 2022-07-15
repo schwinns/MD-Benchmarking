@@ -1,27 +1,29 @@
 import  matplotlib.pyplot as plt
 import numpy as np
-
+from scipy.stats import linregress
 
 data =  np.loadtxt('benchmarks.dat')
-plt.title('AA simulation on Bridges2 RM nodes')
+
 plt.rc('font' , size =12)
-plt.ylabel('Performance (ns/day)')
-plt.xlabel('Cores')
-#plt.xscale("log")
-#plt.yscale("log")
+plt.ylabel('performance (ns/day)')
+plt.xlabel('processors')
+plt.title('AA simulation on RM nodes')
+# plt.xscale("log")
+# plt.yscale("log")
+plt.xticks([16,64,128,256,384])
 
-x=data[:,0]
-y=data[:,1]
+plt.plot(data[:,0], data[:,1], marker='o', linewidth=2)
 
-coef = np.polyfit(x[:6],y[:6],1)
-fn =  np.poly1d(coef)
+x = data[:7,0]
+y = data[:7,1]
+reg = linregress(x, y)
+print('Fitting a line:\n\tx: {}\n\ty: {}'.format(x, y))
 
-plt.plot(x,y, marker='o', linewidth=2)
+x = np.arange(0,384,step=1)
+y = reg.slope*x + reg.intercept
+plt.plot(x,y,ls='dashed',c='k')
 
-x0=np.linspace(0,128,129)
-plt.plot(x0,fn(x0), '--k')
-
-plt.savefig('AA-LLC-cores.png')
+plt.savefig('AA-PA-cores.png')
 
 plt.show()
 exit()
