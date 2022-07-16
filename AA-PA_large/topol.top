@@ -1,0 +1,18 @@
+#include "top/gaff.itp"
+
+#include "top/MPD-L.itp"
+
+#include "top/TMC-L.itp"
+
+#include "top/TMC-C.itp"
+
+#include "top/HOH.itp"
+
+[ system ]
+PA_large
+
+[ molecules ]
+MPD_L       7188
+TMC_L       2943
+TMC_C       2830
+SOL         19653
