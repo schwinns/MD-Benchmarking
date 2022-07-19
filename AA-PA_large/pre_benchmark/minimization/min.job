@@ -1,0 +1,24 @@
+#!/bin/bash
+#SBATCH -N 1 --ntasks-per-node 64
+#SBATCH -t 03:00:00
+#SBATCH -p RM-shared
+#SBATCH -J 'RM'
+
+
+module load gcc
+module load cuda/11.1.1
+module load openmpi/3.1.6-gcc8.3.1
+PATH=$PATH:/jet/home/schwinns/pkgs/gromacs/2020.5
+source /jet/home/schwinns/pkgs/gromacs/2020.5/bin/GMXRC
+
+export GMX_MAXBACKUP=-1  # do not make back-ups
+
+mpirun -np 64 gmx_mpi mdrun -s min.tpr -o min -g min.log -cpo min.cpt -c min.gro -e min.edr -ntomp 1
+
+             
+
+
+
+
+
+

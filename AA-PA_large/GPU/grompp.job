@@ -11,7 +11,7 @@ PATH=$PATH:/jet/home/schwinns/pkgs/gromacs/2020.5
 source /jet/home/schwinns/pkgs/gromacs/2020.5/bin/GMXRC
 
 export GMX_MAXBACKUP=-1  # do not make back-ups
-mpirun -np 1 gmx_mpi grompp -f ../npt.mdp -p topol.top -c ../hydrate.gro -o npt
+mpirun -np 1 gmx_mpi grompp -f ../npt.mdp -p ../topol.top -c ../nvt.gro -o npt -maxwarn 1
              
 
 

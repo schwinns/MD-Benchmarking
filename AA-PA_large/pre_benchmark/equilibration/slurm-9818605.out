@@ -1,0 +1,188 @@
+                      :-) GROMACS - gmx grompp, 2020.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2020.5
+Executable:   /jet/home/schwinns/pkgs/gromacs/2020.5/bin/gmx_mpi
+Data prefix:  /jet/home/schwinns/pkgs/gromacs/2020.5
+Working dir:  /ocean/projects/cts160011p/schwinns/benchmark/2022/AA-PA_large/pre_benchmark/equilibration
+Command line:
+  gmx_mpi grompp -p topol.top -f nvt.mdp -c min.gro -o nvt.tpr -maxwarn 1
+
+Ignoring obsolete mdp entry 'nstype'
+Setting the LD random seed to -336599233
+Generated 1128 of the 1128 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 0.5
+Generated 1128 of the 1128 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'MPD_L'
+turning H bonds into constraints...
+Excluding 3 bonded neighbours molecule type 'TMC_L'
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+Excluding 3 bonded neighbours molecule type 'TMC_C'
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+NOTE 1 [file topol.top, line 18]:
+  System has non-zero total charge: -3885.474862
+  Total charge should normally be an integer. See
+  http://www.gromacs.org/Documentation/Floating_Point_Arithmetic
+  for discussion on how close it should be to an integer.
+  
+
+
+
+WARNING 1 [file topol.top, line 18]:
+  You are using Ewald electrostatics in a system with net charge. This can
+  lead to severe artifacts, such as ions moving into regions with low
+  dielectric, due to the uniform background charge. We suggest to
+  neutralize your system with counter ions, possibly in combination with a
+  physiological salt concentration.
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+J. S. Hub, B. L. de Groot, H. Grubmueller, G. Groenhof
+Quantifying Artifacts in Ewald Simulations of Inhomogeneous Systems with a Net
+Charge
+J. Chem. Theory Comput. 10 (2014) pp. 381-393
+-------- -------- --- Thank You --- -------- --------
+
+Setting gen_seed to -59770153
+Velocities were taken from a Maxwell distribution at 300 K
+Analysing residue names:
+There are: 12961      Other residues
+There are: 19653      Water residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Number of degrees of freedom in T-Coupling group System is 633864.00
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+Calculated rlist for 1x1 atom pair-list as 1.078 nm, buffer size 0.078 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.000 nm, buffer size 0.000 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+
+NOTE 2 [file nvt.mdp]:
+  You are using geometric combination rules in LJ-PME, but your non-bonded
+  C6 parameters do not follow these rules. This will introduce very small
+  errors in the forces and energies in your simulations. Dispersion
+  correction will correct total energy and/or pressure for isotropic
+  systems, but not forces or surface tensions.
+
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 192x192x192, spacing 0.115 0.115 0.115
+Estimate for the relative computational load of the PME mesh part: 0.70
+
+NOTE 3 [file nvt.mdp]:
+  The optimal PME mesh load for parallel simulations is below 0.5
+  and for highly parallel simulations between 0.25 and 0.33,
+  for higher performance, increase the cut-off and the PME grid spacing.
+
+
+This run will generate roughly 34 Mb of data
+
+There were 3 notes
+
+There was 1 warning
+
+GROMACS reminds you: "Why would the backup server database get corrupted anyway?" (Stefan Fleischmann -- system administrator, physicist, optimist.)
+
+                      :-) GROMACS - gmx mdrun, 2020.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.5
+Executable:   /jet/home/schwinns/pkgs/gromacs/2020.5/bin/gmx_mpi
+Data prefix:  /jet/home/schwinns/pkgs/gromacs/2020.5
+Working dir:  /ocean/projects/cts160011p/schwinns/benchmark/2022/AA-PA_large/pre_benchmark/equilibration
+Command line:
+  gmx_mpi mdrun -s nvt.tpr -o nvt -g nvt.log -cpo nvt.cpt -c nvt.gro -e nvt.edr -ntomp 1
+
+Compiled SIMD: SSE4.1, but for this host/run AVX2_256 might be better (see
+log).
+The current CPU can measure timings more accurately than the code in
+gmx mdrun was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding gmx mdrun with the GMX_USE_RDTSCP=ON CMake option.
+Reading file nvt.tpr, VERSION 2020.5 (single precision)
+Changing nstlist from 40 to 100, rlist from 1 to 1.003
+
+
+Using 64 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread per MPI process
+
+starting mdrun 'PA_large'
+500000 steps,   1000.0 ps.
+
+Writing final coordinates.
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 33.1%.
+ The balanceable part of the MD step is 23%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 7.7%.
+
+NOTE: 7.7 % of the available CPU time was lost due to load imbalance
+      in the domain decomposition.
+      You might want to use dynamic load balancing (option -dlb.)
+      You can also consider manually changing the decomposition (option -dd);
+      e.g. by using fewer domains along the box dimension in which there is
+      considerable inhomogeneity in the simulated system.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:   578695.765     9042.146     6400.0
+                         2h30:42
+                 (ns/day)    (hour/ns)
+Performance:        9.555        2.512
+
+GROMACS reminds you: "If You Don't Like Cool Quotes Check Your GMXRC File" (Your Sysadmin)
+

@@ -1,0 +1,2756 @@
+                      :-) GROMACS - gmx mdrun, 2020.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.5
+Executable:   /jet/home/schwinns/pkgs/gromacs/2020.5/bin/gmx_mpi
+Data prefix:  /jet/home/schwinns/pkgs/gromacs/2020.5
+Working dir:  /ocean/projects/cts160011p/schwinns/benchmark/2022/AA-PA_large/CPU/test_np
+Command line:
+  gmx_mpi mdrun -v -s ../npt.tpr -o npt -g N1_np128.log -ntomp 1
+
+Compiled SIMD: SSE4.1, but for this host/run AVX2_256 might be better (see
+log).
+The current CPU can measure timings more accurately than the code in
+gmx mdrun was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding gmx mdrun with the GMX_USE_RDTSCP=ON CMake option.
+Reading file ../npt.tpr, VERSION 2020.5 (single precision)
+Changing nstlist from 40 to 100, rlist from 1 to 1.003
+
+
+Using 128 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread per MPI process
+
+starting mdrun 'PA_large'
+50000 steps,    100.0 ps.
+step 0
+imb F 56% step 100, will finish Sun Jul 17 11:39:21 2022
+imb F 56% step 200, will finish Sun Jul 17 11:38:23 2022
+vol 0.93  imb F 50% step 300, will finish Sun Jul 17 11:37:52 2022
+vol 0.86  imb F 35% step 400, will finish Sun Jul 17 11:37:33 2022
+vol 0.76  imb F 31% step 500, will finish Sun Jul 17 11:37:29 2022
+vol 0.69  imb F 28% step 600, will finish Sun Jul 17 11:37:17 2022
+vol 0.64  imb F 32% step 700, will finish Sun Jul 17 11:37:09 2022
+vol 0.58  imb F 27% step 800, will finish Sun Jul 17 11:37:03 2022
+vol 0.56  imb F 18% step 900, will finish Sun Jul 17 11:36:57 2022
+vol 0.53  imb F 17% step 1000, will finish Sun Jul 17 11:36:52 2022
+vol 0.52  imb F 14% step 1100, will finish Sun Jul 17 11:36:48 2022
+vol 0.50  imb F 10% step 1200, will finish Sun Jul 17 11:36:45 2022
+vol 0.49  imb F 11% step 1300, will finish Sun Jul 17 11:36:43 2022
+vol 0.49  imb F 11% step 1400, will finish Sun Jul 17 11:36:40 2022
+vol 0.49  imb F 22% step 1500, will finish Sun Jul 17 11:36:41 2022
+vol 0.49  imb F 10% step 1600, will finish Sun Jul 17 11:36:39 2022
+vol 0.49  imb F  9% step 1700, will finish Sun Jul 17 11:36:37 2022
+vol 0.49! imb F  8% step 1800, will finish Sun Jul 17 11:36:37 2022
+vol 0.50! imb F  8% step 1900, will finish Sun Jul 17 11:36:35 2022
+vol 0.50! imb F  7% step 2000, will finish Sun Jul 17 11:36:34 2022
+vol 0.50! imb F 10% step 2100, will finish Sun Jul 17 11:36:32 2022
+vol 0.51! imb F  7% step 2200, will finish Sun Jul 17 11:36:31 2022
+vol 0.51  imb F  8% step 2300, will finish Sun Jul 17 11:36:30 2022
+vol 0.51  imb F 19% step 2400, will finish Sun Jul 17 11:36:31 2022
+vol 0.51  imb F 10% step 2500, will finish Sun Jul 17 11:36:31 2022
+vol 0.52! imb F  7% step 2600, will finish Sun Jul 17 11:36:30 2022
+vol 0.52! imb F 10% step 2700, will finish Sun Jul 17 11:36:29 2022
+vol 0.51! imb F  7% step 2800, will finish Sun Jul 17 11:36:28 2022
+vol 0.50! imb F  8% step 2900, will finish Sun Jul 17 11:36:27 2022
+vol 0.49! imb F 10% step 3000, will finish Sun Jul 17 11:36:27 2022
+vol 0.49! imb F  8% step 3100, will finish Sun Jul 17 11:36:26 2022
+vol 0.49! imb F  7% step 3200, will finish Sun Jul 17 11:36:25 2022
+vol 0.49! imb F 10% step 3300, will finish Sun Jul 17 11:36:25 2022
+vol 0.49! imb F 25% step 3400, will finish Sun Jul 17 11:36:26 2022
+vol 0.48! imb F 13% step 3500, will finish Sun Jul 17 11:36:25 2022
+vol 0.48! imb F  8% step 3600, will finish Sun Jul 17 11:36:25 2022
+vol 0.47! imb F  7% step 3700, will finish Sun Jul 17 11:36:24 2022
+vol 0.47! imb F 10% step 3800, will finish Sun Jul 17 11:36:24 2022
+vol 0.47! imb F  7% step 3900, will finish Sun Jul 17 11:36:23 2022
+vol 0.46! imb F  9% step 4000, will finish Sun Jul 17 11:36:23 2022
+vol 0.45! imb F  7% step 4100, will finish Sun Jul 17 11:36:23 2022
+vol 0.45! imb F  8% step 4200, will finish Sun Jul 17 11:36:22 2022
+vol 0.45! imb F  7% step 4300, will finish Sun Jul 17 11:36:22 2022
+vol 0.45! imb F 22% step 4400, will finish Sun Jul 17 11:36:22 2022
+vol 0.45! imb F 14% step 4500, will finish Sun Jul 17 11:36:22 2022
+vol 0.45! imb F  8% step 4600, will finish Sun Jul 17 11:36:22 2022
+vol 0.44! imb F  8% step 4700, will finish Sun Jul 17 11:36:22 2022
+vol 0.44! imb F  7% step 4800, will finish Sun Jul 17 11:36:22 2022
+vol 0.44! imb F  8% step 4900, will finish Sun Jul 17 11:36:21 2022
+vol 0.44! imb F  8% step 5000, will finish Sun Jul 17 11:36:21 2022
+vol 0.44! imb F  7% step 5100, will finish Sun Jul 17 11:36:21 2022
+vol 0.44! imb F  7% step 5200, will finish Sun Jul 17 11:36:21 2022
+vol 0.44! imb F 23% step 5300, will finish Sun Jul 17 11:36:22 2022
+vol 0.45! imb F 12% step 5400, will finish Sun Jul 17 11:36:21 2022
+vol 0.45! imb F  8% step 5500, will finish Sun Jul 17 11:36:21 2022
+vol 0.44! imb F  7% step 5600, will finish Sun Jul 17 11:36:21 2022
+vol 0.44! imb F  7% step 5700, will finish Sun Jul 17 11:36:20 2022
+vol 0.43! imb F  8% step 5800, will finish Sun Jul 17 11:36:20 2022
+vol 0.44! imb F  9% step 5900, will finish Sun Jul 17 11:36:20 2022
+vol 0.44! imb F  8% step 6000, will finish Sun Jul 17 11:36:20 2022
+vol 0.44! imb F  8% step 6100, will finish Sun Jul 17 11:36:19 2022
+vol 0.44! imb F  7% step 6200, will finish Sun Jul 17 11:36:19 2022
+vol 0.44! imb F 15% step 6300, will finish Sun Jul 17 11:36:20 2022
+vol 0.44! imb F  9% step 6400, will finish Sun Jul 17 11:36:20 2022
+vol 0.44! imb F  8% step 6500, will finish Sun Jul 17 11:36:20 2022
+vol 0.43! imb F  9% step 6600, will finish Sun Jul 17 11:36:20 2022
+vol 0.43! imb F  8% step 6700, will finish Sun Jul 17 11:36:20 2022
+vol 0.43! imb F  7% step 6800, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F  9% step 6900, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F  9% step 7000, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F  7% step 7100, will finish Sun Jul 17 11:36:19 2022
+vol 0.42! imb F  8% step 7200, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F 15% step 7300, will finish Sun Jul 17 11:36:20 2022
+vol 0.43! imb F  9% step 7400, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F  9% step 7500, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F 12% step 7600, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F  9% step 7700, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F 10% step 7800, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F  8% step 7900, will finish Sun Jul 17 11:36:19 2022
+vol 0.42! imb F  9% step 8000, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F  7% step 8100, will finish Sun Jul 17 11:36:18 2022
+vol 0.42! imb F 11% step 8200, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F  7% step 8300, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F  8% step 8400, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F  7% step 8500, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F  7% step 8600, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F  8% step 8700, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F  9% step 8800, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F  7% step 8900, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F  8% step 9000, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F  9% step 9100, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F  7% step 9200, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F  8% step 9300, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F  7% step 9400, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F  8% step 9500, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F  8% step 9600, will finish Sun Jul 17 11:36:18 2022
+vol 0.42! imb F  8% step 9700, will finish Sun Jul 17 11:36:18 2022
+vol 0.42! imb F  8% step 9800, will finish Sun Jul 17 11:36:18 2022
+vol 0.42! imb F  9% step 9900, will finish Sun Jul 17 11:36:18 2022
+vol 0.41! imb F  8% step 10000, will finish Sun Jul 17 11:36:18 2022
+vol 0.41! imb F  8% step 10100, will finish Sun Jul 17 11:36:18 2022
+vol 0.41! imb F  9% step 10200, will finish Sun Jul 17 11:36:19 2022
+vol 0.42! imb F  8% step 10300, will finish Sun Jul 17 11:36:18 2022
+vol 0.42! imb F  8% step 10400, will finish Sun Jul 17 11:36:18 2022
+vol 0.42! imb F  9% step 10500, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F  8% step 10600, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F  8% step 10700, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F  8% step 10800, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F  7% step 10900, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F  7% step 11000, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F 11% step 11100, will finish Sun Jul 17 11:36:19 2022
+vol 0.44! imb F  7% step 11200, will finish Sun Jul 17 11:36:19 2022
+vol 0.43! imb F  7% step 11300, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F  8% step 11400, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F  8% step 11500, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F  7% step 11600, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F  8% step 11700, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F  9% step 11800, will finish Sun Jul 17 11:36:18 2022
+vol 0.43! imb F  9% step 11900, will finish Sun Jul 17 11:36:18 2022
+vol 0.44! imb F  8% step 12000, will finish Sun Jul 17 11:36:17 2022
+vol 0.44! imb F  9% step 12100, will finish Sun Jul 17 11:36:18 2022
+vol 0.44! imb F  8% step 12200, will finish Sun Jul 17 11:36:18 2022
+vol 0.45! imb F  7% step 12300, will finish Sun Jul 17 11:36:18 2022
+vol 0.45! imb F  8% step 12400, will finish Sun Jul 17 11:36:18 2022
+vol 0.45! imb F  7% step 12500, will finish Sun Jul 17 11:36:18 2022
+vol 0.45! imb F  8% step 12600, will finish Sun Jul 17 11:36:18 2022
+vol 0.46! imb F  7% step 12700, will finish Sun Jul 17 11:36:17 2022
+vol 0.46! imb F 10% step 12800, will finish Sun Jul 17 11:36:17 2022
+vol 0.46! imb F  9% step 12900, will finish Sun Jul 17 11:36:17 2022
+vol 0.45! imb F 13% step 13000, will finish Sun Jul 17 11:36:18 2022
+vol 0.45! imb F  9% step 13100, will finish Sun Jul 17 11:36:18 2022
+vol 0.45! imb F  8% step 13200, will finish Sun Jul 17 11:36:18 2022
+vol 0.46! imb F  8% step 13300, will finish Sun Jul 17 11:36:18 2022
+vol 0.46! imb F  7% step 13400, will finish Sun Jul 17 11:36:18 2022
+vol 0.46! imb F  8% step 13500, will finish Sun Jul 17 11:36:17 2022
+vol 0.46! imb F  7% step 13600, will finish Sun Jul 17 11:36:17 2022
+vol 0.46! imb F  8% step 13700, will finish Sun Jul 17 11:36:17 2022
+vol 0.46! imb F 11% step 13800, will finish Sun Jul 17 11:36:17 2022
+vol 0.47! imb F  9% step 13900, will finish Sun Jul 17 11:36:17 2022
+vol 0.47! imb F 10% step 14000, will finish Sun Jul 17 11:36:18 2022
+vol 0.48! imb F  8% step 14100, will finish Sun Jul 17 11:36:18 2022
+vol 0.48! imb F  9% step 14200, will finish Sun Jul 17 11:36:18 2022
+vol 0.48! imb F  8% step 14300, will finish Sun Jul 17 11:36:18 2022
+vol 0.48! imb F  9% step 14400, will finish Sun Jul 17 11:36:17 2022
+vol 0.48! imb F  7% step 14500, will finish Sun Jul 17 11:36:17 2022
+vol 0.47! imb F  9% step 14600, will finish Sun Jul 17 11:36:17 2022
+vol 0.47! imb F  9% step 14700, will finish Sun Jul 17 11:36:17 2022
+vol 0.46! imb F  9% step 14800, will finish Sun Jul 17 11:36:17 2022
+vol 0.46! imb F 10% step 14900, will finish Sun Jul 17 11:36:17 2022
+vol 0.47! imb F 16% step 15000, will finish Sun Jul 17 11:36:18 2022
+vol 0.47! imb F  9% step 15100, will finish Sun Jul 17 11:36:18 2022
+vol 0.47! imb F  9% step 15200, will finish Sun Jul 17 11:36:18 2022
+vol 0.47! imb F 10% step 15300, will finish Sun Jul 17 11:36:18 2022
+vol 0.47! imb F  9% step 15400, will finish Sun Jul 17 11:36:18 2022
+vol 0.47! imb F  9% step 15500, will finish Sun Jul 17 11:36:17 2022
+vol 0.47! imb F 10% step 15600, will finish Sun Jul 17 11:36:17 2022
+vol 0.47! imb F 10% step 15700, will finish Sun Jul 17 11:36:18 2022
+vol 0.46! imb F  8% step 15800, will finish Sun Jul 17 11:36:17 2022
+vol 0.46! imb F 13% step 15900, will finish Sun Jul 17 11:36:18 2022
+vol 0.46! imb F  9% step 16000, will finish Sun Jul 17 11:36:18 2022
+vol 0.46! imb F 11% step 16100, will finish Sun Jul 17 11:36:18 2022
+vol 0.46! imb F  9% step 16200, will finish Sun Jul 17 11:36:18 2022
+vol 0.47! imb F  8% step 16300, will finish Sun Jul 17 11:36:18 2022
+vol 0.47! imb F  9% step 16400, will finish Sun Jul 17 11:36:18 2022
+vol 0.48! imb F  9% step 16500, will finish Sun Jul 17 11:36:18 2022
+vol 0.48! imb F  9% step 16600, will finish Sun Jul 17 11:36:18 2022
+vol 0.48! imb F  8% step 16700, will finish Sun Jul 17 11:36:17 2022
+vol 0.48! imb F  8% step 16800, will finish Sun Jul 17 11:36:17 2022
+vol 0.48! imb F 10% step 16900, will finish Sun Jul 17 11:36:18 2022
+vol 0.48! imb F 10% step 17000, will finish Sun Jul 17 11:36:18 2022
+vol 0.49! imb F  8% step 17100, will finish Sun Jul 17 11:36:18 2022
+vol 0.49! imb F  8% step 17200, will finish Sun Jul 17 11:36:18 2022
+vol 0.48! imb F  9% step 17300, will finish Sun Jul 17 11:36:18 2022
+vol 0.48! imb F  8% step 17400, will finish Sun Jul 17 11:36:18 2022
+vol 0.48! imb F  7% step 17500, will finish Sun Jul 17 11:36:18 2022
+vol 0.48! imb F  8% step 17600, will finish Sun Jul 17 11:36:17 2022
+vol 0.48! imb F  7% step 17700, will finish Sun Jul 17 11:36:17 2022
+vol 0.48! imb F 19% step 17800, will finish Sun Jul 17 11:36:19 2022
+vol 0.48! imb F 100% step 17900, will finish Sun Jul 17 11:36:40 2022
+vol 0.45! imb F 49% step 18000, will finish Sun Jul 17 11:36:48 2022
+imb F 65% step 18100, will finish Sun Jul 17 11:36:48 2022
+imb F 65% step 18200, will finish Sun Jul 17 11:36:48 2022
+imb F 66% step 18300, will finish Sun Jul 17 11:36:48 2022
+imb F 66% step 18400, will finish Sun Jul 17 11:36:48 2022
+imb F 65% step 18500, will finish Sun Jul 17 11:36:48 2022
+imb F 64% step 18600, will finish Sun Jul 17 11:36:49 2022
+imb F 54% step 18700, will finish Sun Jul 17 11:36:49 2022
+imb F 54% step 18800, will finish Sun Jul 17 11:36:49 2022
+imb F 55% step 18900, will finish Sun Jul 17 11:36:49 2022
+imb F 55% step 19000, will finish Sun Jul 17 11:36:49 2022
+imb F 54% step 19100, will finish Sun Jul 17 11:36:49 2022
+imb F 54% step 19200, will finish Sun Jul 17 11:36:49 2022
+imb F 54% step 19300, will finish Sun Jul 17 11:36:49 2022
+imb F 53% step 19400, will finish Sun Jul 17 11:36:49 2022
+imb F 63% step 19500, will finish Sun Jul 17 11:36:49 2022
+imb F 51% step 19600, will finish Sun Jul 17 11:36:49 2022
+imb F 54% step 19700, will finish Sun Jul 17 11:36:49 2022
+imb F 65% step 19800, will finish Sun Jul 17 11:36:49 2022
+imb F 64% step 19900, will finish Sun Jul 17 11:36:49 2022
+imb F 65% step 20000, will finish Sun Jul 17 11:36:50 2022
+imb F 63% step 20100, will finish Sun Jul 17 11:36:50 2022
+imb F 64% step 20200, will finish Sun Jul 17 11:36:50 2022
+imb F 55% step 20300, will finish Sun Jul 17 11:36:50 2022
+imb F 63% step 20400, will finish Sun Jul 17 11:36:50 2022
+imb F 65% step 20500, will finish Sun Jul 17 11:36:50 2022
+imb F 65% step 20600, will finish Sun Jul 17 11:36:50 2022
+imb F 63% step 20700, will finish Sun Jul 17 11:36:50 2022
+imb F 64% step 20800, will finish Sun Jul 17 11:36:50 2022
+imb F 63% step 20900, will finish Sun Jul 17 11:36:50 2022
+imb F 65% step 21000, will finish Sun Jul 17 11:36:50 2022
+imb F 63% step 21100, will finish Sun Jul 17 11:36:50 2022
+imb F 65% step 21200, will finish Sun Jul 17 11:36:50 2022
+imb F 53% step 21300, will finish Sun Jul 17 11:36:51 2022
+imb F 63% step 21400, will finish Sun Jul 17 11:36:51 2022
+imb F 64% step 21500, will finish Sun Jul 17 11:36:51 2022
+imb F 62% step 21600, will finish Sun Jul 17 11:36:51 2022
+imb F 62% step 21700, will finish Sun Jul 17 11:36:51 2022
+imb F 64% step 21800, will finish Sun Jul 17 11:36:51 2022
+imb F 62% step 21900, will finish Sun Jul 17 11:36:51 2022
+imb F 64% step 22000, will finish Sun Jul 17 11:36:51 2022
+imb F 63% step 22100, will finish Sun Jul 17 11:36:51 2022
+imb F 61% step 22200, will finish Sun Jul 17 11:36:51 2022
+imb F 64% step 22300, will finish Sun Jul 17 11:36:51 2022
+imb F 63% step 22400, will finish Sun Jul 17 11:36:51 2022
+imb F 64% step 22500, will finish Sun Jul 17 11:36:51 2022
+imb F 56% step 22600, will finish Sun Jul 17 11:36:51 2022
+imb F 56% step 22700, will finish Sun Jul 17 11:36:51 2022
+imb F 55% step 22800, will finish Sun Jul 17 11:36:51 2022
+imb F 54% step 22900, will finish Sun Jul 17 11:36:51 2022
+imb F 58% step 23000, will finish Sun Jul 17 11:36:52 2022
+imb F 55% step 23100, remaining wall clock time:   299 s          
+imb F 55% step 23200, remaining wall clock time:   298 s          
+imb F 55% step 23300, remaining wall clock time:   297 s          
+imb F 54% step 23400, remaining wall clock time:   296 s          
+imb F 54% step 23500, remaining wall clock time:   294 s          
+imb F 54% step 23600, remaining wall clock time:   293 s          
+imb F 55% step 23700, remaining wall clock time:   292 s          
+imb F 54% step 23800, remaining wall clock time:   291 s          
+imb F 53% step 23900, remaining wall clock time:   290 s          
+imb F 53% step 24000, remaining wall clock time:   289 s          
+imb F 54% step 24100, remaining wall clock time:   288 s          
+imb F 55% step 24200, remaining wall clock time:   287 s          
+imb F 55% step 24300, remaining wall clock time:   286 s          
+imb F 54% step 24400, remaining wall clock time:   285 s          
+imb F 55% step 24500, remaining wall clock time:   283 s          
+imb F 54% step 24600, remaining wall clock time:   282 s          
+imb F 64% step 24700, remaining wall clock time:   281 s          
+imb F 67% step 24800, remaining wall clock time:   280 s          
+imb F 65% step 24900, remaining wall clock time:   279 s          
+imb F 64% step 25000, remaining wall clock time:   278 s          
+imb F 65% step 25100, remaining wall clock time:   277 s          
+imb F 65% step 25200, remaining wall clock time:   276 s          
+imb F 64% step 25300, remaining wall clock time:   275 s          
+imb F 64% step 25400, remaining wall clock time:   274 s          
+imb F 63% step 25500, remaining wall clock time:   273 s          
+imb F 63% step 25600, remaining wall clock time:   271 s          
+imb F 61% step 25700, remaining wall clock time:   270 s          
+imb F 62% step 25800, remaining wall clock time:   269 s          
+imb F 64% step 25900, remaining wall clock time:   268 s          
+imb F 66% step 26000, remaining wall clock time:   267 s          
+imb F 55% step 26100, remaining wall clock time:   266 s          
+imb F 65% step 26200, remaining wall clock time:   265 s          
+imb F 66% step 26300, remaining wall clock time:   264 s          
+imb F 66% step 26400, remaining wall clock time:   263 s          
+imb F 67% step 26500, remaining wall clock time:   262 s          
+imb F 68% step 26600, remaining wall clock time:   261 s          
+imb F 65% step 26700, remaining wall clock time:   260 s          
+imb F 64% step 26800, remaining wall clock time:   258 s          
+imb F 63% step 26900, remaining wall clock time:   257 s          
+imb F 67% step 27000, remaining wall clock time:   256 s          
+imb F 67% step 27100, remaining wall clock time:   255 s          
+imb F 62% step 27200, remaining wall clock time:   254 s          
+imb F 65% step 27300, remaining wall clock time:   253 s          
+imb F 64% step 27400, remaining wall clock time:   252 s          
+imb F 56% step 27500, remaining wall clock time:   251 s          
+imb F 54% step 27600, remaining wall clock time:   250 s          
+imb F 54% step 27700, remaining wall clock time:   249 s          
+imb F 53% step 27800, remaining wall clock time:   247 s          
+imb F 55% step 27900, remaining wall clock time:   246 s          
+imb F 55% step 28000, remaining wall clock time:   245 s          
+imb F 56% step 28100, remaining wall clock time:   244 s          
+imb F 55% step 28200, remaining wall clock time:   243 s          
+imb F 54% step 28300, remaining wall clock time:   242 s          
+imb F 54% step 28400, remaining wall clock time:   241 s          
+imb F 55% step 28500, remaining wall clock time:   240 s          
+imb F 57% step 28600, remaining wall clock time:   239 s          
+imb F 56% step 28700, remaining wall clock time:   237 s          
+imb F 54% step 28800, remaining wall clock time:   236 s          
+imb F 54% step 28900, remaining wall clock time:   235 s          
+imb F 53% step 29000, remaining wall clock time:   234 s          
+imb F 54% step 29100, remaining wall clock time:   233 s          
+imb F 55% step 29200, remaining wall clock time:   232 s          
+imb F 53% step 29300, remaining wall clock time:   231 s          
+imb F 53% step 29400, remaining wall clock time:   230 s          
+imb F 53% step 29500, remaining wall clock time:   229 s          
+imb F 54% step 29600, remaining wall clock time:   227 s          
+imb F 54% step 29700, remaining wall clock time:   226 s          
+imb F 61% step 29800, remaining wall clock time:   225 s          
+imb F 52% step 29900, remaining wall clock time:   224 s          
+imb F 54% step 30000, remaining wall clock time:   223 s          
+vol 0.85  imb F 54% step 30100, remaining wall clock time:   222 s          
+vol 0.87  imb F 44% step 30200, remaining wall clock time:   221 s          
+vol 0.77  imb F 34% step 30300, remaining wall clock time:   220 s          
+vol 0.69  imb F 30% step 30400, remaining wall clock time:   218 s          
+vol 0.61  imb F 25% step 30500, remaining wall clock time:   217 s          
+vol 0.57  imb F 25% step 30600, remaining wall clock time:   216 s          
+vol 0.54  imb F 19% step 30700, remaining wall clock time:   215 s          
+vol 0.52! imb F 17% step 30800, remaining wall clock time:   214 s          
+vol 0.50! imb F 12% step 30900, remaining wall clock time:   213 s          
+vol 0.49! imb F 10% step 31000, remaining wall clock time:   212 s          
+vol 0.48! imb F 11% step 31100, remaining wall clock time:   210 s          
+vol 0.47! imb F  9% step 31200, remaining wall clock time:   209 s          
+vol 0.46! imb F 12% step 31300, remaining wall clock time:   208 s          
+vol 0.46! imb F  9% step 31400, remaining wall clock time:   207 s          
+vol 0.46! imb F  8% step 31500, remaining wall clock time:   206 s          
+vol 0.45! imb F 12% step 31600, remaining wall clock time:   205 s          
+vol 0.45! imb F  9% step 31700, remaining wall clock time:   203 s          
+vol 0.44! imb F  9% step 31800, remaining wall clock time:   202 s          
+vol 0.44! imb F  9% step 31900, remaining wall clock time:   201 s          
+vol 0.43! imb F 12% step 32000, remaining wall clock time:   200 s          
+imb F 54% step 32100, remaining wall clock time:   199 s          
+imb F 56% step 32200, remaining wall clock time:   198 s          
+imb F 55% step 32300, remaining wall clock time:   197 s          
+imb F 53% step 32400, remaining wall clock time:   196 s          
+imb F 55% step 32500, remaining wall clock time:   194 s          
+imb F 55% step 32600, remaining wall clock time:   193 s          
+imb F 53% step 32700, remaining wall clock time:   192 s          
+imb F 55% step 32800, remaining wall clock time:   191 s          
+imb F 52% step 32900, remaining wall clock time:   190 s          
+imb F 55% step 33000, remaining wall clock time:   189 s          
+imb F 55% step 33100, remaining wall clock time:   188 s          
+imb F 55% step 33200, remaining wall clock time:   187 s          
+imb F 56% step 33300, remaining wall clock time:   186 s          
+imb F 54% step 33400, remaining wall clock time:   184 s          
+imb F 54% step 33500, remaining wall clock time:   183 s          
+imb F 56% step 33600, remaining wall clock time:   182 s          
+imb F 59% step 33700, remaining wall clock time:   181 s          
+imb F 57% step 33800, remaining wall clock time:   180 s          
+imb F 58% step 33900, remaining wall clock time:   179 s          
+imb F 58% step 34000, remaining wall clock time:   178 s          
+imb F 58% step 34100, remaining wall clock time:   177 s          
+imb F 58% step 34200, remaining wall clock time:   176 s          
+imb F 59% step 34300, remaining wall clock time:   174 s          
+imb F 58% step 34400, remaining wall clock time:   173 s          
+imb F 59% step 34500, remaining wall clock time:   172 s          
+imb F 57% step 34600, remaining wall clock time:   171 s          
+imb F 57% step 34700, remaining wall clock time:   170 s          
+imb F 55% step 34800, remaining wall clock time:   169 s          
+imb F 57% step 34900, remaining wall clock time:   168 s          
+imb F 56% step 35000, remaining wall clock time:   167 s          
+imb F 57% step 35100, remaining wall clock time:   166 s          
+imb F 56% step 35200, remaining wall clock time:   164 s          
+imb F 56% step 35300, remaining wall clock time:   163 s          
+imb F 54% step 35400, remaining wall clock time:   162 s          
+imb F 55% step 35500, remaining wall clock time:   161 s          
+imb F 54% step 35600, remaining wall clock time:   160 s          
+imb F 57% step 35700, remaining wall clock time:   159 s          
+imb F 56% step 35800, remaining wall clock time:   158 s          
+imb F 57% step 35900, remaining wall clock time:   157 s          
+imb F 57% step 36000, remaining wall clock time:   156 s          
+imb F 57% step 36100, remaining wall clock time:   154 s          
+imb F 57% step 36200, remaining wall clock time:   153 s          
+imb F 56% step 36300, remaining wall clock time:   152 s          
+imb F 56% step 36400, remaining wall clock time:   151 s          
+imb F 56% step 36500, remaining wall clock time:   150 s          
+imb F 55% step 36600, remaining wall clock time:   149 s          
+imb F 56% step 36700, remaining wall clock time:   148 s          
+imb F 56% step 36800, remaining wall clock time:   147 s          
+imb F 54% step 36900, remaining wall clock time:   146 s          
+imb F 54% step 37000, remaining wall clock time:   145 s          
+imb F 55% step 37100, remaining wall clock time:   143 s          
+imb F 55% step 37200, remaining wall clock time:   142 s          
+imb F 56% step 37300, remaining wall clock time:   141 s          
+imb F 53% step 37400, remaining wall clock time:   140 s          
+imb F 54% step 37500, remaining wall clock time:   139 s          
+imb F 54% step 37600, remaining wall clock time:   138 s          
+imb F 56% step 37700, remaining wall clock time:   137 s          
+imb F 55% step 37800, remaining wall clock time:   136 s          
+imb F 54% step 37900, remaining wall clock time:   135 s          
+imb F 52% step 38000, remaining wall clock time:   133 s          
+imb F 52% step 38100, remaining wall clock time:   132 s          
+imb F 53% step 38200, remaining wall clock time:   131 s          
+imb F 53% step 38300, remaining wall clock time:   130 s          
+imb F 51% step 38400, remaining wall clock time:   129 s          
+imb F 51% step 38500, remaining wall clock time:   128 s          
+imb F 51% step 38600, remaining wall clock time:   127 s          
+imb F 57% step 38700, remaining wall clock time:   126 s          
+imb F 58% step 38800, remaining wall clock time:   125 s          
+imb F 59% step 38900, remaining wall clock time:   123 s          
+imb F 56% step 39000, remaining wall clock time:   122 s          
+imb F 56% step 39100, remaining wall clock time:   121 s          
+imb F 52% step 39200, remaining wall clock time:   120 s          
+imb F 54% step 39300, remaining wall clock time:   119 s          
+imb F 52% step 39400, remaining wall clock time:   118 s          
+imb F 52% step 39500, remaining wall clock time:   117 s          
+imb F 53% step 39600, remaining wall clock time:   116 s          
+imb F 53% step 39700, remaining wall clock time:   115 s          
+imb F 53% step 39800, remaining wall clock time:   113 s          
+imb F 54% step 39900, remaining wall clock time:   112 s          
+imb F 53% step 40000, remaining wall clock time:   111 s          
+imb F 54% step 40100, remaining wall clock time:   110 s          
+imb F 55% step 40200, remaining wall clock time:   109 s          
+imb F 55% step 40300, remaining wall clock time:   108 s          
+imb F 57% step 40400, remaining wall clock time:   107 s          
+imb F 56% step 40500, remaining wall clock time:   106 s          
+imb F 54% step 40600, remaining wall clock time:   104 s          
+imb F 57% step 40700, remaining wall clock time:   103 s          
+imb F 57% step 40800, remaining wall clock time:   102 s          
+imb F 57% step 40900, remaining wall clock time:   101 s          
+imb F 60% step 41000, remaining wall clock time:   100 s          
+imb F 58% step 41100, remaining wall clock time:    99 s          
+imb F 58% step 41200, remaining wall clock time:    98 s          
+imb F 59% step 41300, remaining wall clock time:    97 s          
+imb F 57% step 41400, remaining wall clock time:    96 s          
+imb F 57% step 41500, remaining wall clock time:    94 s          
+imb F 58% step 41600, remaining wall clock time:    93 s          
+imb F 61% step 41700, remaining wall clock time:    92 s          
+imb F 60% step 41800, remaining wall clock time:    91 s          
+imb F 60% step 41900, remaining wall clock time:    90 s          
+imb F 59% step 42000, remaining wall clock time:    89 s          
+imb F 58% step 42100, remaining wall clock time:    88 s          
+imb F 59% step 42200, remaining wall clock time:    87 s          
+imb F 59% step 42300, remaining wall clock time:    86 s          
+imb F 57% step 42400, remaining wall clock time:    84 s          
+imb F 55% step 42500, remaining wall clock time:    83 s          
+imb F 61% step 42600, remaining wall clock time:    82 s          
+imb F 55% step 42700, remaining wall clock time:    81 s          
+imb F 57% step 42800, remaining wall clock time:    80 s          
+imb F 57% step 42900, remaining wall clock time:    79 s          
+imb F 54% step 43000, remaining wall clock time:    78 s          
+imb F 56% step 43100, remaining wall clock time:    77 s          
+imb F 58% step 43200, remaining wall clock time:    76 s          
+imb F 57% step 43300, remaining wall clock time:    74 s          
+imb F 57% step 43400, remaining wall clock time:    73 s          
+imb F 64% step 43500, remaining wall clock time:    73 s          
+imb F 134% step 43600, remaining wall clock time:    73 s          
+imb F 56% step 43700, remaining wall clock time:    72 s          
+imb F 57% step 43800, remaining wall clock time:    70 s          
+imb F 56% step 43900, remaining wall clock time:    69 s          
+imb F 55% step 44000, remaining wall clock time:    68 s          
+imb F 57% step 44100, remaining wall clock time:    67 s          
+imb F 57% step 44200, remaining wall clock time:    66 s          
+imb F 60% step 44300, remaining wall clock time:    65 s          
+imb F 58% step 44400, remaining wall clock time:    64 s          
+imb F 60% step 44500, remaining wall clock time:    62 s          
+imb F 61% step 44600, remaining wall clock time:    61 s          
+imb F 61% step 44700, remaining wall clock time:    60 s          
+imb F 62% step 44800, remaining wall clock time:    59 s          
+imb F 60% step 44900, remaining wall clock time:    58 s          
+imb F 61% step 45000, remaining wall clock time:    57 s          
+imb F 59% step 45100, remaining wall clock time:    55 s          
+imb F 60% step 45200, remaining wall clock time:    54 s          
+imb F 57% step 45300, remaining wall clock time:    53 s          
+imb F 59% step 45400, remaining wall clock time:    52 s          
+imb F 57% step 45500, remaining wall clock time:    51 s          
+imb F 58% step 45600, remaining wall clock time:    50 s          
+imb F 57% step 45700, remaining wall clock time:    49 s          
+imb F 56% step 45800, remaining wall clock time:    47 s          
+imb F 56% step 45900, remaining wall clock time:    46 s          
+imb F 56% step 46000, remaining wall clock time:    45 s          
+imb F 55% step 46100, remaining wall clock time:    44 s          
+imb F 54% step 46200, remaining wall clock time:    43 s          
+imb F 54% step 46300, remaining wall clock time:    42 s          
+imb F 53% step 46400, remaining wall clock time:    41 s          
+imb F 53% step 46500, remaining wall clock time:    39 s          
+imb F 52% step 46600, remaining wall clock time:    38 s          
+imb F 55% step 46700, remaining wall clock time:    37 s          
+imb F 55% step 46800, remaining wall clock time:    36 s          
+imb F 55% step 46900, remaining wall clock time:    35 s          
+imb F 56% step 47000, remaining wall clock time:    34 s          
+imb F 56% step 47100, remaining wall clock time:    33 s          
+imb F 55% step 47200, remaining wall clock time:    31 s          
+imb F 54% step 47300, remaining wall clock time:    30 s          
+imb F 54% step 47400, remaining wall clock time:    29 s          
+imb F 53% step 47500, remaining wall clock time:    28 s          
+imb F 54% step 47600, remaining wall clock time:    27 s          
+imb F 52% step 47700, remaining wall clock time:    26 s          
+imb F 52% step 47800, remaining wall clock time:    25 s          
+imb F 54% step 47900, remaining wall clock time:    23 s          
+imb F 56% step 48000, remaining wall clock time:    22 s          
+imb F 54% step 48100, remaining wall clock time:    21 s          
+imb F 54% step 48200, remaining wall clock time:    20 s          
+imb F 56% step 48300, remaining wall clock time:    19 s          
+imb F 56% step 48400, remaining wall clock time:    18 s          
+imb F 55% step 48500, remaining wall clock time:    17 s          
+imb F 56% step 48600, remaining wall clock time:    15 s          
+imb F 56% step 48700, remaining wall clock time:    14 s          
+imb F 58% step 48800, remaining wall clock time:    13 s          
+imb F 57% step 48900, remaining wall clock time:    12 s          
+imb F 57% step 49000, remaining wall clock time:    11 s          
+imb F 57% step 49100, remaining wall clock time:    10 s          
+imb F 58% step 49200, remaining wall clock time:     9 s          
+imb F 58% step 49300, remaining wall clock time:     7 s          
+imb F 58% step 49400, remaining wall clock time:     6 s          
+imb F 58% step 49500, remaining wall clock time:     5 s          
+imb F 59% step 49600, remaining wall clock time:     4 s          
+imb F 59% step 49700, remaining wall clock time:     3 s          
+imb F 61% step 49800, remaining wall clock time:     2 s          
+imb F 61% step 49900, remaining wall clock time:     1 s          
+imb F 61% 
+Writing final coordinates.
+step 50000, remaining wall clock time:     0 s          
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 39.6%.
+ The balanceable part of the MD step is 20%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 7.8%.
+
+NOTE: 7.8 % of the available CPU time was lost due to load imbalance
+      in the domain decomposition.
+      You might want to use dynamic load balancing (option -dlb.)
+      You can also consider manually changing the decomposition (option -dd);
+      e.g. by using fewer domains along the box dimension in which there is
+      considerable inhomogeneity in the simulated system.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    73156.127      571.534    12800.0
+                 (ns/day)    (hour/ns)
+Performance:       15.118        1.588
+
+GROMACS reminds you: "Christianity may be OK between consenting adults in private but should not be taught to young children." (Francis Crick)
+
+                      :-) GROMACS - gmx mdrun, 2020.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.5
+Executable:   /jet/home/schwinns/pkgs/gromacs/2020.5/bin/gmx_mpi
+Data prefix:  /jet/home/schwinns/pkgs/gromacs/2020.5
+Working dir:  /ocean/projects/cts160011p/schwinns/benchmark/2022/AA-PA_large/CPU/test_np
+Command line:
+  gmx_mpi mdrun -v -s ../npt.tpr -o npt -g N1_np64.log -ntomp 1
+
+Compiled SIMD: SSE4.1, but for this host/run AVX2_256 might be better (see
+log).
+The current CPU can measure timings more accurately than the code in
+gmx mdrun was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding gmx mdrun with the GMX_USE_RDTSCP=ON CMake option.
+Reading file ../npt.tpr, VERSION 2020.5 (single precision)
+Changing nstlist from 40 to 100, rlist from 1 to 1.003
+
+
+Using 64 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread per MPI process
+
+starting mdrun 'PA_large'
+50000 steps,    100.0 ps.
+step 0
+imb F 44% step 100, will finish Sun Jul 17 11:49:57 2022
+imb F 47% step 200, will finish Sun Jul 17 11:49:51 2022
+vol 0.94  imb F 42% step 300, will finish Sun Jul 17 11:49:42 2022
+vol 0.87  imb F 34% step 400, will finish Sun Jul 17 11:49:32 2022
+vol 0.77  imb F 24% step 500, will finish Sun Jul 17 11:49:24 2022
+vol 0.70  imb F 19% step 600, will finish Sun Jul 17 11:49:15 2022
+vol 0.61  imb F 13% step 700, will finish Sun Jul 17 11:49:07 2022
+vol 0.56  imb F  8% step 800, will finish Sun Jul 17 11:49:02 2022
+vol 0.52  imb F  9% step 900, will finish Sun Jul 17 11:48:57 2022
+vol 0.51  imb F  7% step 1000, will finish Sun Jul 17 11:48:53 2022
+vol 0.51  imb F  5% step 1100, will finish Sun Jul 17 11:48:50 2022
+vol 0.51  imb F  7% step 1200, will finish Sun Jul 17 11:48:48 2022
+vol 0.51  imb F  5% step 1300, will finish Sun Jul 17 11:48:46 2022
+vol 0.51  imb F  4% step 1400, will finish Sun Jul 17 11:48:43 2022
+vol 0.51  imb F  5% step 1500, will finish Sun Jul 17 11:48:42 2022
+vol 0.50  imb F  4% step 1600, will finish Sun Jul 17 11:48:41 2022
+vol 0.51  imb F  6% step 1700, will finish Sun Jul 17 11:48:39 2022
+vol 0.50  imb F  4% step 1800, will finish Sun Jul 17 11:48:38 2022
+vol 0.50  imb F  6% step 1900, will finish Sun Jul 17 11:48:37 2022
+vol 0.50  imb F  3% step 2000, will finish Sun Jul 17 11:48:36 2022
+vol 0.50  imb F  6% step 2100, will finish Sun Jul 17 11:48:35 2022
+vol 0.50  imb F  4% step 2200, will finish Sun Jul 17 11:48:34 2022
+vol 0.50  imb F  4% step 2300, will finish Sun Jul 17 11:48:33 2022
+vol 0.50  imb F  6% step 2400, will finish Sun Jul 17 11:48:33 2022
+vol 0.51  imb F  4% step 2500, will finish Sun Jul 17 11:48:32 2022
+vol 0.51  imb F  4% step 2600, will finish Sun Jul 17 11:48:31 2022
+vol 0.51  imb F  3% step 2700, will finish Sun Jul 17 11:48:31 2022
+vol 0.52  imb F  3% step 2800, will finish Sun Jul 17 11:48:30 2022
+vol 0.52  imb F  4% step 2900, will finish Sun Jul 17 11:48:30 2022
+vol 0.51  imb F  3% step 3000, will finish Sun Jul 17 11:48:29 2022
+vol 0.51  imb F  4% step 3100, will finish Sun Jul 17 11:48:29 2022
+vol 0.51  imb F  3% step 3200, will finish Sun Jul 17 11:48:29 2022
+vol 0.51  imb F  4% step 3300, will finish Sun Jul 17 11:48:28 2022
+vol 0.51  imb F  4% step 3400, will finish Sun Jul 17 11:48:28 2022
+vol 0.51  imb F  3% step 3500, will finish Sun Jul 17 11:48:27 2022
+vol 0.51  imb F  3% step 3600, will finish Sun Jul 17 11:48:27 2022
+vol 0.51  imb F  4% step 3700, will finish Sun Jul 17 11:48:27 2022
+vol 0.51  imb F  4% step 3800, will finish Sun Jul 17 11:48:26 2022
+vol 0.51  imb F  3% step 3900, will finish Sun Jul 17 11:48:26 2022
+vol 0.51  imb F  3% step 4000, will finish Sun Jul 17 11:48:26 2022
+vol 0.51  imb F  4% step 4100, will finish Sun Jul 17 11:48:26 2022
+vol 0.51  imb F  4% step 4200, will finish Sun Jul 17 11:48:26 2022
+vol 0.51  imb F  4% step 4300, will finish Sun Jul 17 11:48:25 2022
+vol 0.51  imb F  3% step 4400, will finish Sun Jul 17 11:48:25 2022
+vol 0.51  imb F  3% step 4500, will finish Sun Jul 17 11:48:25 2022
+vol 0.52  imb F  3% step 4600, will finish Sun Jul 17 11:48:25 2022
+vol 0.52  imb F  6% step 4700, will finish Sun Jul 17 11:48:24 2022
+vol 0.52  imb F  4% step 4800, will finish Sun Jul 17 11:48:24 2022
+vol 0.52  imb F  6% step 4900, will finish Sun Jul 17 11:48:24 2022
+vol 0.52  imb F  4% step 5000, will finish Sun Jul 17 11:48:24 2022
+vol 0.51  imb F  4% step 5100, will finish Sun Jul 17 11:48:24 2022
+vol 0.51  imb F  5% step 5200, will finish Sun Jul 17 11:48:24 2022
+vol 0.51  imb F  4% step 5300, will finish Sun Jul 17 11:48:24 2022
+vol 0.50  imb F  5% step 5400, will finish Sun Jul 17 11:48:23 2022
+vol 0.51  imb F  4% step 5500, will finish Sun Jul 17 11:48:23 2022
+vol 0.51  imb F  5% step 5600, will finish Sun Jul 17 11:48:23 2022
+vol 0.51  imb F  4% step 5700, will finish Sun Jul 17 11:48:23 2022
+vol 0.51  imb F  4% step 5800, will finish Sun Jul 17 11:48:23 2022
+vol 0.51  imb F  4% step 5900, will finish Sun Jul 17 11:48:23 2022
+vol 0.51  imb F  4% step 6000, will finish Sun Jul 17 11:48:23 2022
+vol 0.51  imb F  3% step 6100, will finish Sun Jul 17 11:48:23 2022
+vol 0.51  imb F  5% step 6200, will finish Sun Jul 17 11:48:22 2022
+vol 0.51  imb F  4% step 6300, will finish Sun Jul 17 11:48:22 2022
+vol 0.51  imb F  4% step 6400, will finish Sun Jul 17 11:48:22 2022
+vol 0.51  imb F  4% step 6500, will finish Sun Jul 17 11:48:22 2022
+vol 0.51  imb F  4% step 6600, will finish Sun Jul 17 11:48:22 2022
+vol 0.51  imb F  5% step 6700, will finish Sun Jul 17 11:48:22 2022
+vol 0.51  imb F  4% step 6800, will finish Sun Jul 17 11:48:22 2022
+vol 0.51  imb F  6% step 6900, will finish Sun Jul 17 11:48:21 2022
+vol 0.52  imb F  4% step 7000, will finish Sun Jul 17 11:48:21 2022
+vol 0.52  imb F  4% step 7100, will finish Sun Jul 17 11:48:21 2022
+vol 0.52  imb F  6% step 7200, will finish Sun Jul 17 11:48:21 2022
+vol 0.52  imb F  5% step 7300, will finish Sun Jul 17 11:48:21 2022
+vol 0.52  imb F  6% step 7400, will finish Sun Jul 17 11:48:21 2022
+vol 0.52  imb F  5% step 7500, will finish Sun Jul 17 11:48:21 2022
+vol 0.52  imb F  4% step 7600, will finish Sun Jul 17 11:48:21 2022
+vol 0.52  imb F  4% step 7700, will finish Sun Jul 17 11:48:21 2022
+vol 0.52  imb F  6% step 7800, will finish Sun Jul 17 11:48:21 2022
+vol 0.52  imb F  6% step 7900, will finish Sun Jul 17 11:48:21 2022
+vol 0.52  imb F  4% step 8000, will finish Sun Jul 17 11:48:21 2022
+vol 0.53  imb F  5% step 8100, will finish Sun Jul 17 11:48:20 2022
+vol 0.53  imb F  5% step 8200, will finish Sun Jul 17 11:48:20 2022
+vol 0.53  imb F  4% step 8300, will finish Sun Jul 17 11:48:20 2022
+vol 0.53  imb F  4% step 8400, will finish Sun Jul 17 11:48:20 2022
+vol 0.53  imb F  3% step 8500, will finish Sun Jul 17 11:48:20 2022
+vol 0.53  imb F  4% step 8600, will finish Sun Jul 17 11:48:20 2022
+vol 0.53  imb F  3% step 8700, will finish Sun Jul 17 11:48:20 2022
+vol 0.52  imb F  4% step 8800, will finish Sun Jul 17 11:48:20 2022
+vol 0.52  imb F  4% step 8900, will finish Sun Jul 17 11:48:20 2022
+vol 0.52  imb F  3% step 9000, will finish Sun Jul 17 11:48:20 2022
+vol 0.52  imb F  7% step 9100, will finish Sun Jul 17 11:48:20 2022
+vol 0.52  imb F  5% step 9200, will finish Sun Jul 17 11:48:20 2022
+vol 0.52  imb F  5% step 9300, will finish Sun Jul 17 11:48:20 2022
+vol 0.52  imb F  5% step 9400, will finish Sun Jul 17 11:48:20 2022
+vol 0.52  imb F  5% step 9500, will finish Sun Jul 17 11:48:19 2022
+vol 0.51  imb F  4% step 9600, will finish Sun Jul 17 11:48:20 2022
+vol 0.51  imb F  4% step 9700, will finish Sun Jul 17 11:48:19 2022
+vol 0.52  imb F  4% step 9800, will finish Sun Jul 17 11:48:19 2022
+vol 0.52  imb F  5% step 9900, will finish Sun Jul 17 11:48:19 2022
+vol 0.51  imb F  5% step 10000, will finish Sun Jul 17 11:48:19 2022
+vol 0.51  imb F  4% step 10100, will finish Sun Jul 17 11:48:19 2022
+vol 0.51  imb F  3% step 10200, will finish Sun Jul 17 11:48:19 2022
+vol 0.51  imb F  5% step 10300, will finish Sun Jul 17 11:48:19 2022
+vol 0.50  imb F  7% step 10400, will finish Sun Jul 17 11:48:19 2022
+vol 0.50  imb F  4% step 10500, will finish Sun Jul 17 11:48:19 2022
+vol 0.50  imb F  4% step 10600, will finish Sun Jul 17 11:48:19 2022
+vol 0.50  imb F  6% step 10700, will finish Sun Jul 17 11:48:19 2022
+vol 0.51  imb F  4% step 10800, will finish Sun Jul 17 11:48:19 2022
+vol 0.50  imb F  4% step 10900, will finish Sun Jul 17 11:48:19 2022
+vol 0.51  imb F  4% step 11000, will finish Sun Jul 17 11:48:19 2022
+vol 0.51  imb F  4% step 11100, will finish Sun Jul 17 11:48:19 2022
+vol 0.51  imb F  4% step 11200, will finish Sun Jul 17 11:48:19 2022
+vol 0.51  imb F  4% step 11300, will finish Sun Jul 17 11:48:19 2022
+vol 0.51  imb F  4% step 11400, will finish Sun Jul 17 11:48:19 2022
+vol 0.51  imb F  6% step 11500, will finish Sun Jul 17 11:48:19 2022
+vol 0.51  imb F  4% step 11600, will finish Sun Jul 17 11:48:19 2022
+vol 0.51  imb F  4% step 11700, will finish Sun Jul 17 11:48:19 2022
+vol 0.52  imb F  3% step 11800, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 11900, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  3% step 12000, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  3% step 12100, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 12200, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 12300, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  5% step 12400, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 12500, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  5% step 12600, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 12700, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 12800, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 12900, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  3% step 13000, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  3% step 13100, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 13200, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  5% step 13300, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 13400, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 13500, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 13600, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  6% step 13700, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 13800, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  6% step 13900, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 14000, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 14100, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 14200, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  5% step 14300, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 14400, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  5% step 14500, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  5% step 14600, will finish Sun Jul 17 11:48:18 2022
+vol 0.51  imb F  6% step 14700, will finish Sun Jul 17 11:48:18 2022
+vol 0.51  imb F  5% step 14800, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 14900, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 15000, will finish Sun Jul 17 11:48:18 2022
+vol 0.51  imb F  6% step 15100, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 15200, will finish Sun Jul 17 11:48:18 2022
+vol 0.51  imb F  4% step 15300, will finish Sun Jul 17 11:48:18 2022
+vol 0.51  imb F  4% step 15400, will finish Sun Jul 17 11:48:18 2022
+vol 0.51  imb F  4% step 15500, will finish Sun Jul 17 11:48:18 2022
+vol 0.51  imb F  5% step 15600, will finish Sun Jul 17 11:48:18 2022
+vol 0.51  imb F  6% step 15700, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 15800, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 15900, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  6% step 16000, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  3% step 16100, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 16200, will finish Sun Jul 17 11:48:18 2022
+vol 0.53  imb F  4% step 16300, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  3% step 16400, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  3% step 16500, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 16600, will finish Sun Jul 17 11:48:18 2022
+vol 0.52  imb F  4% step 16700, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 16800, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  6% step 16900, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 17000, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  7% step 17100, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  4% step 17200, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  4% step 17300, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  3% step 17400, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  3% step 17500, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 17600, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 17700, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  3% step 17800, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 17900, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 18000, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 18100, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 18200, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  6% step 18300, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 18400, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 18500, will finish Sun Jul 17 11:48:17 2022
+vol 0.51  imb F  5% step 18600, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 18700, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 18800, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  5% step 18900, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 19000, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 19100, will finish Sun Jul 17 11:48:17 2022
+vol 0.51  imb F  4% step 19200, will finish Sun Jul 17 11:48:17 2022
+vol 0.51  imb F  4% step 19300, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  3% step 19400, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  3% step 19500, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  3% step 19600, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 19700, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 19800, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 19900, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 20000, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  6% step 20100, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 20200, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  5% step 20300, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 20400, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 20500, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 20600, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 20700, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 20800, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 20900, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 21000, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  3% step 21100, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  3% step 21200, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 21300, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  4% step 21400, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  4% step 21500, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  3% step 21600, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  4% step 21700, will finish Sun Jul 17 11:48:17 2022
+vol 0.54  imb F  4% step 21800, will finish Sun Jul 17 11:48:17 2022
+vol 0.54  imb F  3% step 21900, will finish Sun Jul 17 11:48:17 2022
+vol 0.54  imb F  3% step 22000, will finish Sun Jul 17 11:48:17 2022
+vol 0.54  imb F  4% step 22100, will finish Sun Jul 17 11:48:17 2022
+vol 0.54  imb F  3% step 22200, will finish Sun Jul 17 11:48:17 2022
+vol 0.54  imb F  4% step 22300, will finish Sun Jul 17 11:48:17 2022
+vol 0.54  imb F  4% step 22400, will finish Sun Jul 17 11:48:17 2022
+vol 0.54  imb F  3% step 22500, will finish Sun Jul 17 11:48:17 2022
+vol 0.54  imb F  5% step 22600, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  4% step 22700, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  4% step 22800, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  4% step 22900, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  5% step 23000, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  4% step 23100, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  5% step 23200, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  4% step 23300, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  3% step 23400, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  3% step 23500, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  5% step 23600, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  3% step 23700, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  4% step 23800, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 23900, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 24000, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 24100, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 24200, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  4% step 24300, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  6% step 24400, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  3% step 24500, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  4% step 24600, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  5% step 24700, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  4% step 24800, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  4% step 24900, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  7% step 25000, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  5% step 25100, will finish Sun Jul 17 11:48:17 2022
+vol 0.54  imb F  4% step 25200, will finish Sun Jul 17 11:48:17 2022
+vol 0.54  imb F  4% step 25300, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  3% step 25400, will finish Sun Jul 17 11:48:17 2022
+vol 0.53  imb F  4% step 25500, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  5% step 25600, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  5% step 25700, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  5% step 25800, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  3% step 25900, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  5% step 26000, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  3% step 26100, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 26200, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  4% step 26300, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  5% step 26400, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  5% step 26500, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  3% step 26600, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  5% step 26700, will finish Sun Jul 17 11:48:17 2022
+vol 0.51  imb F  4% step 26800, will finish Sun Jul 17 11:48:17 2022
+vol 0.52  imb F  5% step 26900, will finish Sun Jul 17 11:48:17 2022
+vol 0.51  imb F  4% step 27000, will finish Sun Jul 17 11:48:17 2022
+vol 0.51  imb F  8% step 27100, will finish Sun Jul 17 11:48:17 2022
+vol 0.51  imb F  4% step 27200, will finish Sun Jul 17 11:48:17 2022
+vol 0.50  imb F  4% step 27300, remaining wall clock time:   298 s          
+vol 0.51  imb F  3% step 27400, remaining wall clock time:   297 s          
+vol 0.51  imb F  4% step 27500, remaining wall clock time:   296 s          
+vol 0.51  imb F  4% step 27600, remaining wall clock time:   294 s          
+vol 0.51  imb F  4% step 27700, remaining wall clock time:   293 s          
+vol 0.51  imb F  3% step 27800, remaining wall clock time:   292 s          
+vol 0.51  imb F  3% step 27900, remaining wall clock time:   290 s          
+vol 0.51  imb F  4% step 28000, remaining wall clock time:   289 s          
+vol 0.51  imb F  3% step 28100, remaining wall clock time:   288 s          
+vol 0.51  imb F  4% step 28200, remaining wall clock time:   286 s          
+vol 0.51  imb F  4% step 28300, remaining wall clock time:   285 s          
+vol 0.51  imb F  4% step 28400, remaining wall clock time:   284 s          
+vol 0.51  imb F  4% step 28500, remaining wall clock time:   282 s          
+vol 0.51  imb F  4% step 28600, remaining wall clock time:   281 s          
+vol 0.52  imb F  4% step 28700, remaining wall clock time:   280 s          
+vol 0.53  imb F  5% step 28800, remaining wall clock time:   278 s          
+vol 0.53  imb F  4% step 28900, remaining wall clock time:   277 s          
+vol 0.53  imb F  5% step 29000, remaining wall clock time:   276 s          
+vol 0.53  imb F  3% step 29100, remaining wall clock time:   275 s          
+vol 0.53  imb F  6% step 29200, remaining wall clock time:   273 s          
+vol 0.53  imb F  4% step 29300, remaining wall clock time:   272 s          
+vol 0.53  imb F  4% step 29400, remaining wall clock time:   271 s          
+vol 0.53  imb F  4% step 29500, remaining wall clock time:   269 s          
+vol 0.53  imb F  6% step 29600, remaining wall clock time:   268 s          
+vol 0.53  imb F  3% step 29700, remaining wall clock time:   267 s          
+vol 0.53  imb F  4% step 29800, remaining wall clock time:   265 s          
+vol 0.54  imb F  4% step 29900, remaining wall clock time:   264 s          
+vol 0.53  imb F  4% step 30000, remaining wall clock time:   263 s          
+vol 0.53  imb F  4% step 30100, remaining wall clock time:   261 s          
+vol 0.54  imb F  4% step 30200, remaining wall clock time:   260 s          
+vol 0.54  imb F  4% step 30300, remaining wall clock time:   259 s          
+vol 0.53  imb F  4% step 30400, remaining wall clock time:   257 s          
+vol 0.54  imb F  4% step 30500, remaining wall clock time:   256 s          
+vol 0.53  imb F  4% step 30600, remaining wall clock time:   255 s          
+vol 0.53  imb F  4% step 30700, remaining wall clock time:   253 s          
+vol 0.53  imb F  3% step 30800, remaining wall clock time:   252 s          
+vol 0.54  imb F  4% step 30900, remaining wall clock time:   251 s          
+vol 0.54  imb F  4% step 31000, remaining wall clock time:   250 s          
+vol 0.53  imb F  6% step 31100, remaining wall clock time:   248 s          
+vol 0.54  imb F  4% step 31200, remaining wall clock time:   247 s          
+vol 0.54  imb F  4% step 31300, remaining wall clock time:   246 s          
+vol 0.53  imb F  4% step 31400, remaining wall clock time:   244 s          
+vol 0.52  imb F  3% step 31500, remaining wall clock time:   243 s          
+vol 0.52  imb F  5% step 31600, remaining wall clock time:   242 s          
+vol 0.52  imb F  5% step 31700, remaining wall clock time:   240 s          
+vol 0.52  imb F  5% step 31800, remaining wall clock time:   239 s          
+vol 0.52  imb F  4% step 31900, remaining wall clock time:   238 s          
+vol 0.52  imb F  4% step 32000, remaining wall clock time:   236 s          
+vol 0.53  imb F  4% step 32100, remaining wall clock time:   235 s          
+vol 0.53  imb F  5% step 32200, remaining wall clock time:   234 s          
+vol 0.54  imb F  3% step 32300, remaining wall clock time:   232 s          
+vol 0.53  imb F  4% step 32400, remaining wall clock time:   231 s          
+vol 0.54  imb F  5% step 32500, remaining wall clock time:   230 s          
+vol 0.54  imb F  3% step 32600, remaining wall clock time:   228 s          
+vol 0.53  imb F  3% step 32700, remaining wall clock time:   227 s          
+vol 0.53  imb F  4% step 32800, remaining wall clock time:   226 s          
+vol 0.53  imb F  4% step 32900, remaining wall clock time:   225 s          
+vol 0.52  imb F  3% step 33000, remaining wall clock time:   223 s          
+vol 0.53  imb F  3% step 33100, remaining wall clock time:   222 s          
+vol 0.52  imb F  3% step 33200, remaining wall clock time:   221 s          
+vol 0.52  imb F  4% step 33300, remaining wall clock time:   219 s          
+vol 0.52  imb F  5% step 33400, remaining wall clock time:   218 s          
+vol 0.51  imb F  5% step 33500, remaining wall clock time:   217 s          
+vol 0.51  imb F  4% step 33600, remaining wall clock time:   215 s          
+vol 0.51  imb F  6% step 33700, remaining wall clock time:   214 s          
+vol 0.52  imb F  4% step 33800, remaining wall clock time:   213 s          
+vol 0.52  imb F  4% step 33900, remaining wall clock time:   211 s          
+vol 0.52  imb F  6% step 34000, remaining wall clock time:   210 s          
+vol 0.52  imb F  4% step 34100, remaining wall clock time:   209 s          
+vol 0.52  imb F  3% step 34200, remaining wall clock time:   207 s          
+vol 0.52  imb F  5% step 34300, remaining wall clock time:   206 s          
+vol 0.52  imb F  3% step 34400, remaining wall clock time:   205 s          
+vol 0.52  imb F  4% step 34500, remaining wall clock time:   203 s          
+vol 0.52  imb F  4% step 34600, remaining wall clock time:   202 s          
+vol 0.52  imb F  4% step 34700, remaining wall clock time:   201 s          
+vol 0.52  imb F  4% step 34800, remaining wall clock time:   200 s          
+vol 0.53  imb F  4% step 34900, remaining wall clock time:   198 s          
+vol 0.53  imb F  4% step 35000, remaining wall clock time:   197 s          
+vol 0.52  imb F  5% step 35100, remaining wall clock time:   196 s          
+vol 0.53  imb F  4% step 35200, remaining wall clock time:   194 s          
+vol 0.52  imb F  4% step 35300, remaining wall clock time:   193 s          
+vol 0.52  imb F  5% step 35400, remaining wall clock time:   192 s          
+vol 0.53  imb F  3% step 35500, remaining wall clock time:   190 s          
+vol 0.52  imb F  3% step 35600, remaining wall clock time:   189 s          
+vol 0.52  imb F  3% step 35700, remaining wall clock time:   188 s          
+vol 0.52  imb F  4% step 35800, remaining wall clock time:   186 s          
+vol 0.52  imb F  4% step 35900, remaining wall clock time:   185 s          
+vol 0.52  imb F  3% step 36000, remaining wall clock time:   184 s          
+vol 0.52  imb F  3% step 36100, remaining wall clock time:   182 s          
+vol 0.52  imb F  3% step 36200, remaining wall clock time:   181 s          
+vol 0.52  imb F  4% step 36300, remaining wall clock time:   180 s          
+vol 0.52  imb F  3% step 36400, remaining wall clock time:   178 s          
+vol 0.52  imb F  3% step 36500, remaining wall clock time:   177 s          
+vol 0.52  imb F  3% step 36600, remaining wall clock time:   176 s          
+vol 0.52  imb F  6% step 36700, remaining wall clock time:   175 s          
+vol 0.52  imb F  4% step 36800, remaining wall clock time:   173 s          
+vol 0.52  imb F  4% step 36900, remaining wall clock time:   172 s          
+vol 0.52  imb F  3% step 37000, remaining wall clock time:   171 s          
+vol 0.52  imb F  4% step 37100, remaining wall clock time:   169 s          
+vol 0.51  imb F  6% step 37200, remaining wall clock time:   168 s          
+vol 0.51  imb F  3% step 37300, remaining wall clock time:   167 s          
+vol 0.51  imb F  5% step 37400, remaining wall clock time:   165 s          
+vol 0.52  imb F  3% step 37500, remaining wall clock time:   164 s          
+vol 0.52  imb F  4% step 37600, remaining wall clock time:   163 s          
+vol 0.52  imb F  4% step 37700, remaining wall clock time:   161 s          
+vol 0.53  imb F  4% step 37800, remaining wall clock time:   160 s          
+vol 0.53  imb F  5% step 37900, remaining wall clock time:   159 s          
+vol 0.53  imb F  4% step 38000, remaining wall clock time:   157 s          
+vol 0.53  imb F  4% step 38100, remaining wall clock time:   156 s          
+vol 0.53  imb F  4% step 38200, remaining wall clock time:   155 s          
+vol 0.53  imb F  3% step 38300, remaining wall clock time:   153 s          
+vol 0.53  imb F  3% step 38400, remaining wall clock time:   152 s          
+vol 0.53  imb F  4% step 38500, remaining wall clock time:   151 s          
+vol 0.53  imb F  3% step 38600, remaining wall clock time:   150 s          
+vol 0.53  imb F  3% step 38700, remaining wall clock time:   148 s          
+vol 0.53  imb F  3% step 38800, remaining wall clock time:   147 s          
+vol 0.53  imb F  3% step 38900, remaining wall clock time:   146 s          
+vol 0.53  imb F  3% step 39000, remaining wall clock time:   144 s          
+vol 0.53  imb F  8% step 39100, remaining wall clock time:   143 s          
+vol 0.53  imb F  3% step 39200, remaining wall clock time:   142 s          
+vol 0.53  imb F  5% step 39300, remaining wall clock time:   140 s          
+vol 0.53  imb F  4% step 39400, remaining wall clock time:   139 s          
+vol 0.53  imb F  4% step 39500, remaining wall clock time:   138 s          
+vol 0.53  imb F  5% step 39600, remaining wall clock time:   136 s          
+vol 0.53  imb F  4% step 39700, remaining wall clock time:   135 s          
+vol 0.53  imb F  3% step 39800, remaining wall clock time:   134 s          
+vol 0.53  imb F  4% step 39900, remaining wall clock time:   132 s          
+vol 0.53  imb F  4% step 40000, remaining wall clock time:   131 s          
+vol 0.52  imb F  3% step 40100, remaining wall clock time:   130 s          
+vol 0.52  imb F  3% step 40200, remaining wall clock time:   128 s          
+vol 0.52  imb F  4% step 40300, remaining wall clock time:   127 s          
+vol 0.51  imb F  3% step 40400, remaining wall clock time:   126 s          
+vol 0.51  imb F  3% step 40500, remaining wall clock time:   125 s          
+vol 0.51  imb F  3% step 40600, remaining wall clock time:   123 s          
+vol 0.51  imb F  3% step 40700, remaining wall clock time:   122 s          
+vol 0.51  imb F  3% step 40800, remaining wall clock time:   121 s          
+vol 0.51  imb F  3% step 40900, remaining wall clock time:   119 s          
+vol 0.51  imb F  3% step 41000, remaining wall clock time:   118 s          
+vol 0.51  imb F  6% step 41100, remaining wall clock time:   117 s          
+vol 0.51  imb F  3% step 41200, remaining wall clock time:   115 s          
+vol 0.51  imb F  3% step 41300, remaining wall clock time:   114 s          
+vol 0.51  imb F  4% step 41400, remaining wall clock time:   113 s          
+vol 0.51  imb F  4% step 41500, remaining wall clock time:   111 s          
+vol 0.51  imb F  4% step 41600, remaining wall clock time:   110 s          
+vol 0.51  imb F  3% step 41700, remaining wall clock time:   109 s          
+vol 0.51  imb F  4% step 41800, remaining wall clock time:   107 s          
+vol 0.52  imb F  5% step 41900, remaining wall clock time:   106 s          
+vol 0.52  imb F  4% step 42000, remaining wall clock time:   105 s          
+vol 0.52  imb F  3% step 42100, remaining wall clock time:   103 s          
+vol 0.52  imb F  4% step 42200, remaining wall clock time:   102 s          
+vol 0.52  imb F  3% step 42300, remaining wall clock time:   101 s          
+vol 0.52  imb F  4% step 42400, remaining wall clock time:   100 s          
+vol 0.52  imb F  4% step 42500, remaining wall clock time:    98 s          
+vol 0.52  imb F  3% step 42600, remaining wall clock time:    97 s          
+vol 0.52  imb F  5% step 42700, remaining wall clock time:    96 s          
+vol 0.52  imb F  4% step 42800, remaining wall clock time:    94 s          
+vol 0.52  imb F  4% step 42900, remaining wall clock time:    93 s          
+vol 0.51  imb F  4% step 43000, remaining wall clock time:    92 s          
+vol 0.51  imb F  4% step 43100, remaining wall clock time:    90 s          
+vol 0.51  imb F  4% step 43200, remaining wall clock time:    89 s          
+vol 0.50  imb F  4% step 43300, remaining wall clock time:    88 s          
+vol 0.50  imb F  4% step 43400, remaining wall clock time:    86 s          
+vol 0.50  imb F  3% step 43500, remaining wall clock time:    85 s          
+vol 0.50  imb F  3% step 43600, remaining wall clock time:    84 s          
+vol 0.50  imb F  4% step 43700, remaining wall clock time:    82 s          
+vol 0.50  imb F  5% step 43800, remaining wall clock time:    81 s          
+vol 0.50  imb F  3% step 43900, remaining wall clock time:    80 s          
+vol 0.50  imb F  4% step 44000, remaining wall clock time:    78 s          
+vol 0.50  imb F  3% step 44100, remaining wall clock time:    77 s          
+vol 0.50  imb F  4% step 44200, remaining wall clock time:    76 s          
+vol 0.50  imb F  4% step 44300, remaining wall clock time:    75 s          
+vol 0.50  imb F  4% step 44400, remaining wall clock time:    73 s          
+vol 0.49  imb F  4% step 44500, remaining wall clock time:    72 s          
+vol 0.49  imb F  3% step 44600, remaining wall clock time:    71 s          
+vol 0.49  imb F  3% step 44700, remaining wall clock time:    69 s          
+vol 0.50  imb F  3% step 44800, remaining wall clock time:    68 s          
+vol 0.49  imb F  3% step 44900, remaining wall clock time:    67 s          
+vol 0.49  imb F  4% step 45000, remaining wall clock time:    65 s          
+vol 0.50  imb F  4% step 45100, remaining wall clock time:    64 s          
+vol 0.50  imb F  5% step 45200, remaining wall clock time:    63 s          
+vol 0.50  imb F  3% step 45300, remaining wall clock time:    61 s          
+vol 0.51  imb F  4% step 45400, remaining wall clock time:    60 s          
+vol 0.51  imb F  3% step 45500, remaining wall clock time:    59 s          
+vol 0.50  imb F  3% step 45600, remaining wall clock time:    57 s          
+vol 0.50  imb F  4% step 45700, remaining wall clock time:    56 s          
+vol 0.49  imb F  4% step 45800, remaining wall clock time:    55 s          
+vol 0.49  imb F  4% step 45900, remaining wall clock time:    53 s          
+vol 0.49  imb F  3% step 46000, remaining wall clock time:    52 s          
+vol 0.48  imb F  4% step 46100, remaining wall clock time:    51 s          
+vol 0.48  imb F  3% step 46200, remaining wall clock time:    50 s          
+vol 0.48  imb F  3% step 46300, remaining wall clock time:    48 s          
+vol 0.48  imb F  3% step 46400, remaining wall clock time:    47 s          
+vol 0.48  imb F  3% step 46500, remaining wall clock time:    46 s          
+vol 0.49  imb F  4% step 46600, remaining wall clock time:    44 s          
+vol 0.49  imb F  3% step 46700, remaining wall clock time:    43 s          
+vol 0.49  imb F  3% step 46800, remaining wall clock time:    42 s          
+vol 0.49  imb F  4% step 46900, remaining wall clock time:    40 s          
+vol 0.49  imb F  3% step 47000, remaining wall clock time:    39 s          
+vol 0.49  imb F  4% step 47100, remaining wall clock time:    38 s          
+vol 0.49  imb F  4% step 47200, remaining wall clock time:    36 s          
+vol 0.49  imb F  3% step 47300, remaining wall clock time:    35 s          
+vol 0.49  imb F  3% step 47400, remaining wall clock time:    34 s          
+vol 0.49  imb F  3% step 47500, remaining wall clock time:    32 s          
+vol 0.49  imb F  3% step 47600, remaining wall clock time:    31 s          
+vol 0.49  imb F  3% step 47700, remaining wall clock time:    30 s          
+vol 0.49  imb F  4% step 47800, remaining wall clock time:    28 s          
+vol 0.49  imb F  4% step 47900, remaining wall clock time:    27 s          
+vol 0.49  imb F  4% step 48000, remaining wall clock time:    26 s          
+vol 0.49  imb F  3% step 48100, remaining wall clock time:    25 s          
+vol 0.49  imb F  3% step 48200, remaining wall clock time:    23 s          
+vol 0.49  imb F  4% step 48300, remaining wall clock time:    22 s          
+vol 0.49  imb F  4% step 48400, remaining wall clock time:    21 s          
+vol 0.48  imb F  3% step 48500, remaining wall clock time:    19 s          
+vol 0.48  imb F  3% step 48600, remaining wall clock time:    18 s          
+vol 0.48  imb F  3% step 48700, remaining wall clock time:    17 s          
+vol 0.48  imb F  3% step 48800, remaining wall clock time:    15 s          
+vol 0.48  imb F  3% step 48900, remaining wall clock time:    14 s          
+vol 0.48  imb F  3% step 49000, remaining wall clock time:    13 s          
+vol 0.48  imb F  3% step 49100, remaining wall clock time:    11 s          
+vol 0.48  imb F  3% step 49200, remaining wall clock time:    10 s          
+vol 0.48  imb F  4% step 49300, remaining wall clock time:     9 s          
+vol 0.48  imb F  3% step 49400, remaining wall clock time:     7 s          
+vol 0.48  imb F  3% step 49500, remaining wall clock time:     6 s          
+vol 0.48  imb F  3% step 49600, remaining wall clock time:     5 s          
+vol 0.49  imb F  3% step 49700, remaining wall clock time:     3 s          
+vol 0.48  imb F  3% step 49800, remaining wall clock time:     2 s          
+vol 0.48  imb F  3% step 49900, remaining wall clock time:     1 s          
+vol 0.49  imb F  3% 
+Writing final coordinates.
+step 50000, remaining wall clock time:     0 s          
+
+
+Dynamic load balancing report:
+ DLB was turned on during the run due to measured imbalance.
+ Average load imbalance: 4.4%.
+ The balanceable part of the MD step is 29%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 1.3%.
+ Steps where the load balancing was limited by -rdd, -rcon and/or -dds: X 0 % Y 0 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    42157.089      658.705     6400.0
+                 (ns/day)    (hour/ns)
+Performance:       13.117        1.830
+
+GROMACS reminds you: "Aristotle maintained that women have fewer teeth than men; although he was twice married, it never occurred to him to verify this statement by examining his wives' mouths." (Bertrand Russell)
+
+                      :-) GROMACS - gmx mdrun, 2020.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.5
+Executable:   /jet/home/schwinns/pkgs/gromacs/2020.5/bin/gmx_mpi
+Data prefix:  /jet/home/schwinns/pkgs/gromacs/2020.5
+Working dir:  /ocean/projects/cts160011p/schwinns/benchmark/2022/AA-PA_large/CPU/test_np
+Command line:
+  gmx_mpi mdrun -v -s ../npt.tpr -o npt -g N1_np32.log -ntomp 1
+
+Compiled SIMD: SSE4.1, but for this host/run AVX2_256 might be better (see
+log).
+The current CPU can measure timings more accurately than the code in
+gmx mdrun was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding gmx mdrun with the GMX_USE_RDTSCP=ON CMake option.
+Reading file ../npt.tpr, VERSION 2020.5 (single precision)
+Changing nstlist from 40 to 100, rlist from 1 to 1.003
+
+
+Using 32 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread per MPI process
+
+starting mdrun 'PA_large'
+50000 steps,    100.0 ps.
+step 0
+imb F 25% step 100, will finish Sun Jul 17 12:08:52 2022
+imb F 25% step 200, will finish Sun Jul 17 12:08:42 2022
+vol 0.93  imb F 25% step 300, will finish Sun Jul 17 12:08:41 2022
+vol 0.86  imb F 12% step 400, will finish Sun Jul 17 12:08:32 2022
+vol 0.82  imb F  7% step 500, will finish Sun Jul 17 12:08:21 2022
+vol 0.81  imb F  5% step 600, will finish Sun Jul 17 12:08:13 2022
+vol 0.80  imb F  4% step 700, will finish Sun Jul 17 12:08:07 2022
+vol 0.79  imb F  2% step 800, will finish Sun Jul 17 12:08:02 2022
+vol 0.79  imb F  2% step 900, will finish Sun Jul 17 12:07:58 2022
+vol 0.80  imb F  3% step 1000, will finish Sun Jul 17 12:07:55 2022
+vol 0.80  imb F  1% step 1100, will finish Sun Jul 17 12:07:53 2022
+vol 0.79  imb F  1% step 1200, will finish Sun Jul 17 12:07:51 2022
+vol 0.79  imb F  1% step 1300, will finish Sun Jul 17 12:07:49 2022
+vol 0.79  imb F  1% step 1400, will finish Sun Jul 17 12:07:48 2022
+vol 0.78  imb F  1% step 1500, will finish Sun Jul 17 12:07:46 2022
+vol 0.78  imb F  1% step 1600, will finish Sun Jul 17 12:07:46 2022
+vol 0.78  imb F  1% step 1700, will finish Sun Jul 17 12:07:44 2022
+vol 0.78  imb F  1% step 1800, will finish Sun Jul 17 12:07:43 2022
+vol 0.78  imb F  1% step 1900, will finish Sun Jul 17 12:07:43 2022
+vol 0.79  imb F  1% step 2000, will finish Sun Jul 17 12:07:42 2022
+vol 0.79  imb F  1% step 2100, will finish Sun Jul 17 12:07:41 2022
+vol 0.79  imb F  1% step 2200, will finish Sun Jul 17 12:07:41 2022
+vol 0.79  imb F  2% step 2300, will finish Sun Jul 17 12:07:40 2022
+vol 0.79  imb F  1% step 2400, will finish Sun Jul 17 12:07:39 2022
+vol 0.78  imb F  1% step 2500, will finish Sun Jul 17 12:07:39 2022
+vol 0.78  imb F  1% step 2600, will finish Sun Jul 17 12:07:38 2022
+vol 0.78  imb F  2% step 2700, will finish Sun Jul 17 12:07:38 2022
+vol 0.78  imb F  1% step 2800, will finish Sun Jul 17 12:07:37 2022
+vol 0.77  imb F  1% step 2900, will finish Sun Jul 17 12:07:37 2022
+vol 0.77  imb F  1% step 3000, will finish Sun Jul 17 12:07:37 2022
+vol 0.77  imb F  1% step 3100, will finish Sun Jul 17 12:07:36 2022
+vol 0.77  imb F  1% step 3200, will finish Sun Jul 17 12:07:36 2022
+vol 0.77  imb F  1% step 3300, will finish Sun Jul 17 12:07:36 2022
+vol 0.77  imb F  1% step 3400, will finish Sun Jul 17 12:07:36 2022
+vol 0.78  imb F  2% step 3500, will finish Sun Jul 17 12:07:35 2022
+vol 0.78  imb F  2% step 3600, will finish Sun Jul 17 12:07:35 2022
+vol 0.77  imb F  1% step 3700, will finish Sun Jul 17 12:07:35 2022
+vol 0.77  imb F  1% step 3800, will finish Sun Jul 17 12:07:35 2022
+vol 0.78  imb F  1% step 3900, will finish Sun Jul 17 12:07:34 2022
+vol 0.78  imb F  1% step 4000, will finish Sun Jul 17 12:07:34 2022
+vol 0.78  imb F  1% step 4100, will finish Sun Jul 17 12:07:34 2022
+vol 0.78  imb F  1% step 4200, will finish Sun Jul 17 12:07:34 2022
+vol 0.78  imb F  1% step 4300, will finish Sun Jul 17 12:07:34 2022
+vol 0.78  imb F  1% step 4400, will finish Sun Jul 17 12:07:34 2022
+vol 0.78  imb F  1% step 4500, will finish Sun Jul 17 12:07:34 2022
+vol 0.78  imb F  1% step 4600, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  2% step 4700, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  1% step 4800, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  1% step 4900, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  1% step 5000, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  2% step 5100, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  1% step 5200, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  1% step 5300, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  1% step 5400, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  1% step 5500, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  1% step 5600, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 5700, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 5800, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 5900, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 6000, will finish Sun Jul 17 12:07:32 2022
+vol 0.77  imb F  1% step 6100, will finish Sun Jul 17 12:07:32 2022
+vol 0.77  imb F  1% step 6200, will finish Sun Jul 17 12:07:32 2022
+vol 0.77  imb F  1% step 6300, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 6400, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 6500, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  2% step 6600, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 6700, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 6800, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 6900, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  2% step 7000, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 7100, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 7200, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 7300, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 7400, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 7500, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 7600, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 7700, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 7800, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 7900, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 8000, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 8100, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 8200, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 8300, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 8400, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 8500, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 8600, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 8700, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 8800, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 8900, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 9000, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  2% step 9100, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  2% step 9200, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 9300, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 9400, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 9500, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 9600, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 9700, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 9800, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 9900, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 10000, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 10100, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 10200, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 10300, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 10400, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 10500, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 10600, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 10700, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 10800, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 10900, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 11000, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  2% step 11100, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  2% step 11200, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 11300, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 11400, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 11500, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 11600, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 11700, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 11800, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 11900, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  2% step 12000, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 12100, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 12200, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 12300, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 12400, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 12500, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 12600, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 12700, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  2% step 12800, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 12900, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 13000, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 13100, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 13200, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  2% step 13300, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 13400, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 13500, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 13600, will finish Sun Jul 17 12:07:31 2022
+vol 0.78  imb F  1% step 13700, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 13800, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 13900, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 14000, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 14100, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 14200, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 14300, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 14400, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 14500, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 14600, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 14700, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 14800, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 14900, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 15000, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  2% step 15100, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  2% step 15200, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 15300, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 15400, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 15500, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 15600, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 15700, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 15800, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 15900, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  2% step 16000, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  2% step 16100, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 16200, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 16300, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 16400, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 16500, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 16600, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 16700, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 16800, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 16900, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 17000, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  2% step 17100, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 17200, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 17300, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 17400, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  2% step 17500, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 17600, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 17700, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 17800, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 17900, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  2% step 18000, will finish Sun Jul 17 12:07:31 2022
+vol 0.78  imb F  1% step 18100, will finish Sun Jul 17 12:07:31 2022
+vol 0.77  imb F  1% step 18200, will finish Sun Jul 17 12:07:31 2022
+vol 0.77  imb F  1% step 18300, will finish Sun Jul 17 12:07:31 2022
+vol 0.77  imb F  1% step 18400, will finish Sun Jul 17 12:07:31 2022
+vol 0.77  imb F  1% step 18500, will finish Sun Jul 17 12:07:31 2022
+vol 0.77  imb F  1% step 18600, will finish Sun Jul 17 12:07:31 2022
+vol 0.77  imb F  1% step 18700, will finish Sun Jul 17 12:07:31 2022
+vol 0.77  imb F  1% step 18800, will finish Sun Jul 17 12:07:31 2022
+vol 0.77  imb F  1% step 18900, will finish Sun Jul 17 12:07:31 2022
+vol 0.77  imb F  1% step 19000, will finish Sun Jul 17 12:07:31 2022
+vol 0.76  imb F  1% step 19100, will finish Sun Jul 17 12:07:31 2022
+vol 0.76  imb F  2% step 19200, will finish Sun Jul 17 12:07:31 2022
+vol 0.76  imb F  1% step 19300, will finish Sun Jul 17 12:07:31 2022
+vol 0.75  imb F  1% step 19400, will finish Sun Jul 17 12:07:31 2022
+vol 0.75  imb F  1% step 19500, will finish Sun Jul 17 12:07:31 2022
+vol 0.75  imb F  1% step 19600, will finish Sun Jul 17 12:07:31 2022
+vol 0.75  imb F  1% step 19700, will finish Sun Jul 17 12:07:31 2022
+vol 0.75  imb F  1% step 19800, will finish Sun Jul 17 12:07:31 2022
+vol 0.75  imb F  1% step 19900, will finish Sun Jul 17 12:07:31 2022
+vol 0.75  imb F  1% step 20000, will finish Sun Jul 17 12:07:31 2022
+vol 0.75  imb F  1% step 20100, will finish Sun Jul 17 12:07:31 2022
+vol 0.75  imb F  1% step 20200, will finish Sun Jul 17 12:07:31 2022
+vol 0.75  imb F  1% step 20300, will finish Sun Jul 17 12:07:31 2022
+vol 0.75  imb F  1% step 20400, will finish Sun Jul 17 12:07:31 2022
+vol 0.75  imb F  1% step 20500, will finish Sun Jul 17 12:07:31 2022
+vol 0.75  imb F  1% step 20600, will finish Sun Jul 17 12:07:31 2022
+vol 0.75  imb F  1% step 20700, will finish Sun Jul 17 12:07:31 2022
+vol 0.75  imb F  1% step 20800, will finish Sun Jul 17 12:07:31 2022
+vol 0.76  imb F  1% step 20900, will finish Sun Jul 17 12:07:31 2022
+vol 0.76  imb F  1% step 21000, will finish Sun Jul 17 12:07:31 2022
+vol 0.76  imb F  1% step 21100, will finish Sun Jul 17 12:07:31 2022
+vol 0.76  imb F  1% step 21200, will finish Sun Jul 17 12:07:31 2022
+vol 0.77  imb F  2% step 21300, will finish Sun Jul 17 12:07:31 2022
+vol 0.77  imb F  1% step 21400, will finish Sun Jul 17 12:07:31 2022
+vol 0.77  imb F  1% step 21500, will finish Sun Jul 17 12:07:31 2022
+vol 0.77  imb F  1% step 21600, will finish Sun Jul 17 12:07:31 2022
+vol 0.77  imb F  1% step 21700, will finish Sun Jul 17 12:07:31 2022
+vol 0.78  imb F  1% step 21800, will finish Sun Jul 17 12:07:31 2022
+vol 0.78  imb F  1% step 21900, will finish Sun Jul 17 12:07:31 2022
+vol 0.78  imb F  1% step 22000, will finish Sun Jul 17 12:07:31 2022
+vol 0.78  imb F  1% step 22100, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 22200, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 22300, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  2% step 22400, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 22500, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  2% step 22600, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 22700, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 22800, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  2% step 22900, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  2% step 23000, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 23100, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 23200, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 23300, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 23400, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 23500, will finish Sun Jul 17 12:07:31 2022
+vol 0.79  imb F  1% step 23600, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 23700, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 23800, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 23900, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 24000, will finish Sun Jul 17 12:07:31 2022
+vol 0.80  imb F  1% step 24100, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 24200, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 24300, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 24400, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 24500, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 24600, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 24700, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 24800, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 24900, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 25000, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 25100, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  2% step 25200, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 25300, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 25400, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 25500, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 25600, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 25700, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 25800, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 25900, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 26000, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 26100, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  2% step 26200, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 26300, will finish Sun Jul 17 12:07:31 2022
+vol 0.82  imb F  1% step 26400, will finish Sun Jul 17 12:07:31 2022
+vol 0.82  imb F  1% step 26500, will finish Sun Jul 17 12:07:31 2022
+vol 0.82  imb F  2% step 26600, will finish Sun Jul 17 12:07:31 2022
+vol 0.82  imb F  1% step 26700, will finish Sun Jul 17 12:07:31 2022
+vol 0.82  imb F  1% step 26800, will finish Sun Jul 17 12:07:31 2022
+vol 0.82  imb F  1% step 26900, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 27000, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 27100, will finish Sun Jul 17 12:07:31 2022
+vol 0.81  imb F  1% step 27200, will finish Sun Jul 17 12:07:32 2022
+vol 0.81  imb F  1% step 27300, will finish Sun Jul 17 12:07:32 2022
+vol 0.81  imb F  1% step 27400, will finish Sun Jul 17 12:07:32 2022
+vol 0.81  imb F  2% step 27500, will finish Sun Jul 17 12:07:32 2022
+vol 0.81  imb F  1% step 27600, will finish Sun Jul 17 12:07:32 2022
+vol 0.81  imb F  1% step 27700, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 27800, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 27900, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 28000, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 28100, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 28200, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 28300, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 28400, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 28500, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 28600, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 28700, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 28800, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 28900, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 29000, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 29100, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 29200, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 29300, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 29400, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 29500, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 29600, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 29700, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 29800, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 29900, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 30000, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  2% step 30100, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 30200, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 30300, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 30400, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 30500, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 30600, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 30700, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 30800, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 30900, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 31000, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 31100, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 31200, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 31300, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 31400, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 31500, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 31600, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 31700, will finish Sun Jul 17 12:07:32 2022
+vol 0.80  imb F  1% step 31800, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 31900, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 32000, will finish Sun Jul 17 12:07:32 2022
+vol 0.79  imb F  1% step 32100, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  2% step 32200, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 32300, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 32400, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 32500, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 32600, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  2% step 32700, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 32800, will finish Sun Jul 17 12:07:32 2022
+vol 0.78  imb F  1% step 32900, will finish Sun Jul 17 12:07:32 2022
+vol 0.77  imb F  1% step 33000, will finish Sun Jul 17 12:07:32 2022
+vol 0.77  imb F  1% step 33100, will finish Sun Jul 17 12:07:32 2022
+vol 0.77  imb F  1% step 33200, will finish Sun Jul 17 12:07:32 2022
+vol 0.76  imb F  1% step 33300, will finish Sun Jul 17 12:07:32 2022
+vol 0.76  imb F  1% step 33400, will finish Sun Jul 17 12:07:32 2022
+vol 0.76  imb F  1% step 33500, will finish Sun Jul 17 12:07:32 2022
+vol 0.76  imb F  1% step 33600, will finish Sun Jul 17 12:07:32 2022
+vol 0.76  imb F  1% step 33700, will finish Sun Jul 17 12:07:32 2022
+vol 0.76  imb F  1% step 33800, will finish Sun Jul 17 12:07:32 2022
+vol 0.76  imb F  1% step 33900, will finish Sun Jul 17 12:07:32 2022
+vol 0.76  imb F  1% step 34000, will finish Sun Jul 17 12:07:33 2022
+vol 0.76  imb F  1% step 34100, will finish Sun Jul 17 12:07:33 2022
+vol 0.76  imb F  1% step 34200, will finish Sun Jul 17 12:07:33 2022
+vol 0.76  imb F  2% step 34300, will finish Sun Jul 17 12:07:33 2022
+vol 0.76  imb F  1% step 34400, will finish Sun Jul 17 12:07:33 2022
+vol 0.77  imb F  1% step 34500, will finish Sun Jul 17 12:07:33 2022
+vol 0.77  imb F  1% step 34600, will finish Sun Jul 17 12:07:33 2022
+vol 0.77  imb F  1% step 34700, will finish Sun Jul 17 12:07:33 2022
+vol 0.77  imb F  2% step 34800, will finish Sun Jul 17 12:07:33 2022
+vol 0.77  imb F  1% step 34900, will finish Sun Jul 17 12:07:33 2022
+vol 0.77  imb F  1% step 35000, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  1% step 35100, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  1% step 35200, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  1% step 35300, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  1% step 35400, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  1% step 35500, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  1% step 35600, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  2% step 35700, will finish Sun Jul 17 12:07:33 2022
+vol 0.79  imb F  1% step 35800, will finish Sun Jul 17 12:07:33 2022
+vol 0.79  imb F  1% step 35900, will finish Sun Jul 17 12:07:33 2022
+vol 0.79  imb F  1% step 36000, will finish Sun Jul 17 12:07:33 2022
+vol 0.79  imb F  2% step 36100, will finish Sun Jul 17 12:07:33 2022
+vol 0.79  imb F  1% step 36200, will finish Sun Jul 17 12:07:33 2022
+vol 0.79  imb F  2% step 36300, will finish Sun Jul 17 12:07:33 2022
+vol 0.79  imb F  1% step 36400, will finish Sun Jul 17 12:07:33 2022
+vol 0.79  imb F  1% step 36500, will finish Sun Jul 17 12:07:33 2022
+vol 0.79  imb F  1% step 36600, will finish Sun Jul 17 12:07:33 2022
+vol 0.79  imb F  1% step 36700, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  1% step 36800, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  1% step 36900, will finish Sun Jul 17 12:07:33 2022
+vol 0.78  imb F  1% step 37000, remaining wall clock time:   298 s          
+vol 0.78  imb F  1% step 37100, remaining wall clock time:   296 s          
+vol 0.78  imb F  1% step 37200, remaining wall clock time:   293 s          
+vol 0.78  imb F  1% step 37300, remaining wall clock time:   291 s          
+vol 0.78  imb F  2% step 37400, remaining wall clock time:   289 s          
+vol 0.78  imb F  1% step 37500, remaining wall clock time:   286 s          
+vol 0.78  imb F  1% step 37600, remaining wall clock time:   284 s          
+vol 0.78  imb F  1% step 37700, remaining wall clock time:   282 s          
+vol 0.78  imb F  1% step 37800, remaining wall clock time:   280 s          
+vol 0.78  imb F  2% step 37900, remaining wall clock time:   277 s          
+vol 0.78  imb F  1% step 38000, remaining wall clock time:   275 s          
+vol 0.78  imb F  1% step 38100, remaining wall clock time:   273 s          
+vol 0.78  imb F  1% step 38200, remaining wall clock time:   270 s          
+vol 0.79  imb F  1% step 38300, remaining wall clock time:   268 s          
+vol 0.78  imb F  1% step 38400, remaining wall clock time:   266 s          
+vol 0.78  imb F  1% step 38500, remaining wall clock time:   264 s          
+vol 0.77  imb F  1% step 38600, remaining wall clock time:   261 s          
+vol 0.77  imb F  1% step 38700, remaining wall clock time:   259 s          
+vol 0.77  imb F  1% step 38800, remaining wall clock time:   257 s          
+vol 0.77  imb F  1% step 38900, remaining wall clock time:   254 s          
+vol 0.77  imb F  1% step 39000, remaining wall clock time:   252 s          
+vol 0.77  imb F  1% step 39100, remaining wall clock time:   250 s          
+vol 0.77  imb F  1% step 39200, remaining wall clock time:   247 s          
+vol 0.77  imb F  1% step 39300, remaining wall clock time:   245 s          
+vol 0.77  imb F  1% step 39400, remaining wall clock time:   243 s          
+vol 0.77  imb F  2% step 39500, remaining wall clock time:   241 s          
+vol 0.77  imb F  1% step 39600, remaining wall clock time:   238 s          
+vol 0.78  imb F  1% step 39700, remaining wall clock time:   236 s          
+vol 0.78  imb F  1% step 39800, remaining wall clock time:   234 s          
+vol 0.78  imb F  1% step 39900, remaining wall clock time:   231 s          
+vol 0.78  imb F  1% step 40000, remaining wall clock time:   229 s          
+vol 0.79  imb F  1% step 40100, remaining wall clock time:   227 s          
+vol 0.79  imb F  1% step 40200, remaining wall clock time:   225 s          
+vol 0.79  imb F  1% step 40300, remaining wall clock time:   222 s          
+vol 0.79  imb F  1% step 40400, remaining wall clock time:   220 s          
+vol 0.79  imb F  1% step 40500, remaining wall clock time:   218 s          
+vol 0.79  imb F  1% step 40600, remaining wall clock time:   215 s          
+vol 0.79  imb F  1% step 40700, remaining wall clock time:   213 s          
+vol 0.79  imb F  1% step 40800, remaining wall clock time:   211 s          
+vol 0.79  imb F  1% step 40900, remaining wall clock time:   208 s          
+vol 0.78  imb F  1% step 41000, remaining wall clock time:   206 s          
+vol 0.78  imb F  1% step 41100, remaining wall clock time:   204 s          
+vol 0.78  imb F  1% step 41200, remaining wall clock time:   202 s          
+vol 0.79  imb F  1% step 41300, remaining wall clock time:   199 s          
+vol 0.79  imb F  2% step 41400, remaining wall clock time:   197 s          
+vol 0.79  imb F  1% step 41500, remaining wall clock time:   195 s          
+vol 0.80  imb F  1% step 41600, remaining wall clock time:   192 s          
+vol 0.80  imb F  1% step 41700, remaining wall clock time:   190 s          
+vol 0.80  imb F  1% step 41800, remaining wall clock time:   188 s          
+vol 0.80  imb F  1% step 41900, remaining wall clock time:   186 s          
+vol 0.80  imb F  1% step 42000, remaining wall clock time:   183 s          
+vol 0.80  imb F  1% step 42100, remaining wall clock time:   181 s          
+vol 0.81  imb F  1% step 42200, remaining wall clock time:   179 s          
+vol 0.81  imb F  1% step 42300, remaining wall clock time:   176 s          
+vol 0.81  imb F  1% step 42400, remaining wall clock time:   174 s          
+vol 0.81  imb F  2% step 42500, remaining wall clock time:   172 s          
+vol 0.81  imb F  2% step 42600, remaining wall clock time:   169 s          
+vol 0.81  imb F  1% step 42700, remaining wall clock time:   167 s          
+vol 0.81  imb F  1% step 42800, remaining wall clock time:   165 s          
+vol 0.81  imb F  1% step 42900, remaining wall clock time:   163 s          
+vol 0.81  imb F  1% step 43000, remaining wall clock time:   160 s          
+vol 0.81  imb F  1% step 43100, remaining wall clock time:   158 s          
+vol 0.81  imb F  1% step 43200, remaining wall clock time:   156 s          
+vol 0.81  imb F  1% step 43300, remaining wall clock time:   153 s          
+vol 0.81  imb F  2% step 43400, remaining wall clock time:   151 s          
+vol 0.81  imb F  1% step 43500, remaining wall clock time:   149 s          
+vol 0.81  imb F  1% step 43600, remaining wall clock time:   147 s          
+vol 0.81  imb F  1% step 43700, remaining wall clock time:   144 s          
+vol 0.81  imb F  1% step 43800, remaining wall clock time:   142 s          
+vol 0.81  imb F  1% step 43900, remaining wall clock time:   140 s          
+vol 0.81  imb F  1% step 44000, remaining wall clock time:   137 s          
+vol 0.82  imb F  1% step 44100, remaining wall clock time:   135 s          
+vol 0.82  imb F  1% step 44200, remaining wall clock time:   133 s          
+vol 0.81  imb F  1% step 44300, remaining wall clock time:   130 s          
+vol 0.81  imb F  1% step 44400, remaining wall clock time:   128 s          
+vol 0.81  imb F  1% step 44500, remaining wall clock time:   126 s          
+vol 0.81  imb F  1% step 44600, remaining wall clock time:   124 s          
+vol 0.81  imb F  1% step 44700, remaining wall clock time:   121 s          
+vol 0.80  imb F  1% step 44800, remaining wall clock time:   119 s          
+vol 0.80  imb F  1% step 44900, remaining wall clock time:   117 s          
+vol 0.80  imb F  1% step 45000, remaining wall clock time:   114 s          
+vol 0.80  imb F  1% step 45100, remaining wall clock time:   112 s          
+vol 0.80  imb F  1% step 45200, remaining wall clock time:   110 s          
+vol 0.80  imb F  1% step 45300, remaining wall clock time:   107 s          
+vol 0.80  imb F  1% step 45400, remaining wall clock time:   105 s          
+vol 0.80  imb F  1% step 45500, remaining wall clock time:   103 s          
+vol 0.80  imb F  1% step 45600, remaining wall clock time:   101 s          
+vol 0.80  imb F  1% step 45700, remaining wall clock time:    98 s          
+vol 0.80  imb F  1% step 45800, remaining wall clock time:    96 s          
+vol 0.80  imb F  1% step 45900, remaining wall clock time:    94 s          
+vol 0.80  imb F  2% step 46000, remaining wall clock time:    91 s          
+vol 0.80  imb F  1% step 46100, remaining wall clock time:    89 s          
+vol 0.79  imb F  1% step 46200, remaining wall clock time:    87 s          
+vol 0.79  imb F  1% step 46300, remaining wall clock time:    85 s          
+vol 0.79  imb F  1% step 46400, remaining wall clock time:    82 s          
+vol 0.78  imb F  1% step 46500, remaining wall clock time:    80 s          
+vol 0.78  imb F  1% step 46600, remaining wall clock time:    78 s          
+vol 0.79  imb F  1% step 46700, remaining wall clock time:    75 s          
+vol 0.78  imb F  1% step 46800, remaining wall clock time:    73 s          
+vol 0.78  imb F  1% step 46900, remaining wall clock time:    71 s          
+vol 0.78  imb F  1% step 47000, remaining wall clock time:    68 s          
+vol 0.78  imb F  1% step 47100, remaining wall clock time:    66 s          
+vol 0.78  imb F  1% step 47200, remaining wall clock time:    64 s          
+vol 0.78  imb F  1% step 47300, remaining wall clock time:    62 s          
+vol 0.78  imb F  1% step 47400, remaining wall clock time:    59 s          
+vol 0.78  imb F  1% step 47500, remaining wall clock time:    57 s          
+vol 0.78  imb F  1% step 47600, remaining wall clock time:    55 s          
+vol 0.79  imb F  1% step 47700, remaining wall clock time:    52 s          
+vol 0.79  imb F  1% step 47800, remaining wall clock time:    50 s          
+vol 0.79  imb F  1% step 47900, remaining wall clock time:    48 s          
+vol 0.80  imb F  1% step 48000, remaining wall clock time:    45 s          
+vol 0.80  imb F  1% step 48100, remaining wall clock time:    43 s          
+vol 0.80  imb F  1% step 48200, remaining wall clock time:    41 s          
+vol 0.81  imb F  1% step 48300, remaining wall clock time:    39 s          
+vol 0.81  imb F  1% step 48400, remaining wall clock time:    36 s          
+vol 0.81  imb F  2% step 48500, remaining wall clock time:    34 s          
+vol 0.81  imb F  1% step 48600, remaining wall clock time:    32 s          
+vol 0.81  imb F  1% step 48700, remaining wall clock time:    29 s          
+vol 0.81  imb F  1% step 48800, remaining wall clock time:    27 s          
+vol 0.80  imb F  1% step 48900, remaining wall clock time:    25 s          
+vol 0.80  imb F  2% step 49000, remaining wall clock time:    22 s          
+vol 0.80  imb F  1% step 49100, remaining wall clock time:    20 s          
+vol 0.80  imb F  1% step 49200, remaining wall clock time:    18 s          
+vol 0.80  imb F  1% step 49300, remaining wall clock time:    16 s          
+vol 0.80  imb F  2% step 49400, remaining wall clock time:    13 s          
+vol 0.80  imb F  1% step 49500, remaining wall clock time:    11 s          
+vol 0.81  imb F  1% step 49600, remaining wall clock time:     9 s          
+vol 0.81  imb F  1% step 49700, remaining wall clock time:     6 s          
+vol 0.81  imb F  1% step 49800, remaining wall clock time:     4 s          
+vol 0.81  imb F  1% step 49900, remaining wall clock time:     2 s          
+vol 0.81  imb F  1% 
+Writing final coordinates.
+step 50000, remaining wall clock time:     0 s          
+
+
+Dynamic load balancing report:
+ DLB was turned on during the run due to measured imbalance.
+ Average load imbalance: 1.4%.
+ The balanceable part of the MD step is 31%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 0.4%.
+ Steps where the load balancing was limited by -rdd, -rcon and/or -dds: X 0 % Y 0 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    36792.005     1149.751     3200.0
+                 (ns/day)    (hour/ns)
+Performance:        7.515        3.194
+
+GROMACS reminds you: "Problems worthy of attack prove their worth by hitting back." (Piet Hein)
+
+                      :-) GROMACS - gmx mdrun, 2020.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.5
+Executable:   /jet/home/schwinns/pkgs/gromacs/2020.5/bin/gmx_mpi
+Data prefix:  /jet/home/schwinns/pkgs/gromacs/2020.5
+Working dir:  /ocean/projects/cts160011p/schwinns/benchmark/2022/AA-PA_large/CPU/test_np
+Command line:
+  gmx_mpi mdrun -v -s ../npt.tpr -o npt -g N1_np16.log -ntomp 1
+
+Compiled SIMD: SSE4.1, but for this host/run AVX2_256 might be better (see
+log).
+The current CPU can measure timings more accurately than the code in
+gmx mdrun was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding gmx mdrun with the GMX_USE_RDTSCP=ON CMake option.
+Reading file ../npt.tpr, VERSION 2020.5 (single precision)
+Changing nstlist from 40 to 100, rlist from 1 to 1.003
+
+
+Using 16 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread per MPI process
+
+starting mdrun 'PA_large'
+50000 steps,    100.0 ps.
+step 0
+imb F 12% step 100, will finish Sun Jul 17 12:40:50 2022
+imb F 12% step 200, will finish Sun Jul 17 12:40:32 2022
+vol 0.98  imb F 12% step 300, will finish Sun Jul 17 12:40:25 2022
+vol 0.94  imb F  6% step 400, will finish Sun Jul 17 12:40:10 2022
+vol 0.91  imb F  3% step 500, will finish Sun Jul 17 12:39:56 2022
+vol 0.90  imb F  2% step 600, will finish Sun Jul 17 12:39:46 2022
+vol 0.89  imb F  1% step 700, will finish Sun Jul 17 12:39:37 2022
+vol 0.89  imb F  1% step 800, will finish Sun Jul 17 12:39:32 2022
+vol 0.88  imb F  1% step 900, will finish Sun Jul 17 12:39:28 2022
+vol 0.88  imb F  1% step 1000, will finish Sun Jul 17 12:39:23 2022
+vol 0.87  imb F  1% step 1100, will finish Sun Jul 17 12:39:21 2022
+vol 0.87  imb F  1% step 1200, will finish Sun Jul 17 12:39:17 2022
+vol 0.87  imb F  1% step 1300, will finish Sun Jul 17 12:39:15 2022
+vol 0.87  imb F  1% step 1400, will finish Sun Jul 17 12:39:13 2022
+vol 0.86  imb F  1% step 1500, will finish Sun Jul 17 12:39:12 2022
+vol 0.86  imb F  0% step 1600, will finish Sun Jul 17 12:39:10 2022
+vol 0.86  imb F  0% step 1700, will finish Sun Jul 17 12:39:09 2022
+vol 0.86  imb F  1% step 1800, will finish Sun Jul 17 12:39:07 2022
+vol 0.86  imb F  0% step 1900, will finish Sun Jul 17 12:39:07 2022
+vol 0.86  imb F  1% step 2000, will finish Sun Jul 17 12:39:06 2022
+vol 0.87  imb F  1% step 2100, will finish Sun Jul 17 12:39:05 2022
+vol 0.87  imb F  1% step 2200, will finish Sun Jul 17 12:39:04 2022
+vol 0.87  imb F  1% step 2300, will finish Sun Jul 17 12:39:03 2022
+vol 0.87  imb F  0% step 2400, will finish Sun Jul 17 12:39:02 2022
+vol 0.87  imb F  0% step 2500, will finish Sun Jul 17 12:39:01 2022
+vol 0.87  imb F  1% step 2600, will finish Sun Jul 17 12:39:01 2022
+vol 0.87  imb F  1% step 2700, will finish Sun Jul 17 12:39:01 2022
+vol 0.88  imb F  1% step 2800, will finish Sun Jul 17 12:39:00 2022
+vol 0.87  imb F  0% step 2900, will finish Sun Jul 17 12:39:00 2022
+vol 0.87  imb F  1% step 3000, will finish Sun Jul 17 12:38:59 2022
+vol 0.87  imb F  1% step 3100, will finish Sun Jul 17 12:38:59 2022
+vol 0.87  imb F  1% step 3200, will finish Sun Jul 17 12:38:58 2022
+vol 0.87  imb F  1% step 3300, will finish Sun Jul 17 12:38:58 2022
+vol 0.87  imb F  1% step 3400, will finish Sun Jul 17 12:38:58 2022
+vol 0.87  imb F  1% step 3500, will finish Sun Jul 17 12:38:58 2022
+vol 0.87  imb F  1% step 3600, will finish Sun Jul 17 12:38:57 2022
+vol 0.87  imb F  0% step 3700, will finish Sun Jul 17 12:38:57 2022
+vol 0.87  imb F  1% step 3800, will finish Sun Jul 17 12:38:57 2022
+vol 0.87  imb F  1% step 3900, will finish Sun Jul 17 12:38:57 2022
+vol 0.87  imb F  1% step 4000, will finish Sun Jul 17 12:38:56 2022
+vol 0.87  imb F  1% step 4100, will finish Sun Jul 17 12:38:56 2022
+vol 0.87  imb F  1% step 4200, will finish Sun Jul 17 12:38:56 2022
+vol 0.87  imb F  1% step 4300, will finish Sun Jul 17 12:38:56 2022
+vol 0.87  imb F  1% step 4400, will finish Sun Jul 17 12:38:55 2022
+vol 0.87  imb F  1% step 4500, will finish Sun Jul 17 12:38:55 2022
+vol 0.87  imb F  1% step 4600, will finish Sun Jul 17 12:38:55 2022
+vol 0.87  imb F  1% step 4700, will finish Sun Jul 17 12:38:55 2022
+vol 0.86  imb F  1% step 4800, will finish Sun Jul 17 12:38:55 2022
+vol 0.86  imb F  1% step 4900, will finish Sun Jul 17 12:38:54 2022
+vol 0.86  imb F  1% step 5000, will finish Sun Jul 17 12:38:55 2022
+vol 0.86  imb F  1% step 5100, will finish Sun Jul 17 12:38:55 2022
+vol 0.86  imb F  1% step 5200, will finish Sun Jul 17 12:38:54 2022
+vol 0.86  imb F  1% step 5300, will finish Sun Jul 17 12:38:54 2022
+vol 0.86  imb F  1% step 5400, will finish Sun Jul 17 12:38:54 2022
+vol 0.86  imb F  1% step 5500, will finish Sun Jul 17 12:38:54 2022
+vol 0.86  imb F  1% step 5600, will finish Sun Jul 17 12:38:54 2022
+vol 0.86  imb F  1% step 5700, will finish Sun Jul 17 12:38:54 2022
+vol 0.86  imb F  1% step 5800, will finish Sun Jul 17 12:38:54 2022
+vol 0.86  imb F  1% step 5900, will finish Sun Jul 17 12:38:54 2022
+vol 0.86  imb F  1% step 6000, will finish Sun Jul 17 12:38:54 2022
+vol 0.86  imb F  1% step 6100, will finish Sun Jul 17 12:38:54 2022
+vol 0.86  imb F  1% step 6200, will finish Sun Jul 17 12:38:54 2022
+vol 0.86  imb F  1% step 6300, will finish Sun Jul 17 12:38:54 2022
+vol 0.86  imb F  1% step 6400, will finish Sun Jul 17 12:38:53 2022
+vol 0.86  imb F  1% step 6500, will finish Sun Jul 17 12:38:53 2022
+vol 0.86  imb F  1% step 6600, will finish Sun Jul 17 12:38:53 2022
+vol 0.86  imb F  1% step 6700, will finish Sun Jul 17 12:38:53 2022
+vol 0.86  imb F  1% step 6800, will finish Sun Jul 17 12:38:53 2022
+vol 0.86  imb F  1% step 6900, will finish Sun Jul 17 12:38:53 2022
+vol 0.85  imb F  0% step 7000, will finish Sun Jul 17 12:38:53 2022
+vol 0.85  imb F  0% step 7100, will finish Sun Jul 17 12:38:53 2022
+vol 0.85  imb F  1% step 7200, will finish Sun Jul 17 12:38:53 2022
+vol 0.85  imb F  1% step 7300, will finish Sun Jul 17 12:38:53 2022
+vol 0.85  imb F  1% step 7400, will finish Sun Jul 17 12:38:53 2022
+vol 0.85  imb F  1% step 7500, will finish Sun Jul 17 12:38:53 2022
+vol 0.85  imb F  1% step 7600, will finish Sun Jul 17 12:38:53 2022
+vol 0.85  imb F  0% step 7700, will finish Sun Jul 17 12:38:53 2022
+vol 0.85  imb F  0% step 7800, will finish Sun Jul 17 12:38:53 2022
+vol 0.85  imb F  1% step 7900, will finish Sun Jul 17 12:38:53 2022
+vol 0.85  imb F  1% step 8000, will finish Sun Jul 17 12:38:53 2022
+vol 0.85  imb F  1% step 8100, will finish Sun Jul 17 12:38:53 2022
+vol 0.85  imb F  1% step 8200, will finish Sun Jul 17 12:38:54 2022
+vol 0.85  imb F  0% step 8300, will finish Sun Jul 17 12:38:54 2022
+vol 0.85  imb F  1% step 8400, will finish Sun Jul 17 12:38:54 2022
+vol 0.85  imb F  1% step 8500, will finish Sun Jul 17 12:38:54 2022
+vol 0.85  imb F  1% step 8600, will finish Sun Jul 17 12:38:54 2022
+vol 0.85  imb F  1% step 8700, will finish Sun Jul 17 12:38:54 2022
+vol 0.85  imb F  1% step 8800, will finish Sun Jul 17 12:38:54 2022
+vol 0.85  imb F  1% step 8900, will finish Sun Jul 17 12:38:54 2022
+vol 0.85  imb F  0% step 9000, will finish Sun Jul 17 12:38:54 2022
+vol 0.85  imb F  1% step 9100, will finish Sun Jul 17 12:38:55 2022
+vol 0.85  imb F  1% step 9200, will finish Sun Jul 17 12:38:55 2022
+vol 0.85  imb F  1% step 9300, will finish Sun Jul 17 12:38:55 2022
+vol 0.85  imb F  1% step 9400, will finish Sun Jul 17 12:38:55 2022
+vol 0.86  imb F  1% step 9500, will finish Sun Jul 17 12:38:55 2022
+vol 0.86  imb F  1% step 9600, will finish Sun Jul 17 12:38:55 2022
+vol 0.86  imb F  1% step 9700, will finish Sun Jul 17 12:38:55 2022
+vol 0.86  imb F  1% step 9800, will finish Sun Jul 17 12:38:56 2022
+vol 0.86  imb F  1% step 9900, will finish Sun Jul 17 12:38:56 2022
+vol 0.86  imb F  1% step 10000, will finish Sun Jul 17 12:38:56 2022
+vol 0.86  imb F  1% step 10100, will finish Sun Jul 17 12:38:56 2022
+vol 0.86  imb F  1% step 10200, will finish Sun Jul 17 12:38:56 2022
+vol 0.86  imb F  1% step 10300, will finish Sun Jul 17 12:38:57 2022
+vol 0.86  imb F  1% step 10400, will finish Sun Jul 17 12:38:57 2022
+vol 0.86  imb F  1% step 10500, will finish Sun Jul 17 12:38:57 2022
+vol 0.86  imb F  1% step 10600, will finish Sun Jul 17 12:38:57 2022
+vol 0.86  imb F  1% step 10700, will finish Sun Jul 17 12:38:57 2022
+vol 0.86  imb F  1% step 10800, will finish Sun Jul 17 12:38:57 2022
+vol 0.86  imb F  1% step 10900, will finish Sun Jul 17 12:38:57 2022
+vol 0.86  imb F  0% step 11000, will finish Sun Jul 17 12:38:57 2022
+vol 0.86  imb F  1% step 11100, will finish Sun Jul 17 12:38:58 2022
+vol 0.86  imb F  1% step 11200, will finish Sun Jul 17 12:38:58 2022
+vol 0.86  imb F  0% step 11300, will finish Sun Jul 17 12:38:58 2022
+vol 0.86  imb F  1% step 11400, will finish Sun Jul 17 12:38:58 2022
+vol 0.86  imb F  1% step 11500, will finish Sun Jul 17 12:38:58 2022
+vol 0.86  imb F  1% step 11600, will finish Sun Jul 17 12:38:58 2022
+vol 0.86  imb F  1% step 11700, will finish Sun Jul 17 12:38:58 2022
+vol 0.86  imb F  1% step 11800, will finish Sun Jul 17 12:38:58 2022
+vol 0.87  imb F  1% step 11900, will finish Sun Jul 17 12:38:58 2022
+vol 0.87  imb F  1% step 12000, will finish Sun Jul 17 12:38:58 2022
+vol 0.87  imb F  1% step 12100, will finish Sun Jul 17 12:38:58 2022
+vol 0.86  imb F  1% step 12200, will finish Sun Jul 17 12:38:58 2022
+vol 0.86  imb F  1% step 12300, will finish Sun Jul 17 12:38:58 2022
+vol 0.86  imb F  0% step 12400, will finish Sun Jul 17 12:38:58 2022
+vol 0.86  imb F  1% step 12500, will finish Sun Jul 17 12:38:58 2022
+vol 0.86  imb F  1% step 12600, will finish Sun Jul 17 12:38:58 2022
+vol 0.86  imb F  1% step 12700, will finish Sun Jul 17 12:38:58 2022
+vol 0.86  imb F  1% step 12800, will finish Sun Jul 17 12:38:58 2022
+vol 0.86  imb F  1% step 12900, will finish Sun Jul 17 12:38:59 2022
+vol 0.86  imb F  1% step 13000, will finish Sun Jul 17 12:38:59 2022
+vol 0.87  imb F  1% step 13100, will finish Sun Jul 17 12:38:59 2022
+vol 0.87  imb F  1% step 13200, will finish Sun Jul 17 12:38:59 2022
+vol 0.87  imb F  1% step 13300, will finish Sun Jul 17 12:38:59 2022
+vol 0.87  imb F  1% step 13400, will finish Sun Jul 17 12:38:59 2022
+vol 0.87  imb F  1% step 13500, will finish Sun Jul 17 12:38:59 2022
+vol 0.86  imb F  1% step 13600, will finish Sun Jul 17 12:38:59 2022
+vol 0.86  imb F  1% step 13700, will finish Sun Jul 17 12:38:59 2022
+vol 0.86  imb F  1% step 13800, will finish Sun Jul 17 12:38:59 2022
+vol 0.86  imb F  1% step 13900, will finish Sun Jul 17 12:38:59 2022
+vol 0.86  imb F  0% step 14000, will finish Sun Jul 17 12:38:59 2022
+vol 0.86  imb F  1% step 14100, will finish Sun Jul 17 12:38:59 2022
+vol 0.86  imb F  1% step 14200, will finish Sun Jul 17 12:38:59 2022
+vol 0.86  imb F  1% step 14300, will finish Sun Jul 17 12:38:59 2022
+vol 0.87  imb F  1% step 14400, will finish Sun Jul 17 12:38:59 2022
+vol 0.87  imb F  1% step 14500, will finish Sun Jul 17 12:38:59 2022
+vol 0.86  imb F  1% step 14600, will finish Sun Jul 17 12:38:59 2022
+vol 0.86  imb F  1% step 14700, will finish Sun Jul 17 12:38:59 2022
+vol 0.86  imb F  1% step 14800, will finish Sun Jul 17 12:38:59 2022
+vol 0.86  imb F  1% step 14900, will finish Sun Jul 17 12:38:59 2022
+vol 0.86  imb F  1% step 15000, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 15100, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  0% step 15200, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  0% step 15300, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 15400, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 15500, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 15600, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 15700, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 15800, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 15900, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 16000, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 16100, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 16200, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 16300, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 16400, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 16500, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 16600, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 16700, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 16800, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 16900, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 17000, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 17100, will finish Sun Jul 17 12:39:00 2022
+vol 0.86  imb F  1% step 17200, will finish Sun Jul 17 12:39:00 2022
+vol 0.85  imb F  1% step 17300, will finish Sun Jul 17 12:39:00 2022
+vol 0.85  imb F  1% step 17400, will finish Sun Jul 17 12:39:00 2022
+vol 0.85  imb F  1% step 17500, will finish Sun Jul 17 12:39:00 2022
+vol 0.85  imb F  1% step 17600, will finish Sun Jul 17 12:39:00 2022
+vol 0.85  imb F  1% step 17700, will finish Sun Jul 17 12:39:00 2022
+vol 0.85  imb F  1% step 17800, will finish Sun Jul 17 12:39:00 2022
+vol 0.85  imb F  1% step 17900, will finish Sun Jul 17 12:39:00 2022
+vol 0.85  imb F  1% step 18000, will finish Sun Jul 17 12:39:00 2022
+vol 0.84  imb F  0% step 18100, will finish Sun Jul 17 12:39:00 2022
+vol 0.84  imb F  1% step 18200, will finish Sun Jul 17 12:39:00 2022
+vol 0.84  imb F  1% step 18300, will finish Sun Jul 17 12:39:00 2022
+vol 0.84  imb F  1% step 18400, will finish Sun Jul 17 12:39:00 2022
+vol 0.84  imb F  1% step 18500, will finish Sun Jul 17 12:39:00 2022
+vol 0.84  imb F  1% step 18600, will finish Sun Jul 17 12:39:00 2022
+vol 0.84  imb F  0% step 18700, will finish Sun Jul 17 12:39:00 2022
+vol 0.85  imb F  0% step 18800, will finish Sun Jul 17 12:39:01 2022
+vol 0.84  imb F  1% step 18900, will finish Sun Jul 17 12:39:01 2022
+vol 0.84  imb F  1% step 19000, will finish Sun Jul 17 12:39:01 2022
+vol 0.84  imb F  1% step 19100, will finish Sun Jul 17 12:39:01 2022
+vol 0.84  imb F  1% step 19200, will finish Sun Jul 17 12:39:01 2022
+vol 0.83  imb F  1% step 19300, will finish Sun Jul 17 12:39:01 2022
+vol 0.83  imb F  1% step 19400, will finish Sun Jul 17 12:39:01 2022
+vol 0.83  imb F  1% step 19500, will finish Sun Jul 17 12:39:01 2022
+vol 0.83  imb F  1% step 19600, will finish Sun Jul 17 12:39:01 2022
+vol 0.83  imb F  1% step 19700, will finish Sun Jul 17 12:39:01 2022
+vol 0.82  imb F  1% step 19800, will finish Sun Jul 17 12:39:01 2022
+vol 0.82  imb F  1% step 19900, will finish Sun Jul 17 12:39:01 2022
+vol 0.82  imb F  1% step 20000, will finish Sun Jul 17 12:39:01 2022
+vol 0.81  imb F  1% step 20100, will finish Sun Jul 17 12:39:01 2022
+vol 0.81  imb F  1% step 20200, will finish Sun Jul 17 12:39:01 2022
+vol 0.81  imb F  1% step 20300, will finish Sun Jul 17 12:39:01 2022
+vol 0.81  imb F  1% step 20400, will finish Sun Jul 17 12:39:01 2022
+vol 0.81  imb F  1% step 20500, will finish Sun Jul 17 12:39:02 2022
+vol 0.82  imb F  1% step 20600, will finish Sun Jul 17 12:39:02 2022
+vol 0.82  imb F  1% step 20700, will finish Sun Jul 17 12:39:02 2022
+vol 0.82  imb F  1% step 20800, will finish Sun Jul 17 12:39:02 2022
+vol 0.82  imb F  1% step 20900, will finish Sun Jul 17 12:39:02 2022
+vol 0.82  imb F  1% step 21000, will finish Sun Jul 17 12:39:02 2022
+vol 0.82  imb F  1% step 21100, will finish Sun Jul 17 12:39:02 2022
+vol 0.82  imb F  1% step 21200, will finish Sun Jul 17 12:39:02 2022
+vol 0.82  imb F  0% step 21300, will finish Sun Jul 17 12:39:02 2022
+vol 0.82  imb F  1% step 21400, will finish Sun Jul 17 12:39:02 2022
+vol 0.82  imb F  1% step 21500, will finish Sun Jul 17 12:39:02 2022
+vol 0.82  imb F  1% step 21600, will finish Sun Jul 17 12:39:02 2022
+vol 0.82  imb F  1% step 21700, will finish Sun Jul 17 12:39:02 2022
+vol 0.82  imb F  0% step 21800, will finish Sun Jul 17 12:39:02 2022
+vol 0.82  imb F  1% step 21900, will finish Sun Jul 17 12:39:02 2022
+vol 0.82  imb F  0% step 22000, will finish Sun Jul 17 12:39:03 2022
+vol 0.82  imb F  1% step 22100, will finish Sun Jul 17 12:39:03 2022
+vol 0.82  imb F  1% step 22200, will finish Sun Jul 17 12:39:03 2022
+vol 0.82  imb F  0% step 22300, will finish Sun Jul 17 12:39:03 2022
+vol 0.82  imb F  1% step 22400, will finish Sun Jul 17 12:39:03 2022
+vol 0.82  imb F  1% step 22500, will finish Sun Jul 17 12:39:03 2022
+vol 0.82  imb F  1% step 22600, will finish Sun Jul 17 12:39:03 2022
+vol 0.82  imb F  1% step 22700, will finish Sun Jul 17 12:39:03 2022
+vol 0.82  imb F  1% step 22800, will finish Sun Jul 17 12:39:03 2022
+vol 0.82  imb F  1% step 22900, will finish Sun Jul 17 12:39:03 2022
+vol 0.81  imb F  1% step 23000, will finish Sun Jul 17 12:39:03 2022
+vol 0.81  imb F  1% step 23100, will finish Sun Jul 17 12:39:03 2022
+vol 0.82  imb F  1% step 23200, will finish Sun Jul 17 12:39:03 2022
+vol 0.82  imb F  1% step 23300, will finish Sun Jul 17 12:39:03 2022
+vol 0.82  imb F  1% step 23400, will finish Sun Jul 17 12:39:03 2022
+vol 0.82  imb F  1% step 23500, will finish Sun Jul 17 12:39:03 2022
+vol 0.83  imb F  1% step 23600, will finish Sun Jul 17 12:39:03 2022
+vol 0.83  imb F  1% step 23700, will finish Sun Jul 17 12:39:03 2022
+vol 0.83  imb F  1% step 23800, will finish Sun Jul 17 12:39:03 2022
+vol 0.83  imb F  1% step 23900, will finish Sun Jul 17 12:39:03 2022
+vol 0.83  imb F  1% step 24000, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 24100, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 24200, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 24300, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 24400, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 24500, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 24600, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 24700, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 24800, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 24900, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 25000, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 25100, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 25200, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 25300, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 25400, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 25500, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 25600, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 25700, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  0% step 25800, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 25900, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 26000, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 26100, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 26200, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 26300, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 26400, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 26500, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 26600, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 26700, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 26800, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 26900, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 27000, will finish Sun Jul 17 12:39:04 2022
+vol 0.83  imb F  1% step 27100, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 27200, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 27300, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 27400, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  0% step 27500, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 27600, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 27700, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 27800, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 27900, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 28000, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 28100, will finish Sun Jul 17 12:39:04 2022
+vol 0.84  imb F  1% step 28200, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  0% step 28300, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 28400, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 28500, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 28600, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  0% step 28700, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 28800, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 28900, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 29000, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 29100, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  1% step 29200, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  0% step 29300, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 29400, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 29500, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 29600, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 29700, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 29800, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 29900, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 30000, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 30100, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 30200, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  1% step 30300, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 30400, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  1% step 30500, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 30600, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 30700, will finish Sun Jul 17 12:39:05 2022
+vol 0.84  imb F  1% step 30800, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  1% step 30900, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  1% step 31000, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  1% step 31100, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  1% step 31200, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  1% step 31300, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  1% step 31400, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  1% step 31500, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  0% step 31600, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  0% step 31700, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  0% step 31800, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  1% step 31900, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  1% step 32000, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  1% step 32100, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  1% step 32200, will finish Sun Jul 17 12:39:05 2022
+vol 0.82  imb F  1% step 32300, will finish Sun Jul 17 12:39:05 2022
+vol 0.82  imb F  0% step 32400, will finish Sun Jul 17 12:39:05 2022
+vol 0.82  imb F  1% step 32500, will finish Sun Jul 17 12:39:05 2022
+vol 0.82  imb F  1% step 32600, will finish Sun Jul 17 12:39:05 2022
+vol 0.82  imb F  1% step 32700, will finish Sun Jul 17 12:39:05 2022
+vol 0.82  imb F  1% step 32800, will finish Sun Jul 17 12:39:05 2022
+vol 0.82  imb F  1% step 32900, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  1% step 33000, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  0% step 33100, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  1% step 33200, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  1% step 33300, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  0% step 33400, will finish Sun Jul 17 12:39:05 2022
+vol 0.83  imb F  0% step 33500, will finish Sun Jul 17 12:39:05 2022
+vol 0.82  imb F  1% step 33600, will finish Sun Jul 17 12:39:05 2022
+vol 0.82  imb F  1% step 33700, will finish Sun Jul 17 12:39:05 2022
+vol 0.82  imb F  1% step 33800, will finish Sun Jul 17 12:39:05 2022
+vol 0.82  imb F  1% step 33900, will finish Sun Jul 17 12:39:05 2022
+vol 0.82  imb F  0% step 34000, will finish Sun Jul 17 12:39:05 2022
+vol 0.82  imb F  1% step 34100, will finish Sun Jul 17 12:39:05 2022
+vol 0.82  imb F  1% step 34200, will finish Sun Jul 17 12:39:05 2022
+vol 0.82  imb F  1% step 34300, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 34400, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 34500, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 34600, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 34700, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 34800, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 34900, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 35000, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 35100, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 35200, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 35300, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 35400, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  0% step 35500, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 35600, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 35700, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 35800, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 35900, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  0% step 36000, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 36100, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 36200, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 36300, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 36400, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 36500, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 36600, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 36700, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  0% step 36800, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 36900, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  0% step 37000, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 37100, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 37200, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 37300, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 37400, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 37500, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  0% step 37600, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 37700, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 37800, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 37900, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  0% step 38000, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  0% step 38100, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 38200, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 38300, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  0% step 38400, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 38500, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 38600, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 38700, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 38800, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 38900, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 39000, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 39100, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 39200, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 39300, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 39400, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 39500, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 39600, will finish Sun Jul 17 12:39:05 2022
+vol 0.80  imb F  1% step 39700, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 39800, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 39900, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 40000, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 40100, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 40200, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 40300, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 40400, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 40500, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 40600, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  0% step 40700, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 40800, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 40900, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 41000, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 41100, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 41200, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  0% step 41300, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  0% step 41400, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  0% step 41500, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 41600, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  0% step 41700, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 41800, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 41900, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 42000, will finish Sun Jul 17 12:39:05 2022
+vol 0.81  imb F  1% step 42100, remaining wall clock time:   297 s          
+vol 0.81  imb F  0% step 42200, remaining wall clock time:   294 s          
+vol 0.81  imb F  1% step 42300, remaining wall clock time:   290 s          
+vol 0.80  imb F  1% step 42400, remaining wall clock time:   286 s          
+vol 0.80  imb F  1% step 42500, remaining wall clock time:   282 s          
+vol 0.80  imb F  1% step 42600, remaining wall clock time:   278 s          
+vol 0.80  imb F  1% step 42700, remaining wall clock time:   275 s          
+vol 0.79  imb F  1% step 42800, remaining wall clock time:   271 s          
+vol 0.80  imb F  1% step 42900, remaining wall clock time:   267 s          
+vol 0.79  imb F  1% step 43000, remaining wall clock time:   263 s          
+vol 0.80  imb F  1% step 43100, remaining wall clock time:   260 s          
+vol 0.80  imb F  1% step 43200, remaining wall clock time:   256 s          
+vol 0.80  imb F  1% step 43300, remaining wall clock time:   252 s          
+vol 0.80  imb F  1% step 43400, remaining wall clock time:   248 s          
+vol 0.80  imb F  1% step 43500, remaining wall clock time:   245 s          
+vol 0.80  imb F  1% step 43600, remaining wall clock time:   241 s          
+vol 0.80  imb F  1% step 43700, remaining wall clock time:   237 s          
+vol 0.80  imb F  1% step 43800, remaining wall clock time:   233 s          
+vol 0.80  imb F  1% step 43900, remaining wall clock time:   229 s          
+vol 0.80  imb F  0% step 44000, remaining wall clock time:   226 s          
+vol 0.80  imb F  1% step 44100, remaining wall clock time:   222 s          
+vol 0.80  imb F  1% step 44200, remaining wall clock time:   218 s          
+vol 0.80  imb F  1% step 44300, remaining wall clock time:   214 s          
+vol 0.80  imb F  0% step 44400, remaining wall clock time:   211 s          
+vol 0.80  imb F  1% step 44500, remaining wall clock time:   207 s          
+vol 0.80  imb F  1% step 44600, remaining wall clock time:   203 s          
+vol 0.80  imb F  1% step 44700, remaining wall clock time:   199 s          
+vol 0.80  imb F  0% step 44800, remaining wall clock time:   196 s          
+vol 0.80  imb F  1% step 44900, remaining wall clock time:   192 s          
+vol 0.80  imb F  1% step 45000, remaining wall clock time:   188 s          
+vol 0.80  imb F  1% step 45100, remaining wall clock time:   184 s          
+vol 0.80  imb F  1% step 45200, remaining wall clock time:   180 s          
+vol 0.80  imb F  0% step 45300, remaining wall clock time:   177 s          
+vol 0.80  imb F  1% step 45400, remaining wall clock time:   173 s          
+vol 0.80  imb F  0% step 45500, remaining wall clock time:   169 s          
+vol 0.80  imb F  0% step 45600, remaining wall clock time:   165 s          
+vol 0.80  imb F  1% step 45700, remaining wall clock time:   162 s          
+vol 0.80  imb F  1% step 45800, remaining wall clock time:   158 s          
+vol 0.80  imb F  1% step 45900, remaining wall clock time:   154 s          
+vol 0.80  imb F  1% step 46000, remaining wall clock time:   150 s          
+vol 0.80  imb F  1% step 46100, remaining wall clock time:   147 s          
+vol 0.80  imb F  1% step 46200, remaining wall clock time:   143 s          
+vol 0.80  imb F  1% step 46300, remaining wall clock time:   139 s          
+vol 0.80  imb F  1% step 46400, remaining wall clock time:   135 s          
+vol 0.80  imb F  1% step 46500, remaining wall clock time:   131 s          
+vol 0.80  imb F  1% step 46600, remaining wall clock time:   128 s          
+vol 0.80  imb F  1% step 46700, remaining wall clock time:   124 s          
+vol 0.80  imb F  1% step 46800, remaining wall clock time:   120 s          
+vol 0.80  imb F  1% step 46900, remaining wall clock time:   116 s          
+vol 0.80  imb F  0% step 47000, remaining wall clock time:   113 s          
+vol 0.80  imb F  1% step 47100, remaining wall clock time:   109 s          
+vol 0.81  imb F  1% step 47200, remaining wall clock time:   105 s          
+vol 0.80  imb F  0% step 47300, remaining wall clock time:   101 s          
+vol 0.80  imb F  1% step 47400, remaining wall clock time:    98 s          
+vol 0.80  imb F  0% step 47500, remaining wall clock time:    94 s          
+vol 0.80  imb F  0% step 47600, remaining wall clock time:    90 s          
+vol 0.80  imb F  1% step 47700, remaining wall clock time:    86 s          
+vol 0.81  imb F  1% step 47800, remaining wall clock time:    82 s          
+vol 0.81  imb F  1% step 47900, remaining wall clock time:    79 s          
+vol 0.81  imb F  1% step 48000, remaining wall clock time:    75 s          
+vol 0.81  imb F  0% step 48100, remaining wall clock time:    71 s          
+vol 0.81  imb F  1% step 48200, remaining wall clock time:    67 s          
+vol 0.81  imb F  1% step 48300, remaining wall clock time:    64 s          
+vol 0.81  imb F  1% step 48400, remaining wall clock time:    60 s          
+vol 0.81  imb F  1% step 48500, remaining wall clock time:    56 s          
+vol 0.81  imb F  1% step 48600, remaining wall clock time:    52 s          
+vol 0.81  imb F  1% step 48700, remaining wall clock time:    49 s          
+vol 0.82  imb F  1% step 48800, remaining wall clock time:    45 s          
+vol 0.82  imb F  1% step 48900, remaining wall clock time:    41 s          
+vol 0.82  imb F  1% step 49000, remaining wall clock time:    37 s          
+vol 0.82  imb F  0% step 49100, remaining wall clock time:    33 s          
+vol 0.82  imb F  1% step 49200, remaining wall clock time:    30 s          
+vol 0.82  imb F  1% step 49300, remaining wall clock time:    26 s          
+vol 0.82  imb F  1% step 49400, remaining wall clock time:    22 s          
+vol 0.82  imb F  1% step 49500, remaining wall clock time:    18 s          
+vol 0.81  imb F  1% step 49600, remaining wall clock time:    15 s          
+vol 0.81  imb F  1% step 49700, remaining wall clock time:    11 s          
+vol 0.81  imb F  1% step 49800, remaining wall clock time:     7 s          
+vol 0.81  imb F  1% step 49900, remaining wall clock time:     3 s          
+vol 0.81  imb F  1% 
+Writing final coordinates.
+step 50000, remaining wall clock time:     0 s          
+
+
+Dynamic load balancing report:
+ DLB was turned on during the run due to measured imbalance.
+ Average load imbalance: 0.8%.
+ The balanceable part of the MD step is 38%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 0.3%.
+ Steps where the load balancing was limited by -rdd, -rcon and/or -dds: X 0 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    30187.480     1886.718     1600.0
+                         31:26
+                 (ns/day)    (hour/ns)
+Performance:        4.579        5.241
+
+GROMACS reminds you: "He's using code that only you and I know" (Kate Bush)
+
+                      :-) GROMACS - gmx mdrun, 2020.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.5
+Executable:   /jet/home/schwinns/pkgs/gromacs/2020.5/bin/gmx_mpi
+Data prefix:  /jet/home/schwinns/pkgs/gromacs/2020.5
+Working dir:  /ocean/projects/cts160011p/schwinns/benchmark/2022/AA-PA_large/CPU/test_np
+Command line:
+  gmx_mpi mdrun -v -s ../npt.tpr -o npt -g N1_np8.log -ntomp 1
+
+Compiled SIMD: SSE4.1, but for this host/run AVX2_256 might be better (see
+log).
+The current CPU can measure timings more accurately than the code in
+gmx mdrun was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding gmx mdrun with the GMX_USE_RDTSCP=ON CMake option.
+Reading file ../npt.tpr, VERSION 2020.5 (single precision)
+Changing nstlist from 40 to 100, rlist from 1 to 1.003
+
+
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread per MPI process
+
+starting mdrun 'PA_large'
+50000 steps,    100.0 ps.
+step 0
+imb F  7% step 100, will finish Sun Jul 17 13:40:46 2022
+imb F  7% step 200, will finish Sun Jul 17 13:40:22 2022
+vol 0.98  imb F  5% step 300, will finish Sun Jul 17 13:40:09 2022
+vol 0.96  imb F  4% step 400, will finish Sun Jul 17 13:39:56 2022
+vol 0.94  imb F  2% step 500, will finish Sun Jul 17 13:39:42 2022
+vol 0.93  imb F  2% step 600, will finish Sun Jul 17 13:39:30 2022
+vol 0.93  imb F  1% step 700, will finish Sun Jul 17 13:39:21 2022
+vol 0.93  imb F  0% step 800, will finish Sun Jul 17 13:39:12 2022
+vol 0.92  imb F  1% step 900, will finish Sun Jul 17 13:39:07 2022
+vol 0.92  imb F  0% step 1000, will finish Sun Jul 17 13:39:02 2022
+vol 0.92  imb F  0% step 1100, will finish Sun Jul 17 13:38:58 2022
+vol 0.93  imb F  1% step 1200, will finish Sun Jul 17 13:38:56 2022
+vol 0.93  imb F  0% step 1300, will finish Sun Jul 17 13:38:54 2022
+vol 0.93  imb F  1% step 1400, will finish Sun Jul 17 13:38:51 2022
+vol 0.93  imb F  0% step 1500, will finish Sun Jul 17 13:38:49 2022
+vol 0.92  imb F  1% step 1600, will finish Sun Jul 17 13:38:48 2022
+vol 0.93  imb F  1% step 1700, will finish Sun Jul 17 13:38:46 2022
+vol 0.92  imb F  0% step 1800, will finish Sun Jul 17 13:38:44 2022
+vol 0.92  imb F  0% step 1900, will finish Sun Jul 17 13:38:42 2022
+vol 0.92  imb F  0% step 2000, will finish Sun Jul 17 13:38:40 2022
+vol 0.92  imb F  1% step 2100, will finish Sun Jul 17 13:38:40 2022
+vol 0.92  imb F  0% step 2200, will finish Sun Jul 17 13:38:39 2022
+vol 0.92  imb F  0% step 2300, will finish Sun Jul 17 13:38:37 2022
+vol 0.92  imb F  0% step 2400, will finish Sun Jul 17 13:38:37 2022
+vol 0.92  imb F  0% step 2500, will finish Sun Jul 17 13:38:36 2022
+vol 0.92  imb F  0% step 2600, will finish Sun Jul 17 13:38:35 2022
+vol 0.92  imb F  0% step 2700, will finish Sun Jul 17 13:38:34 2022
+vol 0.92  imb F  0% step 2800, will finish Sun Jul 17 13:38:34 2022
+vol 0.92  imb F  1% step 2900, will finish Sun Jul 17 13:38:34 2022
+vol 0.91  imb F  0% step 3000, will finish Sun Jul 17 13:38:33 2022
+vol 0.91  imb F  0% step 3100, will finish Sun Jul 17 13:38:32 2022
+vol 0.91  imb F  0% step 3200, will finish Sun Jul 17 13:38:31 2022
+vol 0.91  imb F  1% step 3300, will finish Sun Jul 17 13:38:31 2022
+vol 0.91  imb F  0% step 3400, will finish Sun Jul 17 13:38:30 2022
+vol 0.91  imb F  1% step 3500, will finish Sun Jul 17 13:38:30 2022
+vol 0.92  imb F  0% step 3600, will finish Sun Jul 17 13:38:30 2022
+vol 0.91  imb F  0% step 3700, will finish Sun Jul 17 13:38:29 2022
+vol 0.91  imb F  0% step 3800, will finish Sun Jul 17 13:38:29 2022
+vol 0.91  imb F  0% step 3900, will finish Sun Jul 17 13:38:28 2022
+vol 0.91  imb F  1% step 4000, will finish Sun Jul 17 13:38:29 2022
+vol 0.92  imb F  0% step 4100, will finish Sun Jul 17 13:38:28 2022
+vol 0.91  imb F  0% step 4200, will finish Sun Jul 17 13:38:29 2022
+vol 0.92  imb F  0% step 4300, will finish Sun Jul 17 13:38:28 2022
+vol 0.92  imb F  1% step 4400, will finish Sun Jul 17 13:38:28 2022
+vol 0.92  imb F  0% step 4500, will finish Sun Jul 17 13:38:28 2022
+vol 0.92  imb F  0% step 4600, will finish Sun Jul 17 13:38:28 2022
+vol 0.92  imb F  0% step 4700, will finish Sun Jul 17 13:38:28 2022
+vol 0.92  imb F  1% step 4800, will finish Sun Jul 17 13:38:28 2022
+vol 0.92  imb F  1% step 4900, will finish Sun Jul 17 13:38:28 2022
+vol 0.92  imb F  0% step 5000, will finish Sun Jul 17 13:38:28 2022
+vol 0.92  imb F  1% step 5100, will finish Sun Jul 17 13:38:28 2022
+vol 0.92  imb F  1% step 5200, will finish Sun Jul 17 13:38:28 2022
+vol 0.92  imb F  0% step 5300, will finish Sun Jul 17 13:38:28 2022
+vol 0.92  imb F  1% step 5400, will finish Sun Jul 17 13:38:28 2022
+vol 0.91  imb F  1% step 5500, will finish Sun Jul 17 13:38:27 2022
+vol 0.91  imb F  1% step 5600, will finish Sun Jul 17 13:38:27 2022
+vol 0.91  imb F  0% step 5700, will finish Sun Jul 17 13:38:27 2022
+vol 0.91  imb F  0% step 5800, will finish Sun Jul 17 13:38:27 2022
+vol 0.91  imb F  0% step 5900, will finish Sun Jul 17 13:38:27 2022
+vol 0.91  imb F  0% step 6000, will finish Sun Jul 17 13:38:26 2022
+vol 0.91  imb F  0% step 6100, will finish Sun Jul 17 13:38:26 2022
+vol 0.91  imb F  0% step 6200, will finish Sun Jul 17 13:38:26 2022
+vol 0.91  imb F  0% step 6300, will finish Sun Jul 17 13:38:26 2022
+vol 0.91  imb F  0% step 6400, will finish Sun Jul 17 13:38:26 2022
+vol 0.91  imb F  0% step 6500, will finish Sun Jul 17 13:38:26 2022
+vol 0.91  imb F  0% step 6600, will finish Sun Jul 17 13:38:25 2022
+vol 0.91  imb F  1% step 6700, will finish Sun Jul 17 13:38:25 2022
+vol 0.91  imb F  1% step 6800, will finish Sun Jul 17 13:38:25 2022
+vol 0.91  imb F  0% step 6900, will finish Sun Jul 17 13:38:25 2022
+vol 0.91  imb F  0% step 7000, will finish Sun Jul 17 13:38:25 2022
+vol 0.91  imb F  0% step 7100, will finish Sun Jul 17 13:38:25 2022
+vol 0.91  imb F  0% step 7200, will finish Sun Jul 17 13:38:24 2022
+vol 0.91  imb F  1% step 7300, will finish Sun Jul 17 13:38:24 2022
+vol 0.92  imb F  0% step 7400, will finish Sun Jul 17 13:38:24 2022
+vol 0.92  imb F  1% step 7500, will finish Sun Jul 17 13:38:25 2022
+vol 0.92  imb F  0% step 7600, will finish Sun Jul 17 13:38:25 2022
+vol 0.92  imb F  1% step 7700, will finish Sun Jul 17 13:38:25 2022
+vol 0.92  imb F  0% step 7800, will finish Sun Jul 17 13:38:25 2022
+vol 0.92  imb F  0% step 7900, will finish Sun Jul 17 13:38:25 2022
+vol 0.92  imb F  0% step 8000, will finish Sun Jul 17 13:38:25 2022
+vol 0.92  imb F  0% step 8100, will finish Sun Jul 17 13:38:25 2022
+vol 0.92  imb F  0% step 8200, will finish Sun Jul 17 13:38:25 2022
+vol 0.92  imb F  0% step 8300, will finish Sun Jul 17 13:38:25 2022
+vol 0.92  imb F  0% step 8400, will finish Sun Jul 17 13:38:25 2022
+vol 0.92  imb F  0% step 8500, will finish Sun Jul 17 13:38:25 2022
+vol 0.92  imb F  1% step 8600, will finish Sun Jul 17 13:38:25 2022
+vol 0.92  imb F  1% step 8700, will finish Sun Jul 17 13:38:25 2022
+vol 0.92  imb F  0% step 8800, will finish Sun Jul 17 13:38:25 2022
+vol 0.92  imb F  0% step 8900, will finish Sun Jul 17 13:38:25 2022
+vol 0.91  imb F  0% step 9000, will finish Sun Jul 17 13:38:24 2022
+vol 0.91  imb F  0% step 9100, will finish Sun Jul 17 13:38:24 2022
+vol 0.91  imb F  0% step 9200, will finish Sun Jul 17 13:38:24 2022
+vol 0.91  imb F  0% step 9300, will finish Sun Jul 17 13:38:24 2022
+vol 0.91  imb F  1% step 9400, will finish Sun Jul 17 13:38:24 2022
+vol 0.91  imb F  0% step 9500, will finish Sun Jul 17 13:38:24 2022
+vol 0.91  imb F  1% step 9600, will finish Sun Jul 17 13:38:24 2022
+vol 0.91  imb F  0% step 9700, will finish Sun Jul 17 13:38:24 2022
+vol 0.91  imb F  0% step 9800, will finish Sun Jul 17 13:38:24 2022
+vol 0.91  imb F  0% step 9900, will finish Sun Jul 17 13:38:24 2022
+vol 0.91  imb F  1% step 10000, will finish Sun Jul 17 13:38:24 2022
+vol 0.91  imb F  1% step 10100, will finish Sun Jul 17 13:38:24 2022
+vol 0.91  imb F  1% step 10200, will finish Sun Jul 17 13:38:24 2022
+vol 0.91  imb F  0% step 10300, will finish Sun Jul 17 13:38:24 2022
+vol 0.91  imb F  0% step 10400, will finish Sun Jul 17 13:38:24 2022
+vol 0.91  imb F  0% step 10500, will finish Sun Jul 17 13:38:23 2022
+vol 0.91  imb F  0% step 10600, will finish Sun Jul 17 13:38:23 2022
+vol 0.91  imb F  0% step 10700, will finish Sun Jul 17 13:38:23 2022
+vol 0.91  imb F  0% step 10800, will finish Sun Jul 17 13:38:23 2022
+vol 0.91  imb F  0% step 10900, will finish Sun Jul 17 13:38:23 2022
+vol 0.91  imb F  1% step 11000, will finish Sun Jul 17 13:38:23 2022
+vol 0.92  imb F  0% step 11100, will finish Sun Jul 17 13:38:23 2022
+vol 0.92  imb F  0% step 11200, will finish Sun Jul 17 13:38:23 2022
+vol 0.92  imb F  0% step 11300, will finish Sun Jul 17 13:38:23 2022
+vol 0.92  imb F  0% step 11400, will finish Sun Jul 17 13:38:23 2022
+vol 0.92  imb F  0% step 11500, will finish Sun Jul 17 13:38:23 2022
+vol 0.92  imb F  0% step 11600, will finish Sun Jul 17 13:38:23 2022
+vol 0.92  imb F  0% step 11700, will finish Sun Jul 17 13:38:23 2022
+vol 0.92  imb F  0% step 11800, will finish Sun Jul 17 13:38:23 2022
+vol 0.92  imb F  0% step 11900, will finish Sun Jul 17 13:38:23 2022
+vol 0.92  imb F  1% step 12000, will finish Sun Jul 17 13:38:23 2022
+vol 0.92  imb F  0% step 12100, will finish Sun Jul 17 13:38:24 2022
+vol 0.93  imb F  0% step 12200, will finish Sun Jul 17 13:38:24 2022
+vol 0.93  imb F  1% step 12300, will finish Sun Jul 17 13:38:24 2022
+vol 0.93  imb F  0% step 12400, will finish Sun Jul 17 13:38:24 2022
+vol 0.92  imb F  1% step 12500, will finish Sun Jul 17 13:38:24 2022
+vol 0.92  imb F  1% step 12600, will finish Sun Jul 17 13:38:23 2022
+vol 0.92  imb F  0% step 12700, will finish Sun Jul 17 13:38:24 2022
+vol 0.92  imb F  1% step 12800, will finish Sun Jul 17 13:38:24 2022
+vol 0.92  imb F  1% step 12900, will finish Sun Jul 17 13:38:24 2022
+vol 0.92  imb F  1% step 13000, will finish Sun Jul 17 13:38:24 2022
+vol 0.92  imb F  0% step 13100, will finish Sun Jul 17 13:38:24 2022
+vol 0.92  imb F  0% step 13200, will finish Sun Jul 17 13:38:24 2022
+vol 0.92  imb F  0% step 13300, will finish Sun Jul 17 13:38:24 2022
+vol 0.92  imb F  0% step 13400, will finish Sun Jul 17 13:38:24 2022
+vol 0.92  imb F  0% step 13500, will finish Sun Jul 17 13:38:24 2022
+vol 0.92  imb F  0% step 13600, will finish Sun Jul 17 13:38:24 2022
+vol 0.92  imb F  0% step 13700, will finish Sun Jul 17 13:38:24 2022
+vol 0.92  imb F  0% step 13800, will finish Sun Jul 17 13:38:24 2022
+vol 0.93  imb F  1% step 13900, will finish Sun Jul 17 13:38:24 2022
+vol 0.92  imb F  0% step 14000, will finish Sun Jul 17 13:38:24 2022
+vol 0.93  imb F  0% step 14100, will finish Sun Jul 17 13:38:23 2022
+vol 0.93  imb F  0% step 14200, will finish Sun Jul 17 13:38:23 2022
+vol 0.93  imb F  0% step 14300, will finish Sun Jul 17 13:38:23 2022
+vol 0.93  imb F  0% step 14400, will finish Sun Jul 17 13:38:23 2022
+vol 0.93  imb F  0% step 14500, will finish Sun Jul 17 13:38:23 2022
+vol 0.93  imb F  0% step 14600, will finish Sun Jul 17 13:38:23 2022
+vol 0.93  imb F  1% step 14700, will finish Sun Jul 17 13:38:23 2022
+vol 0.93  imb F  1% step 14800, will finish Sun Jul 17 13:38:23 2022
+vol 0.94  imb F  0% step 14900, will finish Sun Jul 17 13:38:23 2022
+vol 0.94  imb F  1% step 15000, will finish Sun Jul 17 13:38:24 2022
+vol 0.94  imb F  1% step 15100, will finish Sun Jul 17 13:38:24 2022
+vol 0.93  imb F  1% step 15200, will finish Sun Jul 17 13:38:24 2022
+vol 0.93  imb F  1% step 15300, will finish Sun Jul 17 13:38:24 2022
+vol 0.93  imb F  0% step 15400, will finish Sun Jul 17 13:38:24 2022
+vol 0.93  imb F  1% step 15500, will finish Sun Jul 17 13:38:24 2022
+vol 0.93  imb F  1% step 15600, will finish Sun Jul 17 13:38:25 2022
+vol 0.93  imb F  0% step 15700, will finish Sun Jul 17 13:38:25 2022
+vol 0.93  imb F  0% step 15800, will finish Sun Jul 17 13:38:25 2022
+vol 0.93  imb F  1% step 15900, will finish Sun Jul 17 13:38:25 2022
+vol 0.93  imb F  1% step 16000, will finish Sun Jul 17 13:38:25 2022
+vol 0.93  imb F  0% step 16100, will finish Sun Jul 17 13:38:25 2022
+vol 0.92  imb F  0% step 16200, will finish Sun Jul 17 13:38:26 2022
+vol 0.92  imb F  0% step 16300, will finish Sun Jul 17 13:38:26 2022
+vol 0.92  imb F  0% step 16400, will finish Sun Jul 17 13:38:26 2022
+vol 0.93  imb F  0% step 16500, will finish Sun Jul 17 13:38:26 2022
+vol 0.92  imb F  0% step 16600, will finish Sun Jul 17 13:38:26 2022
+vol 0.92  imb F  0% step 16700, will finish Sun Jul 17 13:38:26 2022
+vol 0.92  imb F  0% step 16800, will finish Sun Jul 17 13:38:26 2022
+vol 0.92  imb F  0% step 16900, will finish Sun Jul 17 13:38:26 2022
+vol 0.92  imb F  0% step 17000, will finish Sun Jul 17 13:38:26 2022
+vol 0.92  imb F  0% step 17100, will finish Sun Jul 17 13:38:26 2022
+vol 0.92  imb F  0% step 17200, will finish Sun Jul 17 13:38:27 2022
+vol 0.92  imb F  0% step 17300, will finish Sun Jul 17 13:38:27 2022
+vol 0.92  imb F  0% step 17400, will finish Sun Jul 17 13:38:27 2022
+vol 0.92  imb F  0% step 17500, will finish Sun Jul 17 13:38:27 2022
+vol 0.92  imb F  0% step 17600, will finish Sun Jul 17 13:38:27 2022
+vol 0.92  imb F  1% step 17700, will finish Sun Jul 17 13:38:27 2022
+vol 0.92  imb F  1% step 17800, will finish Sun Jul 17 13:38:27 2022
+vol 0.92  imb F  0% step 17900, will finish Sun Jul 17 13:38:27 2022
+vol 0.92  imb F  0% step 18000, will finish Sun Jul 17 13:38:27 2022
+vol 0.92  imb F  0% step 18100, will finish Sun Jul 17 13:38:27 2022
+vol 0.92  imb F  0% step 18200, will finish Sun Jul 17 13:38:27 2022
+vol 0.92  imb F  0% step 18300, will finish Sun Jul 17 13:38:27 2022
+vol 0.92  imb F  1% step 18400, will finish Sun Jul 17 13:38:28 2022
+vol 0.93  imb F  0% step 18500, will finish Sun Jul 17 13:38:28 2022
+vol 0.93  imb F  0% step 18600, will finish Sun Jul 17 13:38:28 2022
+vol 0.93  imb F  1% step 18700, will finish Sun Jul 17 13:38:28 2022
+vol 0.93  imb F  1% step 18800, will finish Sun Jul 17 13:38:28 2022
+vol 0.93  imb F  0% step 18900, will finish Sun Jul 17 13:38:28 2022
+vol 0.93  imb F  0% step 19000, will finish Sun Jul 17 13:38:28 2022
+vol 0.93  imb F  1% step 19100, will finish Sun Jul 17 13:38:29 2022
+vol 0.93  imb F  0% step 19200, will finish Sun Jul 17 13:38:29 2022
+vol 0.93  imb F  1% step 19300, will finish Sun Jul 17 13:38:29 2022
+vol 0.93  imb F  0% step 19400, will finish Sun Jul 17 13:38:29 2022
+vol 0.93  imb F  0% step 19500, will finish Sun Jul 17 13:38:29 2022
+vol 0.93  imb F  1% step 19600, will finish Sun Jul 17 13:38:29 2022
+vol 0.93  imb F  0% step 19700, will finish Sun Jul 17 13:38:29 2022
+vol 0.93  imb F  1% step 19800, will finish Sun Jul 17 13:38:29 2022
+vol 0.92  imb F  0% step 19900, will finish Sun Jul 17 13:38:30 2022
+vol 0.92  imb F  0% step 20000, will finish Sun Jul 17 13:38:30 2022
+vol 0.92  imb F  0% step 20100, will finish Sun Jul 17 13:38:30 2022
+vol 0.92  imb F  0% step 20200, will finish Sun Jul 17 13:38:30 2022
+vol 0.92  imb F  0% step 20300, will finish Sun Jul 17 13:38:30 2022
+vol 0.92  imb F  0% step 20400, will finish Sun Jul 17 13:38:30 2022
+vol 0.92  imb F  0% step 20500, will finish Sun Jul 17 13:38:30 2022
+vol 0.92  imb F  0% step 20600, will finish Sun Jul 17 13:38:30 2022
+vol 0.92  imb F  1% step 20700, will finish Sun Jul 17 13:38:30 2022
+vol 0.92  imb F  0% step 20800, will finish Sun Jul 17 13:38:30 2022
+vol 0.92  imb F  0% step 20900, will finish Sun Jul 17 13:38:30 2022
+vol 0.92  imb F  1% step 21000, will finish Sun Jul 17 13:38:30 2022
+vol 0.92  imb F  1% step 21100, will finish Sun Jul 17 13:38:30 2022
+vol 0.92  imb F  0% step 21200, will finish Sun Jul 17 13:38:30 2022
+vol 0.92  imb F  0% step 21300, will finish Sun Jul 17 13:38:30 2022
+vol 0.92  imb F  0% step 21400, will finish Sun Jul 17 13:38:31 2022
+vol 0.92  imb F  0% step 21500, will finish Sun Jul 17 13:38:31 2022
+vol 0.92  imb F  1% step 21600, will finish Sun Jul 17 13:38:31 2022
+vol 0.92  imb F  0% step 21700, will finish Sun Jul 17 13:38:31 2022
+vol 0.92  imb F  0% step 21800, will finish Sun Jul 17 13:38:31 2022
+vol 0.92  imb F  0% step 21900, will finish Sun Jul 17 13:38:31 2022
+vol 0.92  imb F  1% step 22000, will finish Sun Jul 17 13:38:31 2022
+vol 0.92  imb F  1% step 22100, will finish Sun Jul 17 13:38:31 2022
+vol 0.92  imb F  0% step 22200, will finish Sun Jul 17 13:38:31 2022
+vol 0.92  imb F  1% step 22300, will finish Sun Jul 17 13:38:31 2022
+vol 0.92  imb F  1% step 22400, will finish Sun Jul 17 13:38:32 2022
+vol 0.92  imb F  1% step 22500, will finish Sun Jul 17 13:38:32 2022
+vol 0.92  imb F  0% step 22600, will finish Sun Jul 17 13:38:32 2022
+vol 0.92  imb F  0% step 22700, will finish Sun Jul 17 13:38:32 2022
+vol 0.92  imb F  1% step 22800, will finish Sun Jul 17 13:38:32 2022
+vol 0.92  imb F  1% step 22900, will finish Sun Jul 17 13:38:32 2022
+vol 0.92  imb F  1% step 23000, will finish Sun Jul 17 13:38:32 2022
+vol 0.92  imb F  0% step 23100, will finish Sun Jul 17 13:38:32 2022
+vol 0.92  imb F  1% step 23200, will finish Sun Jul 17 13:38:33 2022
+vol 0.92  imb F  0% step 23300, will finish Sun Jul 17 13:38:33 2022
+vol 0.92  imb F  1% step 23400, will finish Sun Jul 17 13:38:33 2022
+vol 0.92  imb F  0% step 23500, will finish Sun Jul 17 13:38:33 2022
+vol 0.92  imb F  1% step 23600, will finish Sun Jul 17 13:38:33 2022
+vol 0.92  imb F  0% step 23700, will finish Sun Jul 17 13:38:33 2022
+vol 0.92  imb F  0% step 23800, will finish Sun Jul 17 13:38:33 2022
+vol 0.91  imb F  1% step 23900, will finish Sun Jul 17 13:38:33 2022
+vol 0.91  imb F  0% step 24000, will finish Sun Jul 17 13:38:33 2022
+vol 0.91  imb F  0% step 24100, will finish Sun Jul 17 13:38:33 2022
+vol 0.91  imb F  1% step 24200, will finish Sun Jul 17 13:38:33 2022
+vol 0.91  imb F  0% step 24300, will finish Sun Jul 17 13:38:33 2022
+vol 0.91  imb F  1% step 24400, will finish Sun Jul 17 13:38:33 2022
+vol 0.91  imb F  0% step 24500, will finish Sun Jul 17 13:38:33 2022
+vol 0.91  imb F  0% step 24600, will finish Sun Jul 17 13:38:33 2022
+vol 0.91  imb F  0% step 24700, will finish Sun Jul 17 13:38:33 2022
+vol 0.91  imb F  0% step 24800, will finish Sun Jul 17 13:38:34 2022
+vol 0.91  imb F  1% step 24900, will finish Sun Jul 17 13:38:34 2022
+vol 0.91  imb F  0% step 25000, will finish Sun Jul 17 13:38:34 2022
+vol 0.91  imb F  0% step 25100, will finish Sun Jul 17 13:38:34 2022
+vol 0.91  imb F  1% step 25200, will finish Sun Jul 17 13:38:34 2022
+vol 0.91  imb F  0% step 25300, will finish Sun Jul 17 13:38:34 2022
+vol 0.91  imb F  1% step 25400, will finish Sun Jul 17 13:38:34 2022
+vol 0.91  imb F  1% step 25500, will finish Sun Jul 17 13:38:34 2022
+vol 0.91  imb F  0% step 25600, will finish Sun Jul 17 13:38:34 2022
+vol 0.91  imb F  1% step 25700, will finish Sun Jul 17 13:38:34 2022
+vol 0.92  imb F  1% step 25800, will finish Sun Jul 17 13:38:35 2022
+vol 0.92  imb F  0% step 25900, will finish Sun Jul 17 13:38:35 2022
+vol 0.92  imb F  0% step 26000, will finish Sun Jul 17 13:38:35 2022
+vol 0.92  imb F  0% step 26100, will finish Sun Jul 17 13:38:35 2022
+vol 0.92  imb F  0% step 26200, will finish Sun Jul 17 13:38:35 2022
+vol 0.92  imb F  0% step 26300, will finish Sun Jul 17 13:38:35 2022
+vol 0.92  imb F  1% step 26400, will finish Sun Jul 17 13:38:35 2022
+vol 0.92  imb F  1% step 26500, will finish Sun Jul 17 13:38:35 2022
+vol 0.92  imb F  0% step 26600, will finish Sun Jul 17 13:38:35 2022
+vol 0.92  imb F  1% step 26700, will finish Sun Jul 17 13:38:35 2022
+vol 0.92  imb F  0% step 26800, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 26900, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 27000, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 27100, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 27200, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 27300, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 27400, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 27500, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 27600, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 27700, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 27800, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 27900, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 28000, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  1% step 28100, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  1% step 28200, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 28300, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 28400, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 28500, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 28600, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 28700, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 28800, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 28900, will finish Sun Jul 17 13:38:36 2022
+vol 0.91  imb F  0% step 29000, will finish Sun Jul 17 13:38:37 2022
+vol 0.91  imb F  0% step 29100, will finish Sun Jul 17 13:38:37 2022
+vol 0.91  imb F  1% step 29200, will finish Sun Jul 17 13:38:37 2022
+vol 0.91  imb F  1% step 29300, will finish Sun Jul 17 13:38:37 2022
+vol 0.91  imb F  0% step 29400, will finish Sun Jul 17 13:38:37 2022
+vol 0.91  imb F  1% step 29500, will finish Sun Jul 17 13:38:37 2022
+vol 0.91  imb F  1% step 29600, will finish Sun Jul 17 13:38:37 2022
+vol 0.91  imb F  0% step 29700, will finish Sun Jul 17 13:38:37 2022
+vol 0.90  imb F  0% step 29800, will finish Sun Jul 17 13:38:37 2022
+vol 0.90  imb F  0% step 29900, will finish Sun Jul 17 13:38:37 2022
+vol 0.90  imb F  0% step 30000, will finish Sun Jul 17 13:38:38 2022
+vol 0.90  imb F  1% step 30100, will finish Sun Jul 17 13:38:38 2022
+vol 0.90  imb F  1% step 30200, will finish Sun Jul 17 13:38:38 2022
+vol 0.90  imb F  1% step 30300, will finish Sun Jul 17 13:38:38 2022
+vol 0.90  imb F  0% step 30400, will finish Sun Jul 17 13:38:38 2022
+vol 0.90  imb F  1% step 30500, will finish Sun Jul 17 13:38:38 2022
+vol 0.90  imb F  1% step 30600, will finish Sun Jul 17 13:38:38 2022
+vol 0.90  imb F  0% step 30700, will finish Sun Jul 17 13:38:38 2022
+vol 0.90  imb F  0% step 30800, will finish Sun Jul 17 13:38:38 2022
+vol 0.90  imb F  0% step 30900, will finish Sun Jul 17 13:38:38 2022
+vol 0.90  imb F  0% step 31000, will finish Sun Jul 17 13:38:38 2022
+vol 0.90  imb F  0% step 31100, will finish Sun Jul 17 13:38:38 2022
+vol 0.90  imb F  0% step 31200, will finish Sun Jul 17 13:38:38 2022
+vol 0.90  imb F  1% step 31300, will finish Sun Jul 17 13:38:38 2022
+vol 0.90  imb F  0% step 31400, will finish Sun Jul 17 13:38:38 2022
+vol 0.90  imb F  0% step 31500, will finish Sun Jul 17 13:38:38 2022
+vol 0.90  imb F  0% step 31600, will finish Sun Jul 17 13:38:39 2022
+vol 0.90  imb F  1% step 31700, will finish Sun Jul 17 13:38:39 2022
+vol 0.90  imb F  0% step 31800, will finish Sun Jul 17 13:38:39 2022
+vol 0.90  imb F  0% step 31900, will finish Sun Jul 17 13:38:39 2022
+vol 0.90  imb F  0% step 32000, will finish Sun Jul 17 13:38:39 2022
+vol 0.90  imb F  1% step 32100, will finish Sun Jul 17 13:38:39 2022
+vol 0.90  imb F  0% step 32200, will finish Sun Jul 17 13:38:39 2022
+vol 0.90  imb F  0% step 32300, will finish Sun Jul 17 13:38:39 2022
+vol 0.90  imb F  0% step 32400, will finish Sun Jul 17 13:38:39 2022
+vol 0.90  imb F  1% step 32500, will finish Sun Jul 17 13:38:39 2022
+vol 0.90  imb F  0% step 32600, will finish Sun Jul 17 13:38:39 2022
+vol 0.90  imb F  0% step 32700, will finish Sun Jul 17 13:38:39 2022
+vol 0.90  imb F  0% step 32800, will finish Sun Jul 17 13:38:39 2022
+vol 0.89  imb F  0% step 32900, will finish Sun Jul 17 13:38:39 2022
+vol 0.89  imb F  1% step 33000, will finish Sun Jul 17 13:38:39 2022
+vol 0.89  imb F  0% step 33100, will finish Sun Jul 17 13:38:39 2022
+vol 0.89  imb F  0% step 33200, will finish Sun Jul 17 13:38:39 2022
+vol 0.89  imb F  0% step 33300, will finish Sun Jul 17 13:38:40 2022
+vol 0.89  imb F  1% step 33400, will finish Sun Jul 17 13:38:40 2022
+vol 0.89  imb F  1% step 33500, will finish Sun Jul 17 13:38:40 2022
+vol 0.89  imb F  0% step 33600, will finish Sun Jul 17 13:38:40 2022
+vol 0.89  imb F  0% step 33700, will finish Sun Jul 17 13:38:40 2022
+vol 0.89  imb F  0% step 33800, will finish Sun Jul 17 13:38:40 2022
+vol 0.90  imb F  1% step 33900, will finish Sun Jul 17 13:38:40 2022
+vol 0.89  imb F  1% step 34000, will finish Sun Jul 17 13:38:40 2022
+vol 0.89  imb F  0% step 34100, will finish Sun Jul 17 13:38:40 2022
+vol 0.89  imb F  0% step 34200, will finish Sun Jul 17 13:38:40 2022
+vol 0.89  imb F  0% step 34300, will finish Sun Jul 17 13:38:40 2022
+vol 0.89  imb F  0% step 34400, will finish Sun Jul 17 13:38:40 2022
+vol 0.90  imb F  0% step 34500, will finish Sun Jul 17 13:38:40 2022
+vol 0.90  imb F  0% step 34600, will finish Sun Jul 17 13:38:40 2022
+vol 0.90  imb F  0% step 34700, will finish Sun Jul 17 13:38:40 2022
+vol 0.90  imb F  0% step 34800, will finish Sun Jul 17 13:38:40 2022
+vol 0.90  imb F  0% step 34900, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  1% step 35000, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  1% step 35100, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  1% step 35200, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  1% step 35300, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  0% step 35400, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  0% step 35500, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  0% step 35600, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  1% step 35700, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  0% step 35800, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  0% step 35900, will finish Sun Jul 17 13:38:41 2022
+vol 0.89  imb F  1% step 36000, will finish Sun Jul 17 13:38:41 2022
+vol 0.89  imb F  0% step 36100, will finish Sun Jul 17 13:38:41 2022
+vol 0.89  imb F  1% step 36200, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  0% step 36300, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  1% step 36400, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  1% step 36500, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  0% step 36600, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  0% step 36700, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  0% step 36800, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  0% step 36900, will finish Sun Jul 17 13:38:41 2022
+vol 0.90  imb F  0% step 37000, will finish Sun Jul 17 13:38:42 2022
+vol 0.90  imb F  0% step 37100, will finish Sun Jul 17 13:38:42 2022
+vol 0.91  imb F  1% step 37200, will finish Sun Jul 17 13:38:42 2022
+vol 0.91  imb F  0% step 37300, will finish Sun Jul 17 13:38:42 2022
+vol 0.91  imb F  0% step 37400, will finish Sun Jul 17 13:38:42 2022
+vol 0.91  imb F  0% step 37500, will finish Sun Jul 17 13:38:42 2022
+vol 0.91  imb F  1% step 37600, will finish Sun Jul 17 13:38:42 2022
+vol 0.91  imb F  0% step 37700, will finish Sun Jul 17 13:38:42 2022
+vol 0.91  imb F  0% step 37800, will finish Sun Jul 17 13:38:42 2022
+vol 0.90  imb F  0% step 37900, will finish Sun Jul 17 13:38:42 2022
+vol 0.90  imb F  1% step 38000, will finish Sun Jul 17 13:38:42 2022
+vol 0.90  imb F  1% step 38100, will finish Sun Jul 17 13:38:42 2022
+vol 0.90  imb F  0% step 38200, will finish Sun Jul 17 13:38:42 2022
+vol 0.90  imb F  0% step 38300, will finish Sun Jul 17 13:38:42 2022
+vol 0.90  imb F  0% step 38400, will finish Sun Jul 17 13:38:42 2022
+vol 0.90  imb F  0% step 38500, will finish Sun Jul 17 13:38:42 2022
+vol 0.90  imb F  0% step 38600, will finish Sun Jul 17 13:38:42 2022
+vol 0.90  imb F  0% step 38700, will finish Sun Jul 17 13:38:42 2022
+vol 0.90  imb F  0% step 38800, will finish Sun Jul 17 13:38:43 2022
+vol 0.90  imb F  0% step 38900, will finish Sun Jul 17 13:38:43 2022
+vol 0.90  imb F  0% step 39000, will finish Sun Jul 17 13:38:43 2022
+vol 0.90  imb F  0% step 39100, will finish Sun Jul 17 13:38:43 2022
+vol 0.90  imb F  0% step 39200, will finish Sun Jul 17 13:38:43 2022
+vol 0.90  imb F  0% step 39300, will finish Sun Jul 17 13:38:43 2022
+vol 0.90  imb F  0% step 39400, will finish Sun Jul 17 13:38:43 2022
+vol 0.90  imb F  0% step 39500, will finish Sun Jul 17 13:38:43 2022
+vol 0.90  imb F  0% step 39600, will finish Sun Jul 17 13:38:43 2022
+vol 0.90  imb F  0% step 39700, will finish Sun Jul 17 13:38:43 2022
+vol 0.90  imb F  0% step 39800, will finish Sun Jul 17 13:38:43 2022
+vol 0.90  imb F  0% step 39900, will finish Sun Jul 17 13:38:43 2022
+vol 0.90  imb F  1% step 40000, will finish Sun Jul 17 13:38:43 2022
+vol 0.90  imb F  1% step 40100, will finish Sun Jul 17 13:38:43 2022
+vol 0.90  imb F  0% step 40200, will finish Sun Jul 17 13:38:43 2022
+vol 0.90  imb F  1% step 40300, will finish Sun Jul 17 13:38:43 2022
+slurmstepd: error: *** JOB 9819250 ON r001 CANCELLED AT 2022-07-17T13:27:13 DUE TO TIME LIMIT ***

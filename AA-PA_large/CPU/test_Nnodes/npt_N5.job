@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH -N 5 --ntasks-per-node 128
-#SBATCH -t 00:10:00
+#SBATCH -t 00:20:00
 #SBATCH -p RM
 #SBATCH -J 'RM'
 

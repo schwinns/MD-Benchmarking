@@ -1,0 +1,421 @@
+--------------------------------------------------------------------------
+WARNING: There are more than one active ports on host 'v001', but the
+default subnet GID prefix was detected on more than one of these
+ports.  If these ports are connected to different physical IB
+networks, this configuration will fail in Open MPI.  This version of
+Open MPI requires that every physically separate IB subnet that is
+used between connected MPI processes must have different subnet ID
+values.
+
+Please see this FAQ entry for more details:
+
+  http://www.open-mpi.org/faq/?category=openfabrics#ofa-default-subnet-gid
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_default_gid_prefix to 0.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx mdrun, 2020.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.5
+Executable:   /jet/home/schwinns/pkgs/gromacs/2020.5/bin/gmx_mpi
+Data prefix:  /jet/home/schwinns/pkgs/gromacs/2020.5
+Working dir:  /ocean/projects/cts160011p/schwinns/benchmark/2022/AA-PA_large/GPU/G4
+Command line:
+  gmx_mpi mdrun -v -s ../npt.tpr -o npt -g G4_np4_nomp4.log -ntomp 4
+
+Compiled SIMD: SSE4.1, but for this host/run AVX_512 might be better (see
+log).
+The current CPU can measure timings more accurately than the code in
+gmx mdrun was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding gmx mdrun with the GMX_USE_RDTSCP=ON CMake option.
+Reading file ../npt.tpr, VERSION 2020.5 (single precision)
+Changing nstlist from 40 to 100, rlist from 1 to 1.003
+
+
+On host v001.ib.bridges2.psc.edu 4 GPUs selected for this run.
+Mapping of GPU IDs to the 4 GPU tasks in the 4 ranks on this node:
+  PP:0,PP:1,PP:2,PP:3
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+Using 4 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 4 OpenMP threads per MPI process
+
+
+NOTE: DLB will not turn on during the first phase of PME tuning
+starting mdrun 'PA_large'
+50000 steps,    100.0 ps.
+step 0
+[v001.ib.bridges2.psc.edu:03963] 11 more processes have sent help message help-mpi-btl-openib.txt / default subnet prefix
+[v001.ib.bridges2.psc.edu:03963] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+imb F  0% step 100, will finish Sun Jul 17 13:30:34 2022
+imb F  0% step 200, will finish Sun Jul 17 13:29:37 2022
+imb F  0% step 300, will finish Sun Jul 17 13:29:14 2022
+imb F  0% step 400, will finish Sun Jul 17 13:29:03 2022
+step  600: timed with pme grid 192 192 192, coulomb cutoff 1.000: 29746.3 M-cycles
+step  800: timed with pme grid 160 160 160, coulomb cutoff 1.146: 16901.7 M-cycles
+step 1000: timed with pme grid 144 144 144, coulomb cutoff 1.273: 12878.7 M-cycles
+step 1200: timed with pme grid 128 128 128, coulomb cutoff 1.432: 9947.0 M-cycles
+step 1200: the maximum allowed grid scaling limits the PME load balancing to a coulomb cut-off of 1.528
+step 1400: timed with pme grid 120 120 120, coulomb cutoff 1.528: 8284.5 M-cycles
+              optimal pme grid 120 120 120, coulomb cutoff 1.528
+
+NOTE: DLB can now turn on, when beneficial
+imb F  0% step 1500, will finish Sun Jul 17 12:55:45 2022
+imb F  0% step 1600, will finish Sun Jul 17 12:53:19 2022
+imb F  0% step 1700, will finish Sun Jul 17 12:51:10 2022
+imb F  0% step 1800, will finish Sun Jul 17 12:49:16 2022
+imb F  0% step 1900, will finish Sun Jul 17 12:47:34 2022
+imb F  0% step 2000, will finish Sun Jul 17 12:46:02 2022
+imb F  0% step 2100, will finish Sun Jul 17 12:44:38 2022
+imb F  0% step 2200, will finish Sun Jul 17 12:43:23 2022
+imb F  0% step 2300, will finish Sun Jul 17 12:42:14 2022
+imb F  0% step 2400, will finish Sun Jul 17 12:41:10 2022
+imb F  0% step 2500, will finish Sun Jul 17 12:40:12 2022
+imb F  0% step 2600, will finish Sun Jul 17 12:39:18 2022
+imb F  0% step 2700, will finish Sun Jul 17 12:38:28 2022
+imb F  0% step 2800, will finish Sun Jul 17 12:37:42 2022
+imb F  0% step 2900, will finish Sun Jul 17 12:36:59 2022
+imb F  0% step 3000, will finish Sun Jul 17 12:36:19 2022
+imb F  0% step 3100, will finish Sun Jul 17 12:35:41 2022
+imb F  0% step 3200, will finish Sun Jul 17 12:35:06 2022
+imb F  0% step 3300, will finish Sun Jul 17 12:34:33 2022
+imb F  0% step 3400, will finish Sun Jul 17 12:34:02 2022
+imb F  0% step 3500, will finish Sun Jul 17 12:33:33 2022
+imb F  0% step 3600, will finish Sun Jul 17 12:33:06 2022
+imb F  0% step 3700, will finish Sun Jul 17 12:32:40 2022
+imb F  0% step 3800, will finish Sun Jul 17 12:32:15 2022
+imb F  0% step 3900, will finish Sun Jul 17 12:31:52 2022
+imb F  0% step 4000, will finish Sun Jul 17 12:31:30 2022
+imb F  0% step 4100, will finish Sun Jul 17 12:31:08 2022
+imb F  0% step 4200, will finish Sun Jul 17 12:30:48 2022
+imb F  0% step 4300, will finish Sun Jul 17 12:30:29 2022
+imb F  0% step 4400, will finish Sun Jul 17 12:30:11 2022
+imb F  0% step 4500, will finish Sun Jul 17 12:29:53 2022
+imb F  0% step 4600, will finish Sun Jul 17 12:29:36 2022
+imb F  0% step 4700, will finish Sun Jul 17 12:29:20 2022
+imb F  0% step 4800, will finish Sun Jul 17 12:29:05 2022
+imb F  0% step 4900, will finish Sun Jul 17 12:28:50 2022
+imb F  0% step 5000, will finish Sun Jul 17 12:28:36 2022
+imb F  1% step 5100, will finish Sun Jul 17 12:28:22 2022
+imb F  0% step 5200, will finish Sun Jul 17 12:28:09 2022
+imb F  0% step 5300, will finish Sun Jul 17 12:27:57 2022
+imb F  0% step 5400, will finish Sun Jul 17 12:27:44 2022
+imb F  0% step 5500, will finish Sun Jul 17 12:27:33 2022
+imb F  0% step 5600, will finish Sun Jul 17 12:27:21 2022
+imb F  0% step 5700, will finish Sun Jul 17 12:27:10 2022
+imb F  0% step 5800, will finish Sun Jul 17 12:27:00 2022
+imb F  0% step 5900, will finish Sun Jul 17 12:26:50 2022
+imb F  0% step 6000, will finish Sun Jul 17 12:26:40 2022
+imb F  0% step 6100, will finish Sun Jul 17 12:26:30 2022
+imb F  0% step 6200, will finish Sun Jul 17 12:26:21 2022
+imb F  0% step 6300, will finish Sun Jul 17 12:26:12 2022
+imb F  0% step 6400, will finish Sun Jul 17 12:26:03 2022
+imb F  0% step 6500, will finish Sun Jul 17 12:25:55 2022
+imb F  0% step 6600, will finish Sun Jul 17 12:25:47 2022
+imb F  1% step 6700, will finish Sun Jul 17 12:25:39 2022
+imb F  0% step 6800, will finish Sun Jul 17 12:25:31 2022
+imb F  0% step 6900, will finish Sun Jul 17 12:25:23 2022
+imb F  0% step 7000, will finish Sun Jul 17 12:25:16 2022
+imb F  0% step 7100, will finish Sun Jul 17 12:25:09 2022
+imb F  1% step 7200, will finish Sun Jul 17 12:25:02 2022
+imb F  0% step 7300, will finish Sun Jul 17 12:24:55 2022
+imb F  0% step 7400, will finish Sun Jul 17 12:24:49 2022
+imb F  0% step 7500, will finish Sun Jul 17 12:24:42 2022
+imb F  0% step 7600, will finish Sun Jul 17 12:24:36 2022
+imb F  1% step 7700, will finish Sun Jul 17 12:24:30 2022
+imb F  0% step 7800, will finish Sun Jul 17 12:24:25 2022
+imb F  0% step 7900, will finish Sun Jul 17 12:24:19 2022
+imb F  0% step 8000, will finish Sun Jul 17 12:24:13 2022
+imb F  0% step 8100, will finish Sun Jul 17 12:24:08 2022
+imb F  1% step 8200, will finish Sun Jul 17 12:24:03 2022
+imb F  0% step 8300, will finish Sun Jul 17 12:23:57 2022
+imb F  0% step 8400, will finish Sun Jul 17 12:23:52 2022
+imb F  0% step 8500, will finish Sun Jul 17 12:23:47 2022
+imb F  0% step 8600, will finish Sun Jul 17 12:23:43 2022
+imb F  0% step 8700, will finish Sun Jul 17 12:23:38 2022
+imb F  1% step 8800, will finish Sun Jul 17 12:23:33 2022
+imb F  0% step 8900, will finish Sun Jul 17 12:23:29 2022
+imb F  0% step 9000, will finish Sun Jul 17 12:23:25 2022
+imb F  1% step 9100, will finish Sun Jul 17 12:23:20 2022
+imb F  0% step 9200, will finish Sun Jul 17 12:23:16 2022
+imb F  0% step 9300, will finish Sun Jul 17 12:23:12 2022
+imb F  1% step 9400, will finish Sun Jul 17 12:23:08 2022
+imb F  1% step 9500, will finish Sun Jul 17 12:23:04 2022
+imb F  0% step 9600, will finish Sun Jul 17 12:23:00 2022
+imb F  0% step 9700, will finish Sun Jul 17 12:22:56 2022
+imb F  1% step 9800, will finish Sun Jul 17 12:22:53 2022
+imb F  0% step 9900, will finish Sun Jul 17 12:22:49 2022
+imb F  0% step 10000, will finish Sun Jul 17 12:22:46 2022
+imb F  1% step 10100, will finish Sun Jul 17 12:22:42 2022
+imb F  0% step 10200, will finish Sun Jul 17 12:22:39 2022
+imb F  0% step 10300, will finish Sun Jul 17 12:22:35 2022
+imb F  0% step 10400, will finish Sun Jul 17 12:22:32 2022
+imb F  0% step 10500, will finish Sun Jul 17 12:22:29 2022
+imb F  1% step 10600, will finish Sun Jul 17 12:22:26 2022
+imb F  1% step 10700, will finish Sun Jul 17 12:22:22 2022
+imb F  0% step 10800, will finish Sun Jul 17 12:22:19 2022
+imb F  1% step 10900, will finish Sun Jul 17 12:22:16 2022
+imb F  1% step 11000, will finish Sun Jul 17 12:22:13 2022
+imb F  1% step 11100, will finish Sun Jul 17 12:22:10 2022
+imb F  0% step 11200, will finish Sun Jul 17 12:22:07 2022
+imb F  0% step 11300, will finish Sun Jul 17 12:22:05 2022
+imb F  1% step 11400, will finish Sun Jul 17 12:22:02 2022
+imb F  0% step 11500, will finish Sun Jul 17 12:21:59 2022
+imb F  0% step 11600, will finish Sun Jul 17 12:21:56 2022
+imb F  0% step 11700, will finish Sun Jul 17 12:21:54 2022
+imb F  0% step 11800, will finish Sun Jul 17 12:21:51 2022
+imb F  0% step 11900, will finish Sun Jul 17 12:21:48 2022
+imb F  0% step 12000, will finish Sun Jul 17 12:21:46 2022
+imb F  0% step 12100, will finish Sun Jul 17 12:21:43 2022
+imb F  0% step 12200, will finish Sun Jul 17 12:21:41 2022
+imb F  0% step 12300, will finish Sun Jul 17 12:21:38 2022
+imb F  0% step 12400, will finish Sun Jul 17 12:21:36 2022
+imb F  0% step 12500, will finish Sun Jul 17 12:21:34 2022
+imb F  0% step 12600, will finish Sun Jul 17 12:21:31 2022
+imb F  0% step 12700, will finish Sun Jul 17 12:21:29 2022
+imb F  0% step 12800, will finish Sun Jul 17 12:21:27 2022
+imb F  0% step 12900, will finish Sun Jul 17 12:21:25 2022
+imb F  0% step 13000, will finish Sun Jul 17 12:21:22 2022
+imb F  0% step 13100, will finish Sun Jul 17 12:21:20 2022
+imb F  0% step 13200, will finish Sun Jul 17 12:21:18 2022
+imb F  0% step 13300, will finish Sun Jul 17 12:21:16 2022
+imb F  0% step 13400, will finish Sun Jul 17 12:21:14 2022
+imb F  0% step 13500, will finish Sun Jul 17 12:21:12 2022
+imb F  1% step 13600, will finish Sun Jul 17 12:21:10 2022
+imb F  1% step 13700, will finish Sun Jul 17 12:21:09 2022
+imb F  0% step 13800, will finish Sun Jul 17 12:21:07 2022
+imb F  0% step 13900, will finish Sun Jul 17 12:21:05 2022
+imb F  0% step 14000, will finish Sun Jul 17 12:21:03 2022
+imb F  0% step 14100, will finish Sun Jul 17 12:21:01 2022
+imb F  0% step 14200, will finish Sun Jul 17 12:20:59 2022
+imb F  0% step 14300, will finish Sun Jul 17 12:20:57 2022
+imb F  0% step 14400, will finish Sun Jul 17 12:20:55 2022
+imb F  0% step 14500, will finish Sun Jul 17 12:20:53 2022
+imb F  0% step 14600, will finish Sun Jul 17 12:20:51 2022
+imb F  0% step 14700, will finish Sun Jul 17 12:20:49 2022
+imb F  0% step 14800, will finish Sun Jul 17 12:20:47 2022
+imb F  0% step 14900, will finish Sun Jul 17 12:20:45 2022
+imb F  0% step 15000, will finish Sun Jul 17 12:20:43 2022
+imb F  1% step 15100, will finish Sun Jul 17 12:20:41 2022
+imb F  0% step 15200, will finish Sun Jul 17 12:20:40 2022
+imb F  0% step 15300, will finish Sun Jul 17 12:20:38 2022
+imb F  0% step 15400, will finish Sun Jul 17 12:20:36 2022
+imb F  0% step 15500, will finish Sun Jul 17 12:20:34 2022
+imb F  0% step 15600, will finish Sun Jul 17 12:20:33 2022
+imb F  0% step 15700, will finish Sun Jul 17 12:20:31 2022
+imb F  0% step 15800, will finish Sun Jul 17 12:20:29 2022
+imb F  0% step 15900, will finish Sun Jul 17 12:20:28 2022
+imb F  0% step 16000, will finish Sun Jul 17 12:20:26 2022
+imb F  0% step 16100, will finish Sun Jul 17 12:20:24 2022
+imb F  0% step 16200, will finish Sun Jul 17 12:20:23 2022
+imb F  0% step 16300, will finish Sun Jul 17 12:20:21 2022
+imb F  0% step 16400, will finish Sun Jul 17 12:20:20 2022
+imb F  0% step 16500, will finish Sun Jul 17 12:20:18 2022
+imb F  0% step 16600, will finish Sun Jul 17 12:20:17 2022
+imb F  0% step 16700, will finish Sun Jul 17 12:20:15 2022
+imb F  0% step 16800, will finish Sun Jul 17 12:20:14 2022
+imb F  0% step 16900, will finish Sun Jul 17 12:20:12 2022
+imb F  0% step 17000, will finish Sun Jul 17 12:20:11 2022
+imb F  0% step 17100, will finish Sun Jul 17 12:20:09 2022
+imb F  0% step 17200, will finish Sun Jul 17 12:20:08 2022
+imb F  0% step 17300, will finish Sun Jul 17 12:20:06 2022
+imb F  0% step 17400, will finish Sun Jul 17 12:20:05 2022
+imb F  1% step 17500, will finish Sun Jul 17 12:20:04 2022
+imb F  0% step 17600, will finish Sun Jul 17 12:20:02 2022
+imb F  0% step 17700, will finish Sun Jul 17 12:20:01 2022
+imb F  0% step 17800, will finish Sun Jul 17 12:20:00 2022
+imb F  0% step 17900, will finish Sun Jul 17 12:19:58 2022
+imb F  0% step 18000, will finish Sun Jul 17 12:19:57 2022
+imb F  0% step 18100, will finish Sun Jul 17 12:19:56 2022
+imb F  0% step 18200, will finish Sun Jul 17 12:19:54 2022
+imb F  0% step 18300, will finish Sun Jul 17 12:19:53 2022
+imb F  0% step 18400, will finish Sun Jul 17 12:19:52 2022
+imb F  0% step 18500, will finish Sun Jul 17 12:19:51 2022
+imb F  0% step 18600, will finish Sun Jul 17 12:19:49 2022
+imb F  0% step 18700, will finish Sun Jul 17 12:19:48 2022
+imb F  0% step 18800, will finish Sun Jul 17 12:19:47 2022
+imb F  0% step 18900, will finish Sun Jul 17 12:19:46 2022
+imb F  0% step 19000, will finish Sun Jul 17 12:19:45 2022
+imb F  0% step 19100, will finish Sun Jul 17 12:19:44 2022
+imb F  0% step 19200, will finish Sun Jul 17 12:19:42 2022
+imb F  0% step 19300, will finish Sun Jul 17 12:19:41 2022
+imb F  0% step 19400, will finish Sun Jul 17 12:19:40 2022
+imb F  0% step 19500, will finish Sun Jul 17 12:19:39 2022
+imb F  0% step 19600, will finish Sun Jul 17 12:19:38 2022
+imb F  0% step 19700, will finish Sun Jul 17 12:19:37 2022
+imb F  0% step 19800, will finish Sun Jul 17 12:19:36 2022
+imb F  0% step 19900, will finish Sun Jul 17 12:19:35 2022
+imb F  0% step 20000, will finish Sun Jul 17 12:19:34 2022
+imb F  1% step 20100, will finish Sun Jul 17 12:19:33 2022
+imb F  0% step 20200, will finish Sun Jul 17 12:19:32 2022
+imb F  0% step 20300, will finish Sun Jul 17 12:19:31 2022
+imb F  0% step 20400, will finish Sun Jul 17 12:19:30 2022
+imb F  0% step 20500, will finish Sun Jul 17 12:19:29 2022
+imb F  0% step 20600, will finish Sun Jul 17 12:19:28 2022
+imb F  0% step 20700, will finish Sun Jul 17 12:19:27 2022
+imb F  0% step 20800, will finish Sun Jul 17 12:19:26 2022
+imb F  0% step 20900, will finish Sun Jul 17 12:19:25 2022
+imb F  0% step 21000, will finish Sun Jul 17 12:19:24 2022
+imb F  0% step 21100, will finish Sun Jul 17 12:19:23 2022
+imb F  0% step 21200, will finish Sun Jul 17 12:19:22 2022
+imb F  0% step 21300, will finish Sun Jul 17 12:19:21 2022
+imb F  0% step 21400, will finish Sun Jul 17 12:19:20 2022
+imb F  0% step 21500, will finish Sun Jul 17 12:19:19 2022
+imb F  0% step 21600, will finish Sun Jul 17 12:19:18 2022
+imb F  0% step 21700, will finish Sun Jul 17 12:19:17 2022
+imb F  0% step 21800, will finish Sun Jul 17 12:19:16 2022
+imb F  0% step 21900, will finish Sun Jul 17 12:19:16 2022
+imb F  0% step 22000, will finish Sun Jul 17 12:19:15 2022
+imb F  0% step 22100, will finish Sun Jul 17 12:19:14 2022
+imb F  0% step 22200, will finish Sun Jul 17 12:19:13 2022
+imb F  0% step 22300, will finish Sun Jul 17 12:19:12 2022
+imb F  0% step 22400, will finish Sun Jul 17 12:19:11 2022
+imb F  0% step 22500, will finish Sun Jul 17 12:19:11 2022
+imb F  0% step 22600, will finish Sun Jul 17 12:19:10 2022
+imb F  0% step 22700, will finish Sun Jul 17 12:19:09 2022
+imb F  0% step 22800, will finish Sun Jul 17 12:19:08 2022
+imb F  0% step 22900, will finish Sun Jul 17 12:19:07 2022
+imb F  0% step 23000, will finish Sun Jul 17 12:19:07 2022
+imb F  0% step 23100, will finish Sun Jul 17 12:19:06 2022
+imb F  0% step 23200, will finish Sun Jul 17 12:19:05 2022
+imb F  0% step 23300, will finish Sun Jul 17 12:19:04 2022
+imb F  0% step 23400, will finish Sun Jul 17 12:19:04 2022
+imb F  0% step 23500, will finish Sun Jul 17 12:19:03 2022
+imb F  0% step 23600, will finish Sun Jul 17 12:19:02 2022
+imb F  1% step 23700, will finish Sun Jul 17 12:19:01 2022
+imb F  0% step 23800, will finish Sun Jul 17 12:19:01 2022
+imb F  0% step 23900, will finish Sun Jul 17 12:19:00 2022
+imb F  0% step 24000, will finish Sun Jul 17 12:18:59 2022
+imb F  0% step 24100, will finish Sun Jul 17 12:18:58 2022
+imb F  0% step 24200, will finish Sun Jul 17 12:18:58 2022
+imb F  0% step 24300, will finish Sun Jul 17 12:18:57 2022
+imb F  0% step 24400, will finish Sun Jul 17 12:18:56 2022
+imb F  0% step 24500, will finish Sun Jul 17 12:18:56 2022
+imb F  0% step 24600, will finish Sun Jul 17 12:18:55 2022
+imb F  0% step 24700, will finish Sun Jul 17 12:18:54 2022
+imb F  0% step 24800, will finish Sun Jul 17 12:18:54 2022
+imb F  0% step 24900, will finish Sun Jul 17 12:18:53 2022
+imb F  0% step 25000, will finish Sun Jul 17 12:18:52 2022
+imb F  1% step 25100, will finish Sun Jul 17 12:18:52 2022
+imb F  0% step 25200, will finish Sun Jul 17 12:18:51 2022
+imb F  0% step 25300, will finish Sun Jul 17 12:18:51 2022
+imb F  1% step 25400, will finish Sun Jul 17 12:18:50 2022
+imb F  0% step 25500, will finish Sun Jul 17 12:18:49 2022
+imb F  0% step 25600, will finish Sun Jul 17 12:18:49 2022
+imb F  0% step 25700, will finish Sun Jul 17 12:18:48 2022
+imb F  0% step 25800, will finish Sun Jul 17 12:18:47 2022
+imb F  0% step 25900, will finish Sun Jul 17 12:18:47 2022
+imb F  0% step 26000, will finish Sun Jul 17 12:18:46 2022
+imb F  0% step 26100, will finish Sun Jul 17 12:18:45 2022
+imb F  0% step 26200, will finish Sun Jul 17 12:18:45 2022
+imb F  0% step 26300, will finish Sun Jul 17 12:18:44 2022
+imb F  0% step 26400, will finish Sun Jul 17 12:18:44 2022
+imb F  0% step 26500, will finish Sun Jul 17 12:18:43 2022
+imb F  0% step 26600, will finish Sun Jul 17 12:18:42 2022
+imb F  0% step 26700, will finish Sun Jul 17 12:18:42 2022
+imb F  0% step 26800, will finish Sun Jul 17 12:18:41 2022
+imb F  0% step 26900, will finish Sun Jul 17 12:18:40 2022
+imb F  0% step 27000, will finish Sun Jul 17 12:18:40 2022
+imb F  0% step 27100, will finish Sun Jul 17 12:18:39 2022
+imb F  0% step 27200, will finish Sun Jul 17 12:18:39 2022
+imb F  0% step 27300, will finish Sun Jul 17 12:18:38 2022
+imb F  0% step 27400, will finish Sun Jul 17 12:18:38 2022
+imb F  0% step 27500, will finish Sun Jul 17 12:18:37 2022
+imb F  0% step 27600, will finish Sun Jul 17 12:18:36 2022
+imb F  0% step 27700, will finish Sun Jul 17 12:18:36 2022
+imb F  0% step 27800, will finish Sun Jul 17 12:18:35 2022
+imb F  0% step 27900, will finish Sun Jul 17 12:18:35 2022
+imb F  0% step 28000, will finish Sun Jul 17 12:18:34 2022
+imb F  0% step 28100, will finish Sun Jul 17 12:18:34 2022
+imb F  0% step 28200, will finish Sun Jul 17 12:18:33 2022
+imb F  0% step 28300, will finish Sun Jul 17 12:18:33 2022
+imb F  0% step 28400, will finish Sun Jul 17 12:18:32 2022
+imb F  0% step 28500, will finish Sun Jul 17 12:18:32 2022
+imb F  0% step 28600, will finish Sun Jul 17 12:18:31 2022
+imb F  0% step 28700, will finish Sun Jul 17 12:18:31 2022
+imb F  0% step 28800, will finish Sun Jul 17 12:18:30 2022
+imb F  0% step 28900, will finish Sun Jul 17 12:18:29 2022
+imb F  0% step 29000, will finish Sun Jul 17 12:18:29 2022
+imb F  0% step 29100, will finish Sun Jul 17 12:18:28 2022
+imb F  0% step 29200, will finish Sun Jul 17 12:18:28 2022
+imb F  0% step 29300, will finish Sun Jul 17 12:18:27 2022
+imb F  0% step 29400, will finish Sun Jul 17 12:18:27 2022
+imb F  0% step 29500, will finish Sun Jul 17 12:18:26 2022
+imb F  0% step 29600, will finish Sun Jul 17 12:18:26 2022
+imb F  0% step 29700, will finish Sun Jul 17 12:18:25 2022
+imb F  0% step 29800, will finish Sun Jul 17 12:18:25 2022
+imb F  0% step 29900, will finish Sun Jul 17 12:18:24 2022
+imb F  0% step 30000, will finish Sun Jul 17 12:18:24 2022
+imb F  1% step 30100, will finish Sun Jul 17 12:18:24 2022
+imb F  0% step 30200, will finish Sun Jul 17 12:18:23 2022
+imb F  0% step 30300, will finish Sun Jul 17 12:18:23 2022
+imb F  0% step 30400, will finish Sun Jul 17 12:18:22 2022
+imb F  0% step 30500, will finish Sun Jul 17 12:18:22 2022
+imb F  0% step 30600, will finish Sun Jul 17 12:18:21 2022
+imb F  0% step 30700, will finish Sun Jul 17 12:18:21 2022
+imb F  0% step 30800, will finish Sun Jul 17 12:18:20 2022
+imb F  0% step 30900, will finish Sun Jul 17 12:18:20 2022
+imb F  0% step 31000, will finish Sun Jul 17 12:18:19 2022
+imb F  0% step 31100, will finish Sun Jul 17 12:18:19 2022
+imb F  0% step 31200, will finish Sun Jul 17 12:18:19 2022
+imb F  0% step 31300, will finish Sun Jul 17 12:18:18 2022
+imb F  0% step 31400, will finish Sun Jul 17 12:18:18 2022
+imb F  0% step 31500, will finish Sun Jul 17 12:18:17 2022
+imb F  0% step 31600, will finish Sun Jul 17 12:18:17 2022
+imb F  0% step 31700, will finish Sun Jul 17 12:18:16 2022
+imb F  0% step 31800, will finish Sun Jul 17 12:18:16 2022
+imb F  0% step 31900, will finish Sun Jul 17 12:18:15 2022
+imb F  0% step 32000, will finish Sun Jul 17 12:18:15 2022
+imb F  0% step 32100, will finish Sun Jul 17 12:18:15 2022
+imb F  0% step 32200, will finish Sun Jul 17 12:18:14 2022
+imb F  0% step 32300, will finish Sun Jul 17 12:18:14 2022
+imb F  0% step 32400, will finish Sun Jul 17 12:18:13 2022
+imb F  0% step 32500, will finish Sun Jul 17 12:18:13 2022
+imb F  0% step 32600, will finish Sun Jul 17 12:18:12 2022
+imb F  0% step 32700, will finish Sun Jul 17 12:18:12 2022
+imb F  0% step 32800, will finish Sun Jul 17 12:18:12 2022
+imb F  0% step 32900, will finish Sun Jul 17 12:18:11 2022
+imb F  0% step 33000, will finish Sun Jul 17 12:18:11 2022
+imb F  0% step 33100, will finish Sun Jul 17 12:18:10 2022
+imb F  0% step 33200, will finish Sun Jul 17 12:18:10 2022
+imb F  0% step 33300, will finish Sun Jul 17 12:18:10 2022
+imb F  0% step 33400, will finish Sun Jul 17 12:18:09 2022
+imb F  0% step 33500, will finish Sun Jul 17 12:18:09 2022
+imb F  0% step 33600, will finish Sun Jul 17 12:18:09 2022
+imb F  0% step 33700, will finish Sun Jul 17 12:18:08 2022
+imb F  0% step 33800, will finish Sun Jul 17 12:18:08 2022
+imb F  0% step 33900, will finish Sun Jul 17 12:18:07 2022
+imb F  0% step 34000, will finish Sun Jul 17 12:18:07 2022
+imb F  0% step 34100, will finish Sun Jul 17 12:18:07 2022
+imb F  0% step 34200, will finish Sun Jul 17 12:18:06 2022
+slurmstepd: error: *** JOB 9819253 ON v001 CANCELLED AT 2022-07-17T12:08:58 DUE TO TIME LIMIT ***
